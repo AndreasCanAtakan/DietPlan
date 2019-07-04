@@ -1,0 +1,4 @@
+﻿var data = [
+{ navn : "Gulrot", type : "grønnsak", enhet: "hgram", kcal : 36 },
+{ fname : "Indrefilet svin", type : "kjøtt", enhet: "hgram", kcal : 116 }
+];
