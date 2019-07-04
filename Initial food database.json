@@ -1,8 +1,18 @@
 ﻿{
+	"matvarer": [
 
-	"navn": "Gulrot",
-	"type": "grønnsak",
-	"hgram": "hgram",
-	"kcal": 36
+		{
+			"navn": "Gulrot",
+			"type": "grønnsak",
+			"enhet": "hgram",
+			"kcal": 36
+		},
 
+		{
+			"navn": "Indrefilet svin",
+			"type": "kjøtt",
+			"enhet": "hgram",
+			"kcal": 112
+		}
+	]
 }
