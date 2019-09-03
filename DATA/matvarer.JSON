@@ -71,6 +71,14 @@
          "kcal": 36,
          "kategori": "grønnsaker",
          "underkategori": "rotgrønnsak"
+      },
+
+      {
+         "id": "42",
+         "navn": "Hvitløk",
+         "kcal": 106,
+         "kategori": "grønnsaker",
+         "underkategori": "kryddergrønnsak"
       }
 
 
