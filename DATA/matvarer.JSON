@@ -1,0 +1,78 @@
+{
+   "matvarer": [
+
+      {
+         "id": "01",
+         "navn": "Rundstykke, fin",
+         "kcal": 265,
+         "kategori": "brødmat",
+         "underkategori": "rundstykker"
+      },
+
+      {
+         "id": "02",
+         "navn": "Rundstykke, grov",
+         "kcal": 256,
+         "kategori": "brødmat",
+         "underkategori": "rundstykker"
+      },
+
+      {
+         "id": "10",
+         "navn": "Kalkunrull, krydderskinke",
+         "kcal": 100,
+         "kategori": "kjøtt",
+         "underkategori": "pålegg"
+      },
+
+      {
+         "id": "11",
+         "navn": "Kalverull",
+         "kcal": 144,
+         "kategori": "kjøtt",
+         "underkategori": "pålegg"
+      },
+
+      {
+         "id": "20",
+         "navn": "Svin, nakkekoteletter",
+         "kcal": 225,
+         "kategori": "kjøtt",
+         "underkategori": "middag"
+      },
+
+      {
+         "id": "30",
+         "navn": "Torsk",
+         "kcal": 81,
+         "kategori": "fisk",
+         "underkategori": "middag"
+      },
+
+      {
+         "id": "31",
+         "navn": "Ørret, oppdrett",
+         "kcal": 166,
+         "kategori": "fisk",
+         "underkategori": "middag"
+      },
+
+      {
+         "id": "40",
+         "navn": "Potet, høstpotet",
+         "kcal": 72,
+         "kategori": "grønnsaker",
+         "underkategori": "potet"
+      },
+
+      {
+         "id": "41",
+         "navn": "Gulrot, norsk",
+         "kcal": 36,
+         "kategori": "grønnsaker",
+         "underkategori": "rotgrønnsak"
+      }
+
+
+   ]
+}
