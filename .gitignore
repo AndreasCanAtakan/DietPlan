@@ -5,6 +5,7 @@
 
 # testing
 /coverage
+/__tests__
 
 # production
 /build
@@ -19,6 +20,8 @@
 .env.test.local
 .env.production.local
 /.firebase
+/.expo
+/.expo-shared
 
 package-lock.json
 
