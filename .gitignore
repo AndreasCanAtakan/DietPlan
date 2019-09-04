@@ -21,7 +21,9 @@
 .env.production.local
 /.firebase
 /.expo
+/.expo/*
 /.expo-shared
+/.expo-shared/*
 
 package-lock.json
 
