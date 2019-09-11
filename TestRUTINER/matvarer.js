@@ -606,9 +606,14 @@ mat=
 {"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
 ];
 var str = "";
+var karbo = 0.0;
+var kcal = 0;
 for (i in mat) {
             str += i + ") " + mat[i].Kategori + "-" + mat[i].underkategori + ": " + mat[i].Matvare + " - <b>kcal: " + mat[i].Kilokalorier +
             "</b>     Fett: "+ mat[i].Fett + "%    Karbohydrat: " + mat[i].Karbohydrat + "%     Proteiner: " + mat[i].Protein + "%<br>";
-                }
-
+            karbo += mat[i].Karbohydrat;
+            kcal += mat[i].Kilokalorier;
+              }
+str += "<br>Total karbo: " + karbo + " <br>";
+str += "<br>Kcal: " + kcal + " <br>";
 document.getElementById("paraId").innerHTML = str;
