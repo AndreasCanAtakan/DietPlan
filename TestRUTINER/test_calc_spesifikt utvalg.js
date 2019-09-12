@@ -610,7 +610,7 @@ mat=
 function checkFett(fett, total) {
   var fettMaks = 0.35
   var fettMin = 0.25
-  if (fett/total<=fettMaks || fett/total>=fettMin) {
+  if (fett/total<=fettMaks && fett/total>=fettMin) {
     return "OK";
   }
   else {
@@ -621,7 +621,7 @@ function checkFett(fett, total) {
 function checkCarbo(carbo, total) {
   var carboMaks = 0.50
   var carboMin = 0.40
-  if (carbo/total<=carboMaks || carbo/total>=carboMin) {
+  if (carbo/total<=carboMaks && carbo/total>=carboMin) {
     return "OK";
   }
   else {
@@ -632,7 +632,7 @@ function checkCarbo(carbo, total) {
 function checkProtein(protein, total) {
   var proteinMaks = 0.25
   var proteinMin = 0.20
-  if (protein/total<=proteinMaks || protein/total>=proteinMin) {
+  if (protein/total<=proteinMaks && protein/total>=proteinMin) {
     return "OK";
   }
   else {
