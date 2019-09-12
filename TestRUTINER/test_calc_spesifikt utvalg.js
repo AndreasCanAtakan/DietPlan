@@ -666,7 +666,7 @@ for (i in values) {
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
   +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
   +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
-  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>og summert "
-  +sum.toFixed(1)+" gram<br>";
+  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>"
+  +sum.toFixed(1)+" gram summert <br>";
 
 document.getElementById("paraId").innerHTML = str;
