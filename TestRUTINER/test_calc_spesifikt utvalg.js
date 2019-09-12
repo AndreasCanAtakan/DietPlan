@@ -611,6 +611,7 @@ var kcal = 0;
 var fett = 0;
 var carbo = 0;
 var protein = 0;
+var sum = 0.0;
 
 var str = "";
 var values = [4,45,99,56,233,603,455,546];
@@ -623,6 +624,10 @@ for (i in values) {
     fett+= mat[values[i]].Fett;
     carbo+= mat[values[i]].Karbohydrat;
     protein+= mat[values[i]].Protein;
+    sum = fett+carbo+protein
   }
-  str+=kcal+" kcal - "+fett+"g fett - "+carbo+" g karbohydrater - "+protein+" g proteiner<br>";
+
+  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"+fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % )<br> "
+  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % )<br> "+protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) <br>og summert "+sum+" gram<br>";
+
 document.getElementById("paraId").innerHTML = str;

@@ -614,5 +614,5 @@ for (i in mat) {
       if (mat[i].Karbohydrat>100) {str += "Karbo har avvik for"+mat[i].Matvare+"<br>";}
       if (mat[i].Protein>100) {str += "Protein har avvik for"+mat[i].Matvare+"<br>";}
     }
-    if (str=="") {str = "ingen avvik funnet i JSON data <br>"}
+    if (str=="") {str = "ingen avvik funnet i totalt "+i+" JSON data <br>"}
 document.getElementById("paraId").innerHTML = str;
