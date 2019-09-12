@@ -611,21 +611,21 @@ function checkFett(fett, total) {
   var fettMaks = 0.35
   var fettMin = 0.25
   if (fett/total<=fettMaks || fett/total>=fettMin) {
-    return true;
+    return "OK";
   }
   else {
-    return false;
+    return "UTENFOR";
   }
 }
 
 function checkCarbo(carbo, total) {
-  var carcoMaks = 0.50
+  var carboMaks = 0.50
   var carboMin = 0.40
   if (carbo/total<=carboMaks || carbo/total>=carboMin) {
-    return true;
+    return "OK";
   }
   else {
-    return false;
+    return "UTENFOR";
   }
 }
 
@@ -633,10 +633,10 @@ function checkProtein(protein, total) {
   var proteinMaks = 0.25
   var proteinMin = 0.20
   if (protein/total<=proteinMaks || protein/total>=proteinMin) {
-    return true;
+    return "OK";
   }
   else {
-    return false;
+    return "UTENFOR";
   }
 }
 
@@ -662,12 +662,11 @@ for (i in values) {
     protein+= mat[values[i]].Protein;
     sum = fett+carbo+protein
   }
-  var fettMle = "true";
-  fettMld = checkFett(fett, sum);
+
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-  +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + fettMld + "<br> "
-  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % )<br> "
-  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) <br>og summert "
+  +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
+  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
+  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>og summert "
   +sum+" gram<br>";
 
 document.getElementById("paraId").innerHTML = str;
