@@ -607,6 +607,17 @@ mat=
 ];
 // testing values for each kcal, Fett, Karbohydrat, Proteiner
 // each has a limit: kcal 1000, and the others 100 (as they are percentage of total weight)
+function checkFett(fett, total) {
+  var fettMaks = 0.35
+  var fettMin = 0.25
+  if ()((fett/total)<=fettMaks)||((fett/total)>=fettMin)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
 var str = "";
 for (i in mat) {
       if (mat[i].Kilokalorier>1000) {str += "Kcal har avvik for"+mat[i].Matvare+"<br>";}

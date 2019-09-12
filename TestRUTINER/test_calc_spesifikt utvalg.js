@@ -605,6 +605,42 @@ mat=
 {"Matvare":"Saftis, Lollipop","Kilokalorier":120,"Fett":3.5,"Karbohydrat":22,"Protein":0.1,"Kategori":"Snacks","underkategori":"Søt"},
 {"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
 ];
+
+
+function checkFett(fett, total) {
+  var fettMaks = 0.35
+  var fettMin = 0.25
+  if (fett/total<=fettMaks || fett/total>=fettMin) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function checkCarbo(carbo, total) {
+  var carcoMaks = 0.50
+  var carboMin = 0.40
+  if (carbo/total<=carboMaks || carbo/total>=carboMin) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function checkProtein(protein, total) {
+  var proteinMaks = 0.25
+  var proteinMin = 0.20
+  if (protein/total<=proteinMaks || protein/total>=proteinMin) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+
 // taking name and values for specific elements
 // and displaying and calculating total for all values
 var kcal = 0;
@@ -626,8 +662,12 @@ for (i in values) {
     protein+= mat[values[i]].Protein;
     sum = fett+carbo+protein
   }
-
-  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"+fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % )<br> "
-  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % )<br> "+protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) <br>og summert "+sum+" gram<br>";
+  var fettMle = "true";
+  fettMld = checkFett(fett, sum);
+  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
+  +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + fettMld + "<br> "
+  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % )<br> "
+  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) <br>og summert "
+  +sum+" gram<br>";
 
 document.getElementById("paraId").innerHTML = str;
