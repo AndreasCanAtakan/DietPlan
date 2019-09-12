@@ -650,7 +650,7 @@ var protein = 0;
 var sum = 0.0;
 
 var str = "";
-var values = [4,45,99,56,233,603,455,546];
+var values = [4,45,455,56,233,603,455,275];
 for (i in values) {
 
     str += i+") "+mat[values[i]].Matvare+"  -  " + mat[values[i]].Kilokalorier+" kcal  -  "
@@ -667,6 +667,6 @@ for (i in values) {
   +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
   +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
   +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>og summert "
-  +sum+" gram<br>";
+  +sum.toFixed(1)+" gram<br>";
 
 document.getElementById("paraId").innerHTML = str;
