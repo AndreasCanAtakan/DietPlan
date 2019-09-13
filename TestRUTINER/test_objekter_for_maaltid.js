@@ -640,6 +640,24 @@ function checkProtein(protein, total) {
   }
 }
 
+// removes the numbered item from the stated JSON-array
+function removeFromMaaltid (liste, element) {
+  liste.splice(element,1);
+}
+
+// adds matvare to the JSON-array liste
+function addToMaaltid (liste, matvare) {
+  liste.push(matvare);
+}
+
+// make a complete object of one matvare - input ID in main array
+function makeMatvare (number) {
+  var obj = { Matvare: mat[number].Matvare, Kilokalorier: mat[number].Kilokalorier,
+    Fett: mat[number].Fett, Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein };
+
+    return obj;
+}
+
 
 // taking name and values for specific elements
 // and displaying and calculating total for all values
@@ -657,14 +675,16 @@ var maaltid = [{}];
 
 // adding all selected food to maaltid-object
 for (i in values) {
-  var obj = { Matvare: mat[values[i]].Matvare, Kilokalorier: mat[values[i]].Kilokalorier,
-    Fett: mat[values[i]].Fett, Karbohydrat: mat[values[i]].Karbohydrat, Protein: mat[values[i]].Protein };
-  maaltid.push(obj);
+  // var obj = makeMatvare(i);
+  addToMaaltid(maaltid,makeMatvare(values[i]));
 }
+
+// removing undefined object (no 0) in the JSON-array ;
+ removeFromMaaltid (maaltid,0);
 
 // running through all elements in maaltid (no 0 is empty) and adding to output string (str)
 // calculating totals og kcal, fett, karbohydrater & Protein
-for (i = 1; i< maaltid.length; i++) {
+for (i in maaltid) {
   str += i+") "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier+" kcal  -  "
   +maaltid[i].Fett+" g fett  -  " +maaltid[i].Karbohydrat+" g karbo  -  "
   +maaltid[i].Protein+" g proteiner.  " +"<br>";
@@ -674,7 +694,9 @@ for (i = 1; i< maaltid.length; i++) {
   protein+= maaltid[i].Protein;
 }
 
+
 sum = fett+carbo+protein;
+
 
 // adding all calculated values and text to string (str) to be sent to HTML-element in page, and displayed
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
