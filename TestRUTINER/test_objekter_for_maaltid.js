@@ -606,7 +606,7 @@ mat=
 {"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
 ];
 
-
+// Check for fat within limits
 function checkFett(fett, total) {
   var fettMaks = 0.35
   var fettMin = 0.25
@@ -618,6 +618,7 @@ function checkFett(fett, total) {
   }
 }
 
+// Check for carbo within limits
 function checkCarbo(carbo, total) {
   var carboMaks = 0.50
   var carboMin = 0.40
@@ -629,6 +630,7 @@ function checkCarbo(carbo, total) {
   }
 }
 
+// Check for protein within limits
 function checkProtein(protein, total) {
   var proteinMaks = 0.25
   var proteinMin = 0.20
@@ -659,17 +661,25 @@ function makeMatvare (number) {
 }
 
 
+// **************** END OF FUNCTIONS ****************
+
+
 // taking name and values for specific elements
 // and displaying and calculating total for all values
-var kcal = 0;
-var fett = 0;
-var carbo = 0;
-var protein = 0;
-var sum = 0.0;
+var kcal = 0; var fett = 0; var carbo = 0; var protein = 0; var sum = 0.0;
 
 var str = "";
+// setting standard value
 var values = [4,45,455,56,233,603,455,275];
+// initializing for use of random values below
+var values = [];
 
+// setting random values for testing
+for (i=0; i<8; i++) {
+var min = 0; var max = 603;
+var random = (Math.random() * (+max - +min) + +min).toFixed(0);
+values.push(random);
+}
 // make JSON-object from mat, using values above as indexes
 var maaltid = [{}];
 
@@ -688,21 +698,23 @@ for (i in maaltid) {
   str += i+") "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier+" kcal  -  "
   +maaltid[i].Fett+" g fett  -  " +maaltid[i].Karbohydrat+" g karbo  -  "
   +maaltid[i].Protein+" g proteiner.  " +"<br>";
+
+  // calculating totals for whole array
   kcal+= maaltid[i].Kilokalorier;
   fett+= maaltid[i].Fett;
   carbo+= maaltid[i].Karbohydrat;
   protein+= maaltid[i].Protein;
 }
 
-
+// calculating total for nutritions, to calculate percentage
 sum = fett+carbo+protein;
 
 
 // adding all calculated values and text to string (str) to be sent to HTML-element in page, and displayed
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-  +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
-  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
-  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>"
+  +fett.toFixed(1)+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + checkFett(fett, sum) + "<br> "
+  +carbo.toFixed(1)+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + checkCarbo(carbo, sum) + "<br> "
+  +protein.toFixed(1)+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + checkProtein(protein, sum) + " <br>"
   +sum.toFixed(1)+" gram summert <br>";
 
 document.getElementById("paraId").innerHTML = str;
