@@ -655,24 +655,28 @@ var values = [4,45,455,56,233,603,455,275];
 // make JSON-object from mat, using values above as indexes
 var maaltid = [{}];
 
+// adding all selected food to maaltid-object
 for (i in values) {
-  var obj = { Matvare: mat[values[i]].Matvare, Kilokalorier: mat[values[i]].Kilokalorier, Fett: mat[values[i]].Fett, Karbohydrat: mat[values[i]].Karbohydrat, Protein: mat[values[i]].Protein };
+  var obj = { Matvare: mat[values[i]].Matvare, Kilokalorier: mat[values[i]].Kilokalorier,
+    Fett: mat[values[i]].Fett, Karbohydrat: mat[values[i]].Karbohydrat, Protein: mat[values[i]].Protein };
   maaltid.push(obj);
 }
-console.log(maaltid);
 
-for (i in values) {
+// running through all elements in maaltid (no 0 is empty) and adding to output string (str)
+// calculating totals og kcal, fett, karbohydrater & Protein
+for (i = 1; i< maaltid.length; i++) {
+  str += i+") "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier+" kcal  -  "
+  +maaltid[i].Fett+" g fett  -  " +maaltid[i].Karbohydrat+" g karbo  -  "
+  +maaltid[i].Protein+" g proteiner.  " +"<br>";
+  kcal+= maaltid[i].Kilokalorier;
+  fett+= maaltid[i].Fett;
+  carbo+= maaltid[i].Karbohydrat;
+  protein+= maaltid[i].Protein;
+}
 
-    str += i+") "+mat[values[i]].Matvare+"  -  " + mat[values[i]].Kilokalorier+" kcal  -  "
-    +mat[values[i]].Fett+" g fett  -  " +mat[values[i]].Karbohydrat+" g karbo  -  "
-    +mat[values[i]].Protein+" g proteiner.  " +"<br>";
-    kcal+= mat[values[i]].Kilokalorier;
-    fett+= mat[values[i]].Fett;
-    carbo+= mat[values[i]].Karbohydrat;
-    protein+= mat[values[i]].Protein;
-    sum = fett+carbo+protein
-  }
+sum = fett+carbo+protein;
 
+// adding all calculated values and text to string (str) to be sent to HTML-element in page, and displayed
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
   +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
   +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
