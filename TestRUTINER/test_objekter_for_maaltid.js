@@ -728,13 +728,13 @@ var tom = {};
 var maaltid = [{}];
 // adding all selected food to maaltid-object
 for (i in values) {
-  min = 40; var max = 350;
+  min = 40; var max = 350;    // for getting random weight of each element
   value = parseInt((Math.random() * (+max - +min) + +min).toFixed(0), 10);
   var obj = makeMatvare(values[i],value);
   addToArray(maaltid, obj);
 }
 
-// removing undefined object (no 0) in the JSON-array ;
+//CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
 
  var verdiObjekt = checkMeal(maaltid);
