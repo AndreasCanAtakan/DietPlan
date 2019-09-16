@@ -606,6 +606,32 @@ mat=
 {"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
 ];
 
+// get maaltid object, and do all checks
+// set values to global variables
+function checkMeal (maaltid) {
+  var fett = 0.0;
+  var carbo = 0.0;
+  var protein = 0.0;
+  var respons = [{}];
+  // sum all values
+  for (i in maaltid) {
+    fett += maaltid[i].Fett;
+    carbo += maaltid[i].Karbohydrat;
+    protein += maaltid[i].Protein;
+  }
+
+  sum = fett+carbo+protein;
+  addToArray(respons, fett);
+  addToArray(respons, checkFett(fett,sum));
+  addToArray(respons, carbo);
+  addToArray(respons, checkCarbo(carbo,sum));
+  addToArray(respons, protein);
+  addToArray(respons, checkProtein(protein,sum));
+  addToArray(respons, sum);
+
+  return respons;
+}
+
 // Check for fat within limits
 function checkFett(fett, total) {
   var fettMaks = 0.35
@@ -643,12 +669,12 @@ function checkProtein(protein, total) {
 }
 
 // removes the numbered item from the stated JSON-array
-function removeFromMaaltid (liste, element) {
+function removeFromArray (liste, element) {
   liste.splice(element,1);
 }
 
 // adds matvare to the JSON-array liste
-function addToMaaltid (liste, matvare) {
+function addToArray (liste, matvare) {
   liste.push(matvare);
 }
 
@@ -658,6 +684,16 @@ function makeMatvare (number) {
     Fett: mat[number].Fett, Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein };
 
     return obj;
+}
+
+// function to add maaltid to a day-menu
+function addToDay (dagsMeny,maaltid) {
+  dagsMeny.push(maaltid);
+}
+
+// function to add a day to a week-menu
+function addToWeek (ukesMeny, dagsMeny) {
+  ukesMeny.push(dagsMeny);
 }
 
 
@@ -681,40 +717,73 @@ var random = (Math.random() * (+max - +min) + +min).toFixed(0);
 values.push(random);
 }
 // make JSON-object from mat, using values above as indexes
+// making empty object 'maaltid'
+var dag = [{}];
+var tom = {};
 var maaltid = [{}];
-
 // adding all selected food to maaltid-object
 for (i in values) {
   // var obj = makeMatvare(i);
-  addToMaaltid(maaltid,makeMatvare(values[i]));
+  addToArray(maaltid,makeMatvare(values[i]));
 }
 
 // removing undefined object (no 0) in the JSON-array ;
- removeFromMaaltid (maaltid,0);
+ removeFromArray (maaltid,0);
 
+ var verdiObjekt = checkMeal(maaltid);
+ var sum = verdiObjekt[7].toFixed(1);
+ var fett = verdiObjekt[1].toFixed(1);
+ var carbo = verdiObjekt[3].toFixed(1);
+ var protein = verdiObjekt[5].toFixed(1);
+
+// maaltid is now current maaltid, the one thet is edited
 // running through all elements in maaltid (no 0 is empty) and adding to output string (str)
 // calculating totals og kcal, fett, karbohydrater & Protein
 for (i in maaltid) {
   str += i+") "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier+" kcal  -  "
   +maaltid[i].Fett+" g fett  -  " +maaltid[i].Karbohydrat+" g karbo  -  "
   +maaltid[i].Protein+" g proteiner.  " +"<br>";
-
-  // calculating totals for whole array
-  kcal+= maaltid[i].Kilokalorier;
-  fett+= maaltid[i].Fett;
-  carbo+= maaltid[i].Karbohydrat;
-  protein+= maaltid[i].Protein;
+}
+for (i=0; i<7; i++) {
+  addToDay(dag, tom);
 }
 
+// replace item 1 with new object
+dag.splice(1, 1, maaltid);
+
+
+
+// how to get elements of maaltid in dag ?
+
+// remove first(0) element in 'dag' (element 0 is empty)
+removeFromArray(dag,0);
+
+// addToDay(dag,maaltid);
 // calculating total for nutritions, to calculate percentage
-sum = fett+carbo+protein;
+// sum = fett+carbo+protein;
+
 
 
 // adding all calculated values and text to string (str) to be sent to HTML-element in page, and displayed
+//  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
+//  +fett+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[0] + "<br> "
+//  +carbo.toFixed(1)+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + checkCarbo(carbo, sum) + "<br> "
+//  +protein.toFixed(1)+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + checkProtein(protein, sum) + " <br>"
+//  +sum.toFixed(1)+" gram summert <br>";
+
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-  +fett.toFixed(1)+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + checkFett(fett, sum) + "<br> "
-  +carbo.toFixed(1)+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + checkCarbo(carbo, sum) + "<br> "
-  +protein.toFixed(1)+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + checkProtein(protein, sum) + " <br>"
+  +fett+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[2] + "<br> "
+  +carbo+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[4] + "<br> "
+  +protein+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[6] + " <br>"
   +sum.toFixed(1)+" gram summert <br>";
 
 document.getElementById("paraId").innerHTML = str;
+//reset maaltid
+maaltid = [{}];
+// console.log(dag);
+// showing maaltid after reset
+//console.log(maaltid);
+// getting object from array dag and putting into maaltid
+maaltid = dag[0];
+// showing "new" maaltid (after getting back object from dag)
+// console.log(maaltid);
