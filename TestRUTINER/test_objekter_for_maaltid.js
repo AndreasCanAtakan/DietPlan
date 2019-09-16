@@ -608,6 +608,8 @@ mat=
 
 // get maaltid object, and do all checks
 // set values to global variables
+// must be compensated regarding eatable part.
+// Database must be updated with this
 function checkMeal (maaltid) {
   var kcal = 0.0;
   var fett = 0.0;
@@ -739,9 +741,9 @@ for (i in values) {
 
  var verdiObjekt = checkMeal(maaltid);
  var sum = verdiObjekt[7].toFixed(0);
- var fett = verdiObjekt[1].toFixed(1);
- var carbo = verdiObjekt[3].toFixed(1);
- var protein = verdiObjekt[5].toFixed(1);
+ var fett = verdiObjekt[1].toFixed(1);  var andelFett= (fett/sum*100).toFixed(1);
+ var carbo = verdiObjekt[3].toFixed(1); var andelCarbo = (carbo/sum*100).toFixed(1);
+ var protein = verdiObjekt[5].toFixed(1); var andelProtein = (protein/sum*100).toFixed(1);
  var kcal = verdiObjekt[8].toFixed(1);
 
 // maaltid is now current maaltid, the one that is edited
@@ -766,9 +768,9 @@ removeFromArray(dag,0);
 
 // get all calculations and put in output string
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-  +fett+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[2] + "<br> "
-  +carbo+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[4] + "<br> "
-  +protein+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[6] + " <br>"
+  +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
+  +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
+  +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
   +sum+" gram summert <br>";
 
 document.getElementById("paraId").innerHTML = str;
