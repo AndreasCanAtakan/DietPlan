@@ -609,18 +609,22 @@ mat=
 // get maaltid object, and do all checks
 // set values to global variables
 function checkMeal (maaltid) {
+  var kcal = 0.0;
   var fett = 0.0;
   var carbo = 0.0;
   var protein = 0.0;
   var respons = [{}];
+  var sum = 0.0;
   // sum all values
   for (i in maaltid) {
-    fett += maaltid[i].Fett;
-    carbo += maaltid[i].Karbohydrat;
-    protein += maaltid[i].Protein;
+    fett += maaltid[i].Fett*maaltid[i].weight/100;
+    carbo += maaltid[i].Karbohydrat*maaltid[i].weight/100;
+    protein += maaltid[i].Protein*maaltid[i].weight/100;
+    kcal += maaltid[i].Kilokalorier*maaltid[i].weight/100;
+    sum += maaltid[i].weight;
   }
 
-  sum = fett+carbo+protein;
+
   addToArray(respons, fett);
   addToArray(respons, checkFett(fett,sum));
   addToArray(respons, carbo);
@@ -628,6 +632,7 @@ function checkMeal (maaltid) {
   addToArray(respons, protein);
   addToArray(respons, checkProtein(protein,sum));
   addToArray(respons, sum);
+  addToArray(respons, kcal);
 
   return respons;
 }
@@ -637,10 +642,10 @@ function checkFett(fett, total) {
   var fettMaks = 0.35
   var fettMin = 0.25
   if (fett/total<=fettMaks && fett/total>=fettMin) {
-    return "OK";
+    return "OK (25-35%)";
   }
   else {
-    return "UTENFOR";
+    return "UTENFOR (25-35%)";
   }
 }
 
@@ -649,10 +654,10 @@ function checkCarbo(carbo, total) {
   var carboMaks = 0.50
   var carboMin = 0.40
   if (carbo/total<=carboMaks && carbo/total>=carboMin) {
-    return "OK";
+    return "OK (40-50%)";
   }
   else {
-    return "UTENFOR";
+    return "UTENFOR (40-50%)";
   }
 }
 
@@ -661,10 +666,10 @@ function checkProtein(protein, total) {
   var proteinMaks = 0.25
   var proteinMin = 0.20
   if (protein/total<=proteinMaks && protein/total>=proteinMin) {
-    return "OK";
+    return "OK (20-25%)";
   }
   else {
-    return "UTENFOR";
+    return "UTENFOR (20-25%)";
   }
 }
 
@@ -679,10 +684,10 @@ function addToArray (liste, matvare) {
 }
 
 // make a complete object of one matvare - input ID in main array
-function makeMatvare (number) {
+// added also input of weight of each matvare
+function makeMatvare (number, vekt) {
   var obj = { Matvare: mat[number].Matvare, Kilokalorier: mat[number].Kilokalorier,
-    Fett: mat[number].Fett, Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein };
-
+    Fett: mat[number].Fett, Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein, weight: vekt };
     return obj;
 }
 
@@ -723,59 +728,48 @@ var tom = {};
 var maaltid = [{}];
 // adding all selected food to maaltid-object
 for (i in values) {
-  // var obj = makeMatvare(i);
-  addToArray(maaltid,makeMatvare(values[i]));
+  min = 40; var max = 350;
+  value = parseInt((Math.random() * (+max - +min) + +min).toFixed(0), 10);
+  var obj = makeMatvare(values[i],value);
+  addToArray(maaltid, obj);
 }
 
 // removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
 
  var verdiObjekt = checkMeal(maaltid);
- var sum = verdiObjekt[7].toFixed(1);
+ var sum = verdiObjekt[7].toFixed(0);
  var fett = verdiObjekt[1].toFixed(1);
  var carbo = verdiObjekt[3].toFixed(1);
  var protein = verdiObjekt[5].toFixed(1);
+ var kcal = verdiObjekt[8].toFixed(1);
 
-// maaltid is now current maaltid, the one thet is edited
-// running through all elements in maaltid (no 0 is empty) and adding to output string (str)
+// maaltid is now current maaltid, the one that is edited
+// running through all elements in maaltid and adding to output string (str)
 // calculating totals og kcal, fett, karbohydrater & Protein
 for (i in maaltid) {
-  str += i+") "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier+" kcal  -  "
-  +maaltid[i].Fett+" g fett  -  " +maaltid[i].Karbohydrat+" g karbo  -  "
-  +maaltid[i].Protein+" g proteiner.  " +"<br>";
+  str += i+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
+  +(maaltid[i].Fett*maaltid[i].weight/100).toFixed(1)+" g fett  -  " +(maaltid[i].Karbohydrat*maaltid[i].weight/100).toFixed(1)+" g karbo  -  "
+  +(maaltid[i].Protein*maaltid[i].weight/100).toFixed(1)+" g proteiner.  " +"<br>";
 }
+
+// make a list of 7 possible meals in a day
 for (i=0; i<7; i++) {
   addToDay(dag, tom);
 }
 
-// replace item 1 with new object
+// replace item 1 in dag with new object
 dag.splice(1, 1, maaltid);
-
-
-
-// how to get elements of maaltid in dag ?
 
 // remove first(0) element in 'dag' (element 0 is empty)
 removeFromArray(dag,0);
 
-// addToDay(dag,maaltid);
-// calculating total for nutritions, to calculate percentage
-// sum = fett+carbo+protein;
-
-
-
-// adding all calculated values and text to string (str) to be sent to HTML-element in page, and displayed
-//  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-//  +fett+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[0] + "<br> "
-//  +carbo.toFixed(1)+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + checkCarbo(carbo, sum) + "<br> "
-//  +protein.toFixed(1)+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + checkProtein(protein, sum) + " <br>"
-//  +sum.toFixed(1)+" gram summert <br>";
-
+// get all calculations and put in output string
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
   +fett+" g fett ("+ (fett/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ (carbo/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[4] + "<br> "
   +protein+" g proteiner ("+ (protein/sum*100).toFixed(1) + " %) " + (checkMeal(maaltid))[6] + " <br>"
-  +sum.toFixed(1)+" gram summert <br>";
+  +sum+" gram summert <br>";
 
 document.getElementById("paraId").innerHTML = str;
 //reset maaltid
