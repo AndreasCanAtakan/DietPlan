@@ -1,605 +1,605 @@
-Matvare,Kilokalorier,Fett,Karbohydrat,Protein,Kategori,underkategori
-"Berlinerbolle, kjøpt",439,"23,2","49,2","7,3",Brødmat,Bolle/lefse
-"Bolle, med sjokoladebiter",378,"13,3","55,3","7,7",Brødmat,Bolle/lefse
-"Bolle, uten rosiner, kjøpt",361,"11,3","55,7","7,7",Brødmat,Bolle/lefse
-"Kanelbolle, skillingsbolle, med sukkerstrø, kjøpt",292,"5,2","51,8","8,4",Brødmat,Bolle/lefse
-"Lefse, ferdig smurt, Vestlandslefsa",347,"17,2","41,4","5,8",Brødmat,Bolle/lefse
-"Rosinbolle, kjøpt",357,"10,4","56,9","7,3",Brødmat,Bolle/lefse
-"Baguette, fin, halvstekt, stekt",260,"1,4","50,6","9,9",Brødmat,Brød
-"Brød, ekstra grovt (75-100 %), karbohydratredusert, kjøpt, Fiber og frø",260,11,"19,7","15,9",Brødmat,Brød
-"Brød, grovt (50-75 %), kjøpt",237,"2,3","42,2",9,Brødmat,Brød
-"Brød, halvgrovt (25-50 %), kjøpt",231,"2,4","42,2",8,Brødmat,Brød
-Focaccia,316,"12,2","43,3","7,1",Brødmat,Brød
-"Hamburgerbrød, fint, kjøpt",303,"8,3","49,5","6,6",Brødmat,Brød
-"Loff, fint brød (0-25 %), kjøpt",272,"2,3",53,"8,6",Brødmat,Brød
-"Pitabrød, fint, kjøpt",235,"1,1","47,3","7,4",Brødmat,Brød
-"Polarbrød, hvete",321,"5,1","58,4","9,1",Brødmat,Brød
-"Pølsebrød, fint, kjøpt",304,"8,2","50,1","6,5",Brødmat,Brød
-"Rugbrød, fint (0-25 %), kjøpt",248,"2,6","45,7","7,9",Brødmat,Brød
-"Rugbrød, grovt (50-75 %), kjøpt",259,"2,4","48,4","6,9",Brødmat,Brød
-"Rundstykke, fint, kjøpt",284,"3,3","53,4","8,7",Brødmat,Brød
-"Rundstykke, grovt, kjøpt",256,"5,2",43,"7,6",Brødmat,Brød
-"Terte, uten fyll",527,"29,8","56,4","7,5",Brødmat,Brød
-"Gjær, tørrgjær",341,"7,6","14,3","40,4",Brødmat,diverse
-"Riskaker, lettsaltet",380,3,78,8,Brødmat,diverse
-"Flatbrød, kjøpt",340,"1,2","67,4","10,4",Brødmat,Flat-/knekkebrød
-"Knekkebrød, havre",364,"5,3",61,13,Brødmat,Flat-/knekkebrød
-"Knekkebrød, lyst",403,"8,5","67,7",11,Brødmat,Flat-/knekkebrød
-"Knekkebrød, med ekstra fiber",349,8,"43,2",13,Brødmat,Flat-/knekkebrød
-"Knekkebrød, rug, Husman",319,"1,1","62,3","7,8",Brødmat,Flat-/knekkebrød
-"Knekkebrød, rug, Ryvita",336,"1,1","64,6","9,1",Brødmat,Flat-/knekkebrød
-"Croissant, uten fyll, kjøpt",404,"21,4","43,7","8,5",Brødmat,Kake
-Daimkake,379,"24,8","32,7","5,5",Brødmat,Kake
-Delfiakake,530,43,"30,1","4,6",Brødmat,Kake
-"Donuts, med sjokoladeglasur, kjøpt",497,"37,3","33,3","6,2",Brødmat,Kake
-"Formkake, fet, dansk sandkake",413,23,"46,4","4,9",Brødmat,Kake
-"Formkake, marmor",368,"17,4","45,1",7,Brødmat,Kake
-"Formkake, med epler",265,"13,5","31,4","3,8",Brødmat,Kake
-"Fyrstekake, med mandler",430,"21,9","48,5","8,5",Brødmat,Kake
-"Gulrotkake, med ostekrem, kjøpt",331,"12,4","50,3","3,8",Brødmat,Kake
-Hvite kakemenn,371,"9,3","64,5","6,5",Brødmat,Kake
-Kransekake,480,"24,5","51,3","11,2",Brødmat,Kake
-Muffins,411,"20,2","50,6","6,2",Brødmat,Kake
-Pepperkaker,459,"15,9","72,9","5,3",Brødmat,Kake
-"Rullekake, med smørkrem av margarin",398,"19,8","48,3","6,3",Brødmat,Kake
-Sarah Bernhard-kake,467,"29,6","40,5",8,Brødmat,Kake
-"Scones, grove, med melk",301,"8,3","45,6","8,8",Brødmat,Kake
-"Vafler, grove",226,"8,9","27,1","8,5",Brødmat,Kake
-"Vafler, med egg, lettmelk",218,"8,8","27,2",7,Brødmat,Kake
-"Wienerbrød, med eggekrem",401,"24,4",38,"6,5",Brødmat,Kake
-"Wienerkringle, med mandelfyll",496,"35,8","36,4","6,2",Brødmat,Kake
-Biscotti,449,"15,9","61,6","12,6",Brødmat,Kjeks
-"Kjeks, salt, fet, Ritz, Seltiner",466,"23,4","53,5","8,6",Brødmat,Kjeks
-"Kjeks, søt,  sjokoladebiter, cookies, store",420,"16,4","60,7","6,1",Brødmat,Kjeks
-"Kjeks, søt, Ballerina",465,"20,7","62,4","6,1",Brødmat,Kjeks
-"Kjeks, søt, Gjende",463,"18,6","65,4","6,6",Brødmat,Kjeks
-"Kjeks, søt, grov, Digestive",470,"20,3","62,9","7,2",Brødmat,Kjeks
-"Kjeks, søt, havre, Bixit",458,"19,1","60,9","7,7",Brødmat,Kjeks
-"Kjeks, søt, vaffel, fylt",512,"23,5","70,3","4,1",Brødmat,Kjeks
-"Egg, rå",149,"10,6","0,3",13,Diverse,Egg
-"Miso, fermentert soyabønnepasta",172,"4,6",21,"10,5",Diverse,Middag
-"Pizzabunn, uten fyll",244,"3,3","44,8","7,5",Diverse,Middag
-"Potetsalat, med ekte majones",325,"29,7","12,3","1,6",Diverse,Middag
-"Potetsalat, med lettmajones (40 % fett)",195,"14,5","14,1","1,4",Diverse,Middag
-"Potetsalat, med lettrømme",107,"5,3","12,2","1,9",Diverse,Middag
-"Soyaburger, stekt i vegetabilsk olje",195,11,"11,7","10,6",Diverse,Middag
-"Soyapølse, hermetisk",201,15,"3,5",12,Diverse,Middag
-Soyasaus,84,0,"17,9",3,Diverse,Middag
-Tacosaus,27,"0,1",4,"1,9",Diverse,Middag
-Tacoskjell,462,"23,4","55,3","5,7",Diverse,Middag
-"Tofu, soyabønneost",77,"4,2","0,6","8,1",Diverse,Middag
-"Tortilla, maislefse",258,"2,8","50,1","6,2",Diverse,Middag
-"Wokblanding, klassisk",34,"0,3","4,8","1,9",Diverse,middag
-Taco kryddermix,226,"3,5","36,6","5,9",Diverse,Salt
-Urtesalt,47,"1,7","0,3","7,6",Diverse,Salt
-Honning,317,0,"78,9","0,3",Diverse,Søtt
-Melis,400,0,100,0,Diverse,Søtt
-Sirup,297,0,"74,1","0,1",Diverse,Søtt
-"Sukker, brunt",376,0,94,0,Diverse,Søtt
-"Sukker, hvitt",400,0,100,0,Diverse,Søtt
-Vaniljesukker,364,0,"91,1",0,Diverse,Søtt
-"Cider, søt, 4,5 vol-% alkohol",59,0,"8,5",0,Drikke,Alkohol
-"Dessertvin, ekstra søt, musserende",76,0,"3,7","0,2",Drikke,Alkohol
-"Gulløl, 5,7 vol-% alkohol",58,0,"6,1","0,5",Drikke,Alkohol
-"Hvitvin, halvtørr, 10 vol-% alkohol",72,0,"0,6","0,1",Drikke,Alkohol
-"Lettøl, lett, 2,5 vol-% alkohol",25,0,"2,5","0,2",Drikke,Alkohol
-"Likør, 35 vol-% alkohol",313,0,"27,5",0,Drikke,Alkohol
-"Pils, 4,7 vol-% alkohol",41,0,"3,2","0,4",Drikke,Alkohol
-"Rødvin, 12 vol-% alkohol",74,0,"0,7","0,1",Drikke,Alkohol
-"Sterkvin, søt, portvin, 20 vol-% alkohol",151,0,"9,6","0,1",Drikke,Alkohol
-"Sterkøl, bokkøl, 6,5 vol-% alkohol",63,0,6,"0,7",Drikke,Alkohol
-"Vin, alkoholfri",17,0,4,"0,2",Drikke,Alkohol
-"Vin, alkoholsvak",36,0,"6,1",0,Drikke,Alkohol
-"Øl, alkoholfritt",24,0,5,"0,4",Drikke,Alkohol
-"Øl, redusert energiinnhold, lavkarbo",32,0,1,"0,4",Drikke,Alkohol
-"Espresso, enkel",9,0,"1,3","0,9",Drikke,Diverse
-Kokosmelk,209,"21,3","1,5",2,Drikke,Diverse
-Mandeldrikke,26,"1,3","3,5",0,Drikke,Diverse
-Risdrikke,36,"0,9","6,9","0,1",Drikke,Diverse
-"Soyadrikke, tilsatt kalsium, søtet",44,"2,4","2,2","3,1",Drikke,Diverse
-Ananasjuice,50,"0,1","11,8","0,4",Drikke,Juice
-Appelsinjuice,43,"0,2","9,6","0,7",Drikke,Juice
-Eplejuice,42,"0,1","10,2",0,Drikke,Juice
-"Brus, cola, med sukker",42,0,"10,6",0,Drikke,Søt
-"Iste, Nestea",18,0,"4,5",0,Drikke,Søt
-"Kakao, med lettmelk, tilberedt",87,"2,3",12,4,Drikke,Søt
-"Milkshake, sjokoladesmak",78,"1,5",12,"4,1",Drikke,Søt
-"Smoothie, med yoghurt, juice, banan og bær",60,"1,2","9,9","1,7",Drikke,Søt
-"Solbærsirup, drikkeklar",32,0,"7,9","0,1",Drikke,Søt
-"Bjørnebær, rå",40,"0,5","4,9","1,4",Frukt/Bær,Bær
-"Blåbær, rå",51,"0,9","7,5",1,Frukt/Bær,Bær
-"Bringebær, rå",29,"0,4","3,2","1,1",Frukt/Bær,Bær
-"Hyllebær, rå",47,"0,5","6,5","0,7",Frukt/Bær,Bær
-"Jordbær, rå",34,"0,2","6,6","0,5",Frukt/Bær,Bær
-"Kirsebær, rå",41,0,9,"0,7",Frukt/Bær,Bær
-"Krekling, krøkebær, rå",38,"0,5","5,3","0,3",Frukt/Bær,Bær
-"Moreller, rå",52,"0,1","11,3","0,9",Frukt/Bær,Bær
-"Rips, rå",53,"1,2","6,9","1,2",Frukt/Bær,Bær
-"Solbær, rå",55,1,"7,6","1,3",Frukt/Bær,Bær
-"Stikkelsbær, rå",37,"0,6","5,4","0,8",Frukt/Bær,Bær
-"Tranebær, rå",28,"0,1",4,"0,4",Frukt/Bær,Bær
-"Tyttebær, rå",44,"0,6",7,"0,7",Frukt/Bær,Bær
-"Ananas, hermetisk, med egen saft",51,0,"12,2","0,3",Frukt/Bær,Frukt
-"Ananas, hermetisk, med sukkerlake",69,0,"16,5","0,5",Frukt/Bær,Frukt
-"Ananas, rå",51,"0,1","11,4","0,5",Frukt/Bær,Frukt
-"Appelsin, rå",37,"0,1","7,2","0,9",Frukt/Bær,Frukt
-"Aprikos, hermetisk, med sukkerlake",70,0,"16,1","0,5",Frukt/Bær,Frukt
-"Aprikos, rå",52,"0,4","9,7","1,4",Frukt/Bær,Frukt
-"Aprikos, tørket",181,"0,5","39,4","2,2",Frukt/Bær,Frukt
-"Banan, rå",83,"0,3","18,1","1,1",Frukt/Bær,Frukt
-"Carambola, stjernefrukt, rå",36,"0,3","7,3","0,5",Frukt/Bær,Frukt
-"Daddel, tørket",299,"0,2",68,"3,3",Frukt/Bær,Frukt
-"Drue, blå, rå",53,"0,2","11,7","0,7",Frukt/Bær,Frukt
-"Drue, grønn, rå",70,"0,2",16,"0,7",Frukt/Bær,Frukt
-"Drue, uspesifisert, rå",62,"0,2","13,8","0,7",Frukt/Bær,Frukt
-"Eple, Rød aroma, rå",50,0,"11,2",0,Frukt/Bær,Frukt
-"Fersken, hermetisk, med egen saft",43,0,"9,7","0,6",Frukt/Bær,Frukt
-"Fersken, hermetisk, med sukkerlake",60,0,14,"0,5",Frukt/Bær,Frukt
-"Fersken, rå",42,"0,2","8,4","0,9",Frukt/Bær,Frukt
-"Fiken, tørket",253,"0,9",53,"3,3",Frukt/Bær,Frukt
-"Granateple, rå",80,"1,2","13,7","1,7",Frukt/Bær,Frukt
-"Grapefrukt, rå",34,"0,1","6,9","0,9",Frukt/Bær,Frukt
-"Guava, rå",39,1,5,"0,8",Frukt/Bær,Frukt
-"Honningmelon, rå",37,"0,1","8,1","0,5",Frukt/Bær,Frukt
-"Kiwi, rå",50,"0,9","8,3","0,8",Frukt/Bær,Frukt
-"Klementin, rå",45,"0,2","9,2","0,8",Frukt/Bær,Frukt
-"Lime, rå",17,"0,2","1,7","0,7",Frukt/Bær,Frukt
-"Litchi, rå",71,"0,4","15,2","0,8",Frukt/Bær,Frukt
-"Mango, rå",49,"0,3","10,4","0,7",Frukt/Bær,Frukt
-"Molter, rå",46,"1,1","4,4","1,6",Frukt/Bær,Frukt
-"Nektarin, rå",48,"0,3","9,8",1,Frukt/Bær,Frukt
-"Nype, rå",53,"0,5","8,6","0,6",Frukt/Bær,Frukt
-"Papaya, rå",47,"0,3","9,5","0,7",Frukt/Bær,Frukt
-"Papaya, tørket",259,"0,6","57,6","3,4",Frukt/Bær,Frukt
-"Paradisepler, rå",31,"0,3","5,8","0,4",Frukt/Bær,Frukt
-"Pasjonsfrukt, rå",44,"0,4","5,8","2,6",Frukt/Bær,Frukt
-"Physalis, rå",64,"0,6","10,7","1,8",Frukt/Bær,Frukt
-"Plomme, rå",44,"0,1","9,3","0,5",Frukt/Bær,Frukt
-"Pære, uspesifisert, rå",44,"0,1","8,8","0,4",Frukt/Bær,Frukt
-"Rabarbra, rå",20,"0,2","1,9","0,9",Frukt/Bær,Frukt
-Rosiner,277,1,"62,6",3,Frukt/Bær,Frukt
-"Sharon, kakifrukt, rå",65,"0,3",12,"0,7",Frukt/Bær,Frukt
-"Sitron, rå",23,"0,3","2,5","1,1",Frukt/Bær,Frukt
-Svisker,168,"0,3","36,5","2,3",Frukt/Bær,Frukt
-"Vannmelon, rå",35,"0,1","7,6","0,8",Frukt/Bær,Frukt
-"Aspargesbønner, rå",27,"0,1","3,4","1,7",Grønnsaker,Bønner/erter
-"Brune bønner, tørre",313,"1,5","44,6",22,Grønnsaker,Bønner/erter
-"Erter, fryst",68,"0,4",8,"5,2",Grønnsaker,Bønner/erter
-"Erter, grønne, hermetisk, avrent",64,1,7,"4,3",Grønnsaker,Bønner/erter
-"Hvite bønner, tørre",312,"0,8","45,2","23,4",Grønnsaker,Bønner/erter
-"Kikerter, hermetiske",124,"2,5","14,8","7,5",Grønnsaker,Bønner/erter
-"Kikerter, tørre",341,"5,4","46,4","21,3",Grønnsaker,Bønner/erter
-"Limabønner, smørbønner, tørr",307,"0,7","44,4","21,5",Grønnsaker,Bønner/erter
-"Linser, grønne og brune, tørre",307,2,"41,6","25,1",Grønnsaker,Bønner/erter
-"Linser, røde/rosa, tørr",346,"2,2","52,3","23,9",Grønnsaker,Bønner/erter
-"Meterbønner, rå",45,"0,4",7,"2,8",Grønnsaker,Bønner/erter
-"Mungbønner, tørre",295,"1,1","42,4","23,9",Grønnsaker,Bønner/erter
-"Røde bønner, tørre",294,"1,4","40,5","22,1",Grønnsaker,Bønner/erter
-"Sukkererter, norsk, rå",42,"0,1","5,3","3,5",Grønnsaker,Bønner/erter
-"Svarte bønner, hermetiske",106,1,"12,8","8,1",Grønnsaker,Bønner/erter
-"Svartøyebønner, tørr",324,"1,3","49,4","23,5",Grønnsaker,Bønner/erter
-"Alfalfaspirer, rå",27,"0,7","0,3",4,Grønnsaker,diverse
-"Artiskokk, rå",28,"0,2","1,3","2,8",Grønnsaker,diverse
-"Asparges, hermetisk, avrent",24,"0,6","1,6","2,1",Grønnsaker,diverse
-"Asparges, rå",22,"0,1",2,"2,2",Grønnsaker,diverse
-"Aubergine, rå",20,"0,1","2,5","1,1",Grønnsaker,diverse
-"Avocado, rå",191,"19,6","0,4","1,8",Grønnsaker,diverse
-"Bønnespirer, mungbønnespirer, rå",41,"0,2","5,9",3,Grønnsaker,diverse
-"Gresskar, rå",13,"0,1","1,7",1,Grønnsaker,diverse
-"Mais, hermetisk",85,"1,1","15,4","2,5",Grønnsaker,diverse
-"Mais, norsk, rå",85,"1,7","12,6","3,2",Grønnsaker,diverse
-"Oliven, grønne, med paprikafyll",130,"13,1","1,1","0,6",Grønnsaker,diverse
-"Oliven, sorte, i olje, hermetisk",348,36,"1,8","2,2",Grønnsaker,diverse
-"Pomelo, rå",33,"0,2","6,8","0,6",Grønnsaker,diverse
-"Squash, zucchini, rå",17,"0,2","2,2","1,3",Grønnsaker,diverse
-"Stangselleri, norsk, rå",15,"0,1","1,3","1,1",Grønnsaker,diverse
-"Basilikum, rå",21,"0,6",0,"3,2",Grønnsaker,Krydder/urter
-"Basilikum, tørket",244,"4,1",10,23,Grønnsaker,Krydder/urter
-"Chili, rød, rå",35,"0,4","5,3","1,9",Grønnsaker,Krydder/urter
-"Dill, rå",48,"1,1","4,9","3,5",Grønnsaker,Krydder/urter
-"Fennikel, rå",19,"0,4","1,8","0,9",Grønnsaker,Krydder/urter
-"Kardemomme, malt",321,"6,7","40,5","10,8",Grønnsaker,Krydder/urter
-"Karri, malt",301,14,"2,8","14,3",Grønnsaker,Krydder/urter
-"Karve, kummin, hel",334,"14,6","11,9","19,8",Grønnsaker,Krydder/urter
-"Koriander, rå",24,"0,5","1,2","2,1",Grønnsaker,Krydder/urter
-"Merian, tørket",276,7,"20,3","12,7",Grønnsaker,Krydder/urter
-"Pastinakk, rå",65,"0,6","11,2","1,7",Grønnsaker,Krydder/urter
-"Pepper, cayenne, rød",375,"17,3","29,4",12,Grønnsaker,Krydder/urter
-"Pepper, hvit",283,"2,1","42,4","10,4",Grønnsaker,Krydder/urter
-"Persille, norsk, rå",32,"0,4","1,6","3,1",Grønnsaker,Krydder/urter
-"Rosmarin, rå",120,"5,9","6,6","3,3",Grønnsaker,Krydder/urter
-"Safran, tørket",352,"5,8","61,5","11,4",Grønnsaker,Krydder/urter
-"Timian, rå",107,"1,7","10,4","5,6",Grønnsaker,Krydder/urter
-"Blomkål, norsk, rå",23,"0,2","2,3","1,9",Grønnsaker,Kål
-"Brokkoli, norsk, rå",28,"0,3","1,9","3,2",Grønnsaker,Kål
-"Grønnkål, rå",36,"0,7","2,2","3,3",Grønnsaker,Kål
-"Hodekål, rå",32,"0,1","5,2","1,4",Grønnsaker,Kål
-"Kinakål, norsk, rå",15,"0,1","1,8","1,1",Grønnsaker,Kål
-"Kålrot, kålrabi, norsk, rå",35,"0,1","6,4","0,9",Grønnsaker,Kål
-"Rosenkål, norsk, rå",52,"0,6","4,4","5,1",Grønnsaker,Kål
-"Rødkål, rå",32,"0,3",5,"1,1",Grønnsaker,Kål
-"Spisskål, rå",18,"0,3","0,9","2,1",Grønnsaker,Kål
-"Surkål, kjøpt",29,0,"5,1","1,4",Grønnsaker,Kål
-"Hvitløk, rå",106,"0,6","16,3","7,9",Grønnsaker,Løk
-"Løk, gul/rød, norsk, rå",32,"0,1","5,7","1,1",Grønnsaker,Løk
-"Purreløk, norsk, rå",28,"0,2","3,6","1,6",Grønnsaker,Løk
-"Sjalottløk, rå",24,"0,2","3,3","1,5",Grønnsaker,Løk
-"Vårløk, rå",23,"0,2","2,3","1,8",Grønnsaker,Løk
-"Gulrot, uspesifisert, rå",36,"0,1","6,7","0,7",Grønnsaker,Rotgrønnsak
-"Ingefærrot, rå",50,"0,8","8,1","1,8",Grønnsaker,Rotgrønnsak
-"Jordskokk, rå",65,"0,6","11,5","2,1",Grønnsaker,Rotgrønnsak
-"Neper, norsk, rå",29,"0,3","4,7","0,9",Grønnsaker,Rotgrønnsak
-"Okra, rå",28,"0,2",3,"1,9",Grønnsaker,Rotgrønnsak
-"Pepperrot, rå",96,"0,7",11,"7,7",Grønnsaker,Rotgrønnsak
-"Persillerot, norsk, rå",46,"0,3","7,3","1,7",Grønnsaker,Rotgrønnsak
-"Pommes frites, fryst",153,"5,2",22,"2,2",Grønnsaker,Rotgrønnsak
-"Potet, lagringspotet, rå",80,"0,1","17,1","1,9",Grønnsaker,Rotgrønnsak
-"Reddik, norsk, rå",16,"0,1","2,5","0,7",Grønnsaker,Rotgrønnsak
-"Rødbete, norsk, rå",49,"0,2","8,9","1,6",Grønnsaker,Rotgrønnsak
-"Rødbeter, syltede",59,"0,1","12,5","1,3",Grønnsaker,Rotgrønnsak
-"Sellerirot, norsk, rå",27,"0,3","2,8","1,6",Grønnsaker,Rotgrønnsak
-"Søtpotet, rå",80,0,"16,8","1,6",Grønnsaker,Rotgrønnsak
-"Vannkastanje, rå",52,"0,2","10,4","1,4",Grønnsaker,Rotgrønnsak
-"Feltsalat, rå",17,"0,2","0,2","2,6",Grønnsaker,Salat
-"Isbergsalat, issalat, norsk, rå",12,"0,1","1,5","0,8",Grønnsaker,Salat
-"Rapidsalat, norsk, rå",11,"0,2","0,3","1,4",Grønnsaker,Salat
-"Romanosalat, rå",16,"0,2","1,3","1,4",Grønnsaker,Salat
-"Ruccolasalat, rå",28,"0,7",2,"2,6",Grønnsaker,Salat
-"Sikorisalat, rå",15,"0,6","0,9","0,5",Grønnsaker,Salat
-"Spinat, rå",22,"0,4","0,3","3,3",Grønnsaker,Salat
-"Kantarell, rå",17,"0,5","0,4","1,8",Grønnsaker,Sopp
-"Sjampinjong, norsk,  rå",22,"0,3","0,3","3,6",Grønnsaker,Sopp
-"Steinsopp, rå",30,"0,2","2,4","3,1",Grønnsaker,Sopp
-"Østerssopp, rå",26,"0,3","2,6",2,Grønnsaker,Sopp
-"Agurk, norsk, rå",10,"0,1","1,2","0,8",Grønnsaker,Tomat/agurk/paprika
-"Agurker, syltede",37,"0,7","6,1","0,7",Grønnsaker,Tomat/agurk/paprika
-"Cherrytomat, importert, rå",17,"0,2","2,5","0,6",Grønnsaker,Tomat/agurk/paprika
-"Paprika, grønn, rå",21,"0,3","2,8","0,8",Grønnsaker,Tomat/agurk/paprika
-"Paprika, gul/oransje, rå",26,"0,2",5,"0,5",Grønnsaker,Tomat/agurk/paprika
-"Paprika, rød, rå",26,"0,2","4,2","0,8",Grønnsaker,Tomat/agurk/paprika
-"Tomat, hermetisk",20,"0,2","3,3","0,8",Grønnsaker,Tomat/agurk/paprika
-"Tomat, norsk, rå",18,"0,2","2,5","0,7",Grønnsaker,Tomat/agurk/paprika
-"Tomater, soltørkede, tørr",280,3,43,"14,1",Grønnsaker,Tomat/agurk/paprika
-Blodpudding,369,"20,4","30,5","14,2",Kjøtt,bearbeidet/div
-"Hamburger, rå",167,"11,2",0,"16,6",Kjøtt,bearbeidet/div
-"Hjerte, rå",107,"3,9",0,18,Kjøtt,bearbeidet/div
-"Karbonadedeig, rå",103,"2,2",0,"20,9",Kjøtt,bearbeidet/div
-"Kjøttdeig, kylling, rå",145,"8,1",0,18,Kjøtt,bearbeidet/div
-"Kjøttdeig, storfe, uten salt og vann, rå",196,"13,2",0,"19,4",Kjøtt,bearbeidet/div
-"Kjøttfarse, rå",165,"11,2",5,11,Kjøtt,bearbeidet/div
-"Medisterdeig, rå",206,"15,5",0,"16,7",Kjøtt,bearbeidet/div
-"Pinnekjøtt, råvare",452,37,0,"29,8",Kjøtt,bearbeidet/div
-"Wienersnitzel, rå",244,"15,8","5,8","19,7",Kjøtt,bearbeidet/div
-"And, kjøtt med skinn, rå",388,"37,3",0,"13,1",Kjøtt,Fugl
-"Gås, kjøtt med skinn, rå",366,"33,6",0,"15,9",Kjøtt,Fugl
-"Kalkun, bryst, filet, uten skinn, rå",114,"1,4",0,"25,3",Kjøtt,Fugl
-"Kalkun, kjøtt med skinn, rå",133,"5,2",0,"21,6",Kjøtt,Fugl
-"Kylling, filet, uten skinn, rå",111,"2,1",0,23,Kjøtt,Fugl
-"Kylling, hel, med skinn, rå",165,"10,2",0,"18,2",Kjøtt,Fugl
-"Kylling, hel, uten skinn, rå",107,3,0,20,Kjøtt,Fugl
-"Kylling, lår (overlår og lårklubbe), med skinn, rå",171,"11,5",0,"16,9",Kjøtt,Fugl
-"Lever, kylling, rå",113,"4,1",0,"19,1",Kjøtt,Fugl
-"Rype, bryst, uten skinn, rå",122,"4,5",0,"20,3",Kjøtt,Fugl
-"Lam, bogstek, rå",187,"12,6",0,"18,5",Kjøtt,Lam/sau
-"Lam, flatbiff, rå",104,"2,1",0,"21,3",Kjøtt,Lam/sau
-"Lam, fårikålkjøtt, rå",230,"17,7",0,"17,6",Kjøtt,Lam/sau
-"Lam, grytekjøtt, rå",192,"13,2",0,"18,4",Kjøtt,Lam/sau
-"Lam, indrefilet, rå",116,"3,8",0,"20,4",Kjøtt,Lam/sau
-"Lam, kotelett og sadel, kjøtt med fettrand, rå",257,"20,4",0,"18,3",Kjøtt,Lam/sau
-"Lam, lår med mørbrad, rå",181,"11,6",0,"19,1",Kjøtt,Lam/sau
-"Lam, ribbe, side med ben, rå",285,"24,2",0,"16,8",Kjøtt,Lam/sau
-"Lam, sadel, rå",227,"17,1",0,"18,3",Kjøtt,Lam/sau
-"Lam, ytrefilet, rå",120,"3,9",0,"21,3",Kjøtt,Lam/sau
-"Lever, lam, rå",128,"4,1",2,"20,7",Kjøtt,Lam/sau
-"Sau, fårekjøtt, lettsaltet, rå",371,35,0,14,Kjøtt,Lam/sau
-Grillpølse,261,"21,4","5,5","11,5",Kjøtt,Pølse
-"Kylling- og kalkunpølse, med mindre fett",168,"10,6",5,"13,1",Kjøtt,Pølse
-"Kylling- og kalkunpølse, med ost",201,"14,1","4,6","13,4",Kjøtt,Pølse
-"Salsiccia, italiensk pølse",271,"18,3","4,7","21,8",Kjøtt,Pølse
-Wienerpølse,256,"21,2","5,4","10,9",Kjøtt,Pølse
-"Wienerpølse, med mindre fett",160,"10,7","5,8","10,1",Kjøtt,Pølse
-"Bankekjøtt, salt",102,"4,3",0,"15,9",Kjøtt,Storfe
-"Kalv, koteletter, rå",117,3,0,"22,5",Kjøtt,Storfe
-"Kalv, stek, rå",107,"2,4",0,"21,4",Kjøtt,Storfe
-"Lever, storfe, rå",124,"3,2","3,5","20,3",Kjøtt,Storfe
-"Storfe, bankekjøtt, rå",124,"4,1",0,"21,9",Kjøtt,Storfe
-"Storfe, bibringe, rå",209,"14,8",0,"18,9",Kjøtt,Storfe
-"Storfe, bog, uten knoke, rå",160,"8,8",0,"20,2",Kjøtt,Storfe
-"Storfe, bogstek, rå",120,"3,7",0,"21,8",Kjøtt,Storfe
-"Storfe, entrecôte, synlig fett skåret vekk, rå",141,"5,7",0,"22,4",Kjøtt,Storfe
-"Storfe, entrecôtekam, rå",200,"13,1",0,"20,5",Kjøtt,Storfe
-"Storfe, fett fra storfekjøtt, rå",732,80,0,3,Kjøtt,Storfe
-"Storfe, filetkam, rå",165,9,0,"21,1",Kjøtt,Storfe
-"Storfe, flatbiff, rå",105,"1,7",0,"22,5",Kjøtt,Storfe
-"Storfe, høyrygg, rå",162,"9,2",0,"19,9",Kjøtt,Storfe
-"Storfe, indrefilet, rå",118,"3,7",0,"21,2",Kjøtt,Storfe
-"Storfe, kam, rå",162,"8,6",0,"21,1",Kjøtt,Storfe
-"Storfe, kotelettkam, rå",170,"9,9",0,"20,2",Kjøtt,Storfe
-"Storfe, mørbrad, rå",109,"2,3",0,"22,2",Kjøtt,Storfe
-"Storfe, rundstek, rå",107,2,0,"22,2",Kjøtt,Storfe
-"Storfe, ytrefilet, rå",109,"2,3",0,"22,2",Kjøtt,Storfe
-"Kjøttdeig, svin, rå",144,"6,7",0,21,Kjøtt,Svin
-"Lever, svin, rå",120,"3,4","0,8","21,4",Kjøtt,Svin
-"Svin, bacon med svor, rå",339,"31,5",0,"13,9",Kjøtt,Svin
-"Svin, bogstek, kjøtt uten fettrand, rå",144,"6,7",0,21,Kjøtt,Svin
-"Svin, bogstek, med fettrand, rå",220,"16,1",0,"18,7",Kjøtt,Svin
-"Svin, familieribbe, rå",328,"29,5",0,"15,6",Kjøtt,Svin
-"Svin, flatbiff, rå",103,"1,7",0,22,Kjøtt,Svin
-"Svin, grillben, rå",247,"19,9",0,17,Kjøtt,Svin
-"Svin, indrefilet, rå",116,"3,1",0,22,Kjøtt,Svin
-"Svin, kjøtt fra knoke, rå",151,"8,1",0,"19,5",Kjøtt,Svin
-"Svin, kotelett, kam, svinekoteletter, inntil 5 mm fettrand, rå",243,"18,3",0,"19,8",Kjøtt,Svin
-"Svin, midtribbe, med kam og svor, rå",328,"29,5",0,"15,6",Kjøtt,Svin
-"Svin, mørbrad, rå",215,"15,7",0,"18,5",Kjøtt,Svin
-"Svin, nakkekoteletter, rå",225,17,0,18,Kjøtt,Svin
-"Svin, sideflesk, lettsaltet, rå",301,"27,4",0,"13,6",Kjøtt,Svin
-"Svin, sideflesk, uten ben, rå",384,"36,6",0,"13,6",Kjøtt,Svin
-"Svin, skinke, med knoke, rå",219,"16,4",0,"17,9",Kjøtt,Svin
-"Svin, skinkestek med fettrand, uten svor, rå",221,16,0,"19,2",Kjøtt,Svin
-"Svin, skinkestek, rå",130,"4,7",0,22,Kjøtt,Svin
-"Svin, tynnribbe, med svor, rå",371,"35,1",0,"13,8",Kjøtt,Svin
-"Svin, ytrefilet, rå",110,"1,6",0,24,Kjøtt,Svin
-"Svinekam, røkt",209,"17,6","0,3","12,3",Kjøtt,Svin
-"Hare, kjøtt, rå",129,5,0,"21,1",Kjøtt,Vilt
-"Hjort, stek, rå",98,"1,3",0,"21,7",Kjøtt,Vilt
-"Kanin, kjøtt, rå",124,4,0,22,Kjøtt,Vilt
-"Lever, rein, rå",128,"4,1","3,3","19,5",Kjøtt,Vilt
-"Reinsdyr, bog, stek, rå",118,"3,6",0,"21,3",Kjøtt,Vilt
-"Reinsdyr, kjøtt, tørket, rå",318,"17,6",0,40,Kjøtt,Vilt
-"Reinsdyrskav, fryst, rå",145,"7,5",0,"19,3",Kjøtt,Vilt
-"Rådyr, kjøtt, rå",95,"1,2",0,21,Kjøtt,Vilt
-"Villsvin, kjøtt, rå",105,"1,5",0,23,Kjøtt,Vilt
-"Bokhvete, hele korn",335,2,"65,3","11,1",Korn/nøtter,Korn
-"Bokhvetemel, lyst",353,"3,6","65,1","13,5",Korn/nøtter,Korn
-"Bulgurgryn, tørr",327,"2,3","61,9","10,8",Korn/nøtter,Korn
-Byggmel,302,"1,1","60,6","8,6",Korn/nøtter,Korn
-Byggryn,327,"1,1","65,4","8,6",Korn/nøtter,Korn
-"Corn flakes, Kelloggs",381,1,"84,1","7,1",Korn/nøtter,Korn
-"Havregryn, lettkokte/store",389,"7,8","63,1","11,4",Korn/nøtter,Korn
-Havrekli,361,"7,5","54,6","12,3",Korn/nøtter,Korn
-Havremel,373,7,"61,7","11,7",Korn/nøtter,Korn
-Hvetekli,294,5,"30,4","16,6",Korn/nøtter,Korn
-"Kornblanding,  4-korn",324,"3,2","56,7","10,6",Korn/nøtter,Korn
-"Linfrø, knuste",513,"42,2","1,6","18,3",Korn/nøtter,Korn
-"Semulegryn, hvetegryn",339,2,69,10,Korn/nøtter,Korn
-Cashewnøtter,592,"43,8","29,4","18,2",Korn/nøtter,Nøtter
-"Cashewnøtter, saltet",603,"48,7","19,2",18,Korn/nøtter,Nøtter
-"Chilinøtter, Eldorado",522,32,"40,3","14,4",Korn/nøtter,Nøtter
-Hasselnøtter,645,"60,8","4,8",15,Korn/nøtter,Nøtter
-Macadamianøtter,753,"75,8","5,6","7,9",Korn/nøtter,Nøtter
-Mandler,577,"49,2","6,3","21,2",Korn/nøtter,Nøtter
-Paranøtter,680,"66,4","2,6","14,3",Korn/nøtter,Nøtter
-Pinjekjerner,697,"68,4",5,"13,7",Korn/nøtter,Nøtter
-Valnøtter,672,"65,2","2,7","15,2",Korn/nøtter,Nøtter
-"Geitmelk, langtidsholdbar",61,"3,6",4,"3,1",Meieriprodukt,Melk
-"Helmelk, uspesifisert",64,"3,6","4,5","3,4",Meieriprodukt,Melk
-"Kaffefløte, 10 % fett",119,10,"4,3",3,Meieriprodukt,Melk
-"Kaffemelk, 3,5 % fett",62,"3,5","4,4","3,3",Meieriprodukt,Melk
-"Kremfløte, 38 % fett",362,38,"2,9","2,1",Meieriprodukt,Melk
-"Lettmelk, 0,7 % fett, vitamin D",38,"0,7","4,5","3,5",Meieriprodukt,Melk
-"Lettmelk, 1,0 % fett",41,1,"4,6","3,5",Meieriprodukt,Melk
-"Matfløte, 20 % fett",206,20,"3,9","2,7",Meieriprodukt,Melk
-Skummet melk,33,"0,1","4,5","3,5",Meieriprodukt,Melk
-"Syrnet melk, jordbær, Biola",52,"0,1","9,7","3,1",Meieriprodukt,Melk
-"Syrnet melk, Kulturmjølk",61,"3,5",4,"3,3",Meieriprodukt,Melk
-"Syrnet melk, Skumma Kulturmjølk",33,"0,4","4,1","3,2",Meieriprodukt,Melk
-Cottage Cheese,97,"4,3","1,5",13,Meieriprodukt,Rømme o.l.
-"Crème Fraîche, 35 % fett",335,35,"2,9","2,2",Meieriprodukt,Rømme o.l.
-"Kvarg, 1 % fett, Kesam",66,1,"4,3",10,Meieriprodukt,Rømme o.l.
-"Kvarg, 7 % fett, Kesam",108,"7,1",4,7,Meieriprodukt,Rømme o.l.
-"Lettrømme, 10 % fett",119,10,"4,1","3,1",Meieriprodukt,Rømme o.l.
-"Lettrømme, 18 % fett",188,18,"3,7","2,8",Meieriprodukt,Rømme o.l.
-"Seterrømme, 35 % fett",335,35,"2,9","2,2",Meieriprodukt,Rømme o.l.
-"Skyr, naturell",74,1,"4,3",12,Meieriprodukt,Rømme o.l.
-"Yoghurt, frukt, 0,1 % fett, lett, Yoplait",52,"0,1","8,9","3,9",Meieriprodukt,Rømme o.l.
-"Yoghurt, jordbær",88,3,"11,5","3,7",Meieriprodukt,Rømme o.l.
-"Ansjos, hermetisk",216,"13,1","12,1","12,5",Pålegg,Fisk
-"Brisling, i olje, avrent, hermetisk",261,"20,9",0,"18,3",Pålegg,Fisk
-"Brisling, i tomat, hermetisk",203,"14,7","2,7",15,Pålegg,Fisk
-"Gaffelbiter, sild, hermetisk",240,16,8,16,Pålegg,Fisk
-Kaviarmix,542,"53,1","9,2","6,8",Pålegg,Fisk
-"Laks, filet, gravet",179,"9,2","2,8","21,2",Pålegg,Fisk
-"Makrellfilet, i tomat, 60 % makrell, hermetisk",241,"19,4","3,9","11,9",Pålegg,Fisk
-"Chorizo, pølse",360,"29,1","3,4","20,7",Pålegg,Kjøtt
-Fårepølse,339,"27,1","0,5","23,3",Pålegg,Kjøtt
-Kalverull,144,"8,2",2,"15,4",Pålegg,Kjøtt
-"Kokt skinke, First Price",104,4,"0,9",16,Pålegg,Kjøtt
-Kyllingpostei,134,"7,8","5,8","10,1",Pålegg,Kjøtt
-Lammerull,251,"20,3","0,2","16,8",Pålegg,Kjøtt
-"Leverpostei, hermetisk, Stabburet",237,20,"4,3","9,9",Pålegg,Kjøtt
-Morrpølse,417,"34,5","0,1","26,5",Pålegg,Kjøtt
-Okserull,166,"8,7","0,5","21,4",Pålegg,Kjøtt
-Reinsdyrpølse,426,"38,5",0,20,Pålegg,Kjøtt
-"Ribberull, skiver",193,"13,5",0,18,Pålegg,Kjøtt
-"Roastbiff, skiver",129,"2,7",0,"26,1",Pålegg,Kjøtt
-Salami,429,"39,5","0,9","17,6",Pålegg,Kjøtt
-Servelat,198,"14,5","7,1","9,9",Pålegg,Kjøtt
-"Servelat, mager, Gilde",145,9,"4,5","11,4",Pålegg,Kjøtt
-"Skinkerull, Westfalerskinke",286,20,0,"26,6",Pålegg,Kjøtt
-Spekeskinke,203,"9,2",0,30,Pålegg,Kjøtt
-Sylte,304,"23,2","0,3","23,6",Pålegg,Kjøtt
-"Gorgonzola, blåmuggost",359,"31,2","0,1","19,4",Pålegg,Ost – blåmugg
-"Normanna, blåmuggost",336,28,0,21,Pålegg,Ost – blåmugg
-"Norzola, blåmuggost",383,35,0,17,Pålegg,Ost – blåmugg
-"Roquefort, blåmuggost",355,31,0,19,Pålegg,Ost – blåmugg
-"Royal Blue, blåmuggost",452,44,0,14,Pålegg,Ost – blåmugg
-"Selbu blå, blåmuggost",420,40,0,15,Pålegg,Ost – blåmugg
-"Stilton, blåmuggost",410,35,"0,1","23,7",Pålegg,Ost – blåmugg
-"Brunost, uspesifisert",437,"26,2","39,7","10,6",Pålegg,Ost-brun
-"Fløtemysost, brunost",422,26,36,11,Pålegg,Ost-brun
-"Fløtemysost, brunost, lettere",368,16,44,12,Pålegg,Ost-brun
-"Geitost, brunost",439,27,36,13,Pålegg,Ost-brun
-"Gudbrandsdalsost, brunost",436,28,35,11,Pålegg,Ost-brun
-"Gudbrandsdalsost, brunost, lettere",364,16,43,12,Pålegg,Ost-brun
-"Cheddar, gulost",416,"34,9","0,1","25,4",Pålegg,Ost-gul
-"Edamer, gulost",355,27,0,28,Pålegg,Ost-gul
-"Feta, ost med geitmelk",250,"20,2","1,5","15,6",Pålegg,Ost-gul
-Gamalost,221,"0,6",0,54,Pålegg,Ost-gul
-"Gulost, uspesifisert",348,"26,7",0,27,Pålegg,Ost-gul
-"Halloumi, ost",290,"21,9","0,9","22,3",Pålegg,Ost-gul
-"Jarlsberg, gulost",351,27,0,27,Pålegg,Ost-gul
-"Norvegia, gulost, fyldig",370,30,0,25,Pålegg,Ost-gul
-"Norvegia, gulost, lettere",268,16,0,31,Pålegg,Ost-gul
-"Norvegia, gulost, vellagret",360,28,0,27,Pålegg,Ost-gul
-Nøkkelost,351,27,0,27,Pålegg,Ost-gul
-"Nøkkelost, lettere",272,16,0,32,Pålegg,Ost-gul
-"Parmesan, ost",416,"29,7","0,9","36,2",Pålegg,Ost-gul
-"Port Salut, kittmodnet ost",321,25,0,24,Pålegg,Ost-gul
-"Raclette, ost",357,"27,9",0,"26,4",Pålegg,Ost-gul
-Ridderost,422,38,0,20,Pålegg,Ost-gul
-"Sveitserost, gulost",364,28,0,28,Pålegg,Ost-gul
-"Taffelost, tomat",313,24,"0,3",24,Pålegg,Ost-gul
-"Brie, hvitmuggost",360,32,0,18,Pålegg,Ost-myk
-"Camembert, hvitmuggost",328,28,0,19,Pålegg,Ost-myk
-Gräddost,418,38,0,19,Pålegg,Ost-myk
-Mozzarella,317,23,"0,6",27,Pålegg,Ost-myk
-"Mozzarella, lettere",268,16,1,30,Pålegg,Ost-myk
-"Chevre, geitost, naturell",316,28,1,15,Pålegg,Ost-smørbar
-"Crème Chérie, mykost",335,31,0,14,Pålegg,Ost-smørbar
-"Geitost, smørbar, naturell, Snøfrisk",259,25,2,"6,6",Pålegg,Ost-smørbar
-"Kremost, mager, Philadelphia",189,16,"3,4","7,8",Pålegg,Ost-smørbar
-"Kremost, naturell",277,27,"2,7","5,7",Pålegg,Ost-smørbar
-"Kremost, Philadelphia",281,"27,3","2,7","6,1",Pålegg,Ost-smørbar
-"Magerost, smørbar, 10 % fett",162,10,0,18,Pålegg,Ost-smørbar
-"Magerost, smørbar, 3 % fett",100,3,0,17,Pålegg,Ost-smørbar
-"Magerost, smørbar, 7 % fett",130,"6,5",0,18,Pålegg,Ost-smørbar
-"Mascarpone, kremost",436,"44,5","4,3","4,6",Pålegg,Ost-smørbar
-"Ricotta, ferskost",163,13,"0,3","11,3",Pålegg,Ost-smørbar
-"Italiensk salat, majonessalat, 37 % fett",360,"37,3","4,4",1,Pålegg,Salat
-"Rekesalat, majonessalat, 35 % fett",359,36,"5,2","3,2",Pålegg,Salat
-"Rødbetsalat, majonessalat, 30 % fett",317,"31,6","6,2","1,2",Pålegg,Salat
-Brelett,388,40,3,4,Pålegg,Smør
-Bremykt,742,82,"0,5","0,5",Pålegg,Smør
-"Margarin, Soft Flora lett",364,40,"0,5","0,5",Pålegg,Smør
-"Margarin, Soft Flora, original",632,70,"0,3","0,2",Pålegg,Smør
-"Nøttepålegg, med mindre sukker, Nugatti",489,"29,7","41,1","6,3",Pålegg,Søt
-"Nøttepålegg, Nugatti",525,"28,1","62,1","4,9",Pålegg,Søt
-Peanøttsmør,620,"51,8","13,1","22,8",Pålegg,Søt
-Prim,283,8,46,"6,7",Pålegg,Søt
-"Prim, mager",256,4,48,7,Pålegg,Søt
-"Sjokoladepålegg, Sjokade",414,19,59,"1,1",Pålegg,Søt
-"Syltetøy, 40 % bær, 40 % sukker",174,"0,1","42,4","0,3",Pålegg,Søt
-"Syltetøy, 45 % bær, 25 % sukker",130,"0,1","31,4","0,3",Pålegg,Søt
-"Nudler, med egg, tørr",359,2,"72,6",12,Ris/pasta,Nudler/pasta
-"Nudler, uten egg, tørr",343,"3,3","66,4","10,2",Ris/pasta,Nudler/pasta
-"Couscous, tørr",321,"0,6","63,6","12,8",Ris/pasta,
-"Pasta, fullkorn, tørr",362,"2,5","68,3","12,6",Ris/pasta,
-"Pasta, grønn, fersk, rå",229,"3,9","38,3","9,1",Ris/pasta,
-"Pasta, naturell, fersk, rå",244,4,"41,5","9,5",Ris/pasta,
-"Pasta, naturell, tørr",347,"1,3","69,8","11,9",Ris/pasta,
-"Quinoa, tørr",358,"6,1","58,3","14,1",Ris/pasta,
-"Ris, polert, Jasminris, tørr",354,"0,7","79,5","7,5",Ris/pasta,
-"Bremykt, flytende",732,81,"0,5","0,3",Saus/olje,Fet
-"Dressing, majonestype, 15 % fett",185,"13,3","14,9","1,2",Saus/olje,Fet
-"Dressing, majonestype, 30 % fett",295,"26,4","12,8","1,6",Saus/olje,Fet
-"Dressing, majonestype, 40 % fett",406,40,"10,5",1,Saus/olje,Fet
-"Dressing, majonestype, 55 % fett",518,54,"4,2","3,9",Saus/olje,Fet
-Maisolje,892,99,0,"0,2",Saus/olje,Fet
-"Majones, ekstra lett, 25 % fett",257,"26,1","4,9","0,7",Saus/olje,Fet
-"Majones, ekte",728,"79,6",2,"0,9",Saus/olje,Fet
-"Majones, lett, 50 % fett",465,"48,6","6,1","0,7",Saus/olje,Fet
-"Margarin, Melange",722,80,"0,3","0,2",Saus/olje,Fet
-Remulade,617,"65,6","5,6","0,9",Saus/olje,Fet
-"Rømmedressing, med urter",136,"11,8","4,7","2,8",Saus/olje,Fet
-Smør,742,82,"0,5","0,5",Saus/olje,Fet
-"Brun saus, av blokk",55,"3,5",5,1,Saus/olje,Saus
-"Brun saus, kjøttkakesaus, av pulver",34,"1,1",5,1,Saus/olje,Saus
-"Brun saus, med løk, av pulver",39,"1,5","5,5",1,Saus/olje,Saus
-"Ketchup, tomatketchup",107,"0,4","23,5","1,8",Saus/olje,Saus
-"Pesto, grønn, kjøpt",520,"52,9","4,9","5,2",Saus/olje,saus
-Sennep,158,"6,4","18,5","5,7",Saus/olje,saus
-Sennepssaus,441,"39,8","17,8","2,6",Saus/olje,saus
-"Tomatpuré, hermetisk",84,"0,2","14,5","4,8",Saus/olje,saus
-Buljongpulver,144,"4,5",9,17,Saus/olje,Tørr
-"Fiskeboller, kjølevare",68,"0,9","5,5","9,5",Sjømat,Bearbeidet
-"Fiskegrateng, kjøpt",119,"4,6","11,6","7,5",Sjømat,Bearbeidet
-"Fiskekaker, kjøpt",110,"4,2","5,9","11,8",Sjømat,Bearbeidet
-"Fiskekarbonader, kjøpt",107,"3,7","6,5","11,5",Sjømat,Bearbeidet
-Fiskepudding,72,1,"7,5","8,1",Sjømat,Bearbeidet
-"Fiskepudding, fløtepudding",102,"4,6","7,2",8,Sjømat,Bearbeidet
-"Alaska pollock, rå",72,"0,7",0,"16,4",Sjømat,Fisk
-"Blåkveite, rå/kaldrøkt",155,11,0,14,Sjømat,Fisk
-"Blålange, rå",64,"0,1",0,"15,7",Sjømat,Fisk
-"Breiflabb, rå",64,"0,1",0,"15,8",Sjømat,Fisk
-"Brosme, rå",66,"0,2",0,"16,1",Sjømat,Fisk
-"Gjedde, rå",83,"0,2",0,"20,2",Sjømat,Fisk
-"Hvitting, rå",79,"0,6",0,"18,3",Sjømat,Fisk
-"Hyse, kolje, rå",68,"0,2",0,"16,6",Sjømat,Fisk
-"Håbrann, rå",85,"0,4",0,"20,3",Sjømat,Fisk
-"Kveite, hellefisk, oppdrett, rå",102,"2,4",0,20,Sjømat,Fisk
-"Lange, rå",72,"0,2",0,"17,5",Sjømat,Fisk
-"Pangasius, rå",63,"1,1",0,"13,1",Sjømat,Fisk
-"Pigghå, håbrann, rå",129,"6,4",0,"17,9",Sjømat,Fisk
-"Piggvar, rå",85,"2,4",0,"15,9",Sjømat,Fisk
-"Rødspette, rå",91,"2,6",0,"16,8",Sjømat,Fisk
-"Sei, rå",69,"0,3",0,"16,5",Sjømat,Fisk
-"Sik, rå",89,"0,6",0,"20,9",Sjømat,Fisk
-"Skate, rå",58,"0,2",0,14,Sjømat,Fisk
-"Steinbit, rå",97,"2,5",0,"18,6",Sjømat,Fisk
-"Torsk, uspesifisert, rå",81,1,0,"18,1",Sjømat,Fisk
-"Uer, rå",94,"2,8",0,"17,1",Sjømat,Fisk
-"Åbor, abbor, rå",85,"0,6",0,"19,8",Sjømat,Fisk
-"Hval, kjøtt, rå",120,"2,1",0,"25,2",Sjømat,Fisk-diverse
-"Kaviar, av torskerogn",413,"35,2","13,7","10,5",Sjømat,Fisk-diverse
-"Klippfisk, saltet og tørket",271,"1,2",0,65,Sjømat,Fisk-diverse
-"Lutefisk, tørr vare, rå",50,"0,7",0,"10,9",Sjømat,Fisk-diverse
-"Rogn, torsk, presset, hermetisk",125,"1,9",0,"27,1",Sjømat,Fisk-diverse
-"Sjøtunge, rå",64,"0,5",0,"14,8",Sjømat,Fisk-diverse
-Tørrfisk,327,"1,4",0,"78,5",Sjømat,Fisk-diverse
-"Makrell, mai-juni, rå",123,"5,4",0,"18,6",Sjømat,Fisk-fet
-"Makrell, vill (høst), rå",293,25,0,17,Sjømat,Fisk-fet
-"Sild, fetsild, sommersild, rå",293,25,0,17,Sjømat,Fisk-fet
-"Sild, fetsild/sommersild, kokt",349,"29,8",0,"20,2",Sjømat,Fisk-fet
-"Sild, kryddersild",154,12,0,"11,5",Sjømat,Fisk-fet
-"Sild, marinert, sennepssild",250,"13,6","25,5","6,1",Sjømat,Fisk-fet
-"Sild, storsild, vintersild, rå",187,14,0,"15,2",Sjømat,Fisk-fet
-"Sild, sursild, innlagt, avrent",190,"11,7","11,1","9,9",Sjømat,Fisk-fet
-"Ål, rå",362,"32,5",0,"17,3",Sjømat,Fisk-fet
-"Laks, oppdrett, rå",224,16,0,20,Sjømat,Fisk-rød
-"Laks, røkt",225,"14,7",0,"23,2",Sjømat,Fisk-rød
-"Røye, rå",128,"7,1",0,"16,1",Sjømat,Fisk-rød
-"Tunfisk, i gele, hermetisk",70,"0,4",0,"16,5",Sjømat,Fisk-rød
-"Tunfisk, i olje, avrent, hermetisk",259,"18,9",0,"22,3",Sjømat,Fisk-rød
-"Tunfisk, i vann, avrent, hermetisk",105,1,0,"24,1",Sjømat,Fisk-rød
-"Tunfisk, makrellstørje, rå",105,1,0,24,Sjømat,Fisk-rød
-"Ørret, oppdrett, rå",166,10,0,19,Sjømat,Fisk-rød
-"Ørret, sjøørret, rå",110,"3,3",0,20,Sjømat,Fisk-rød
-"Akkar, tiarmet blekksprut, rå",77,"1,7",0,"15,4",Sjømat,Skjell/bløtdyr
-"Blåskjell, rå",54,"1,4",0,"10,4",Sjømat,Skjell/bløtdyr
-"Hummer, kokt",66,"0,6",0,"15,2",Sjømat,Skjell/bløtdyr
-"Kamskjell, rå",81,"1,1",0,"17,9",Sjømat,Skjell/bløtdyr
-"Kongereke, rå",77,"0,7",0,"17,6",Sjømat,Skjell/bløtdyr
-"Krabbe, kokt",108,"1,8",0,"22,9",Sjømat,Skjell/bløtdyr
-"Kreps, kokt",54,"1,3",0,"10,7",Sjømat,Skjell/bløtdyr
-"Reker, i lake, avrent",58,"0,6",0,"13,2",Sjømat,Skjell/bløtdyr
-"Snegler, hermetisk",77,"1,4",0,"16,1",Sjømat,Skjell/bløtdyr
-"Strandsnegle, norsk",87,"1,4","3,3","15,2",Sjømat,Skjell/bløtdyr
-"Østers, rå",59,"2,4",0,"9,3",Sjømat,Skjell/bløtdyr
-"Sashimi, kveite",113,"4,3",0,"18,5",Sjømat,Sushi
-"Sashimi, laks",224,16,0,20,Sjømat,Sushi
-"Sashimi, tunfisk",105,1,0,24,Sjømat,Sushi
-"Sushi, maki, kveite",116,"2,4","18,1","5,1",Sjømat,Sushi
-"Sushi, maki, laks",134,"4,3","18,1","5,3",Sjømat,Sushi
-"Sushi, maki, tunfisk",115,"1,9","18,1","5,9",Sjømat,Sushi
-"Sushi, nigiri, kveite",114,"1,4","17,8","7,3",Sjømat,Sushi
-"Sushi, nigiri, laks",147,5,"17,8","7,8",Sjømat,Sushi
-"Sushi, nigiri, tunfisk",112,"0,5","17,8",9,Sjømat,Sushi
-Ostepop,495,"30,2","44,4","9,8",Snacks,Salt
-"Popcorn, kjøpt",398,"14,5","51,4","10,1",Snacks,Salt
-Potetchips,517,"31,5","50,5","5,2",Snacks,Salt
-Saltstenger,380,"6,3","68,1","10,5",Snacks,Salt
-"Tortillachips, nachochips",475,"22,4","57,4","7,4",Snacks,Salt
-"Sjokolade, hvit",544,"30,9","58,3",8,Snacks,Sjokolade
-"Sjokolade, kokesjokolade, lys",527,"29,5","56,7",7,Snacks,Sjokolade
-"Sjokolade, mørk, 70 % kakao",584,"46,5","33,2",7,Snacks,Sjokolade
-"Sjokolade, Snickers",498,"28,2","52,2","7,5",Snacks,Sjokolade
-"Sjokoladepudding, Piano",123,"3,9",18,"3,3",Snacks,Sjokolade
-"Geléfrukt, Seigmenn",292,0,"65,5","7,6",Snacks,Søt
-"Iskrem, fløte, med sjokoladebiter",241,"12,6","28,1","3,5",Snacks,Søt
-Karamell,376,22,"42,9","1,5",Snacks,Søt
-"Karamellpudding, Piano",128,"5,8",16,"2,8",Snacks,Søt
-Kokosbolle,376,"14,8","55,2","4,5",Snacks,Søt
-"Marsipan, 50 % mandler",508,"27,5","52,7","10,5",Snacks,Søt
-"Marsipanbrød, med sjokoladetrekk",514,"29,5",52,9,Snacks,Søt
-"Saftis, Lollipop",120,"3,5",22,"0,1",Snacks,Søt
-"Vaniljesaus, Piano",147,"8,4",15,"2,7",Snacks,Søt
+Matvare,Kilokalorier,Fett,Karbohydrat,Protein,% Spiselig,Kategori,underkategori
+"Agurk, norsk, rå",10,"0,1","1,2","0,8",97,Grønnsaker,Tomat/agurk/paprika
+"Agurker, syltede",37,"0,7","6,1","0,7",100,Grønnsaker,Tomat/agurk/paprika
+"Akkar, tiarmet blekksprut, rå",77,"1,7",0,"15,4",78,Sjømat,Skjell/bløtdyr
+"Alaska pollock, rå",72,"0,7",0,"16,4",78,Sjømat,Fisk
+"Alfalfaspirer, rå",27,"0,7","0,3",4,100,Grønnsaker,diverse
+"Ananas, hermetisk, med egen saft",51,0,"12,2","0,3",100,Frukt/Bær,Frukt
+"Ananas, hermetisk, med sukkerlake",69,0,"16,5","0,5",100,Frukt/Bær,Frukt
+"Ananas, rå",51,"0,1","11,4","0,5",51,Frukt/Bær,Frukt
+Ananasjuice,50,"0,1","11,8","0,4",100,Drikke,Juice
+"And, kjøtt med skinn, rå",388,"37,3",0,"13,1",100,Kjøtt,Fugl
+"Ansjos, hermetisk",216,"13,1","12,1","12,5",100,Pålegg,Fisk
+"Appelsin, rå",37,"0,1","7,2","0,9",78,Frukt/Bær,Frukt
+Appelsinjuice,43,"0,2","9,6","0,7",100,Drikke,Juice
+"Aprikos, hermetisk, med sukkerlake",70,0,"16,1","0,5",100,Frukt/Bær,Frukt
+"Aprikos, rå",52,"0,4","9,7","1,4",93,Frukt/Bær,Frukt
+"Aprikos, tørket",181,"0,5","39,4","2,2",100,Frukt/Bær,Frukt
+"Artiskokk, rå",28,"0,2","1,3","2,8",43,Grønnsaker,diverse
+"Asparges, hermetisk, avrent",24,"0,6","1,6","2,1",100,Grønnsaker,diverse
+"Asparges, rå",22,"0,1",2,"2,2",53,Grønnsaker,diverse
+"Aspargesbønner, rå",27,"0,1","3,4","1,7",100,Grønnsaker,Bønner/erter
+"Aubergine, rå",20,"0,1","2,5","1,1",81,Grønnsaker,diverse
+"Avocado, rå",191,"19,6","0,4","1,8",74,Grønnsaker,diverse
+"Baguette, fin, halvstekt, stekt",260,"1,4","50,6","9,9",100,Brødmat,Brød
+"Banan, rå",83,"0,3","18,1","1,1",66,Frukt/Bær,Frukt
+"Bankekjøtt, salt",102,"4,3",0,"15,9",100,Kjøtt,Storfe
+"Basilikum, rå",21,"0,6",0,"3,2",64,Grønnsaker,Krydder/urter
+"Basilikum, tørket",244,"4,1",10,23,100,Grønnsaker,Krydder/urter
+"Berlinerbolle, kjøpt",439,"23,2","49,2","7,3",100,Brødmat,Bolle/lefse
+Biscotti,449,"15,9","61,6","12,6",100,Brødmat,Kjeks
+"Bjørnebær, rå",40,"0,5","4,9","1,4",100,Frukt/Bær,Bær
+Blodpudding,369,"20,4","30,5","14,2",100,Kjøtt,bearbeidet/div
+"Blomkål, norsk, rå",23,"0,2","2,3","1,9",74,Grønnsaker,Kål
+"Blåbær, rå",51,"0,9","7,5",1,100,Frukt/Bær,Bær
+"Blåkveite, rå/kaldrøkt",155,11,0,14,100,Sjømat,Fisk
+"Blålange, rå",64,"0,1",0,"15,7",78,Sjømat,Fisk
+"Blåskjell, rå",54,"1,4",0,"10,4",51,Sjømat,Skjell/bløtdyr
+"Bokhvete, hele korn",335,2,"65,3","11,1",100,Korn/nøtter,Korn
+"Bokhvetemel, lyst",353,"3,6","65,1","13,5",100,Korn/nøtter,Korn
+"Bolle, med sjokoladebiter",378,"13,3","55,3","7,7",100,Brødmat,Bolle/lefse
+"Bolle, uten rosiner, kjøpt",361,"11,3","55,7","7,7",100,Brødmat,Bolle/lefse
+"Breiflabb, filet, rå",64,"0,1",0,"15,8",95,Sjømat,Fisk
+Brelett,388,40,3,4,100,Pålegg,Smør
+Bremykt,742,82,"0,5","0,5",100,Pålegg,Smør
+"Bremykt, flytende",732,81,"0,5","0,3",100,Saus/olje,Fet
+"Brie, hvitmuggost",360,32,0,18,100,Pålegg,Ost-myk
+"Bringebær, rå",29,"0,4","3,2","1,1",100,Frukt/Bær,Bær
+"Brisling, i olje, avrent, hermetisk",261,"20,9",0,"18,3",100,Pålegg,Fisk
+"Brisling, i tomat, hermetisk",203,"14,7","2,7",15,100,Pålegg,Fisk
+"Brokkoli, norsk, rå",28,"0,3","1,9","3,2",100,Grønnsaker,Kål
+"Brosme, rå",66,"0,2",0,"16,1",50,Sjømat,Fisk
+"Brun saus, av blokk",55,"3,5",5,1,100,Saus/olje,Saus
+"Brun saus, kjøttkakesaus, av pulver",34,"1,1",5,1,100,Saus/olje,Saus
+"Brun saus, med løk, av pulver",39,"1,5","5,5",1,100,Saus/olje,Saus
+"Brune bønner, tørre",313,"1,5","44,6",22,100,Grønnsaker,Bønner/erter
+"Brunost, uspesifisert",437,"26,2","39,7","10,6",100,Pålegg,Ost-brun
+"Brus, cola, med sukker",42,0,"10,6",0,100,Drikke,Søt
+"Brød, ekstra grovt (75-100 %), karbohydratredusert, kjøpt, Fiber og frø",260,11,"19,7","15,9",100,Brødmat,Brød
+"Brød, grovt (50-75 %), kjøpt",237,"2,3","42,2",9,100,Brødmat,Brød
+"Brød, halvgrovt (25-50 %), kjøpt",231,"2,4","42,2",8,100,Brødmat,Brød
+"Bulgurgryn, tørr",327,"2,3","61,9","10,8",100,Korn/nøtter,Korn
+Buljongpulver,144,"4,5",9,17,100,Saus/olje,Tørr
+Byggmel,302,"1,1","60,6","8,6",100,Korn/nøtter,Korn
+Byggryn,327,"1,1","65,4","8,6",100,Korn/nøtter,Korn
+"Bønnespirer, mungbønnespirer, rå",41,"0,2","5,9",3,100,Grønnsaker,diverse
+"Camembert, hvitmuggost",328,28,0,19,100,Pålegg,Ost-myk
+"Carambola, stjernefrukt, rå",36,"0,3","7,3","0,5",97,Frukt/Bær,Frukt
+Cashewnøtter,592,"43,8","29,4","18,2",100,Korn/nøtter,Nøtter
+"Cashewnøtter, saltet",603,"48,7","19,2",18,100,Korn/nøtter,Nøtter
+"Cheddar, gulost",416,"34,9","0,1","25,4",100,Pålegg,Ost-gul
+"Cherrytomat, importert, rå",17,"0,2","2,5","0,6",100,Grønnsaker,Tomat/agurk/paprika
+"Chevre, geitost, naturell",316,28,1,15,100,Pålegg,Ost-smørbar
+"Chili, rød, rå",35,"0,4","5,3","1,9",73,Grønnsaker,Krydder/urter
+"Chilinøtter, Eldorado",522,32,"40,3","14,4",100,Korn/nøtter,Nøtter
+"Chorizo, pølse",360,"29,1","3,4","20,7",100,Pålegg,Kjøtt
+"Cider, søt, 4,5 vol-% alkohol",59,0,"8,5",0,100,Drikke,Alkohol
+"Corn flakes, Kelloggs",381,1,"84,1","7,1",100,Korn/nøtter,Korn
+Cottage Cheese,97,"4,3","1,5",13,100,Meieriprodukt,Rømme o.l.
+"Couscous, tørr",321,"0,6","63,6","12,8",100,Ris/pasta,
+"Crème Chérie, mykost",335,31,0,14,100,Pålegg,Ost-smørbar
+"Crème Fraîche, 35 % fett",335,35,"2,9","2,2",100,Meieriprodukt,Rømme o.l.
+"Croissant, uten fyll, kjøpt",404,"21,4","43,7","8,5",100,Brødmat,Kake
+"Daddel, tørket",299,"0,2",68,"3,3",84,Frukt/Bær,Frukt
+Daimkake,379,"24,8","32,7","5,5",100,Brødmat,Kake
+Delfiakake,530,43,"30,1","4,6",100,Brødmat,Kake
+"Dessertvin, ekstra søt, musserende",76,0,"3,7","0,2",100,Drikke,Alkohol
+"Dill, rå",48,"1,1","4,9","3,5",90,Grønnsaker,Krydder/urter
+"Donuts, med sjokoladeglasur, kjøpt",497,"37,3","33,3","6,2",100,Brødmat,Kake
+"Dressing, majonestype, 15 % fett",185,"13,3","14,9","1,2",100,Saus/olje,Fet
+"Dressing, majonestype, 30 % fett",295,"26,4","12,8","1,6",100,Saus/olje,Fet
+"Dressing, majonestype, 40 % fett",406,40,"10,5",1,100,Saus/olje,Fet
+"Dressing, majonestype, 55 % fett",518,54,"4,2","3,9",100,Saus/olje,Fet
+"Drue, blå, rå",53,"0,2","11,7","0,7",96,Frukt/Bær,Frukt
+"Drue, grønn, rå",70,"0,2",16,"0,7",96,Frukt/Bær,Frukt
+"Drue, uspesifisert, rå",62,"0,2","13,8","0,7",96,Frukt/Bær,Frukt
+"Edamer, gulost",355,27,0,28,100,Pålegg,Ost-gul
+"Egg, rå",149,"10,6","0,3",13,88,Diverse,Egg
+"Eple, Rød aroma, rå",50,0,"11,2",0,91,Frukt/Bær,Frukt
+Eplejuice,42,"0,1","10,2",0,100,Drikke,Juice
+"Erter, fryst",68,"0,4",8,"5,2",100,Grønnsaker,Bønner/erter
+"Erter, grønne, hermetisk, avrent",64,1,7,"4,3",100,Grønnsaker,Bønner/erter
+"Espresso, enkel",9,0,"1,3","0,9",100,Drikke,Diverse
+"Feltsalat, rå",17,"0,2","0,2","2,6",100,Grønnsaker,Salat
+"Fennikel, rå",19,"0,4","1,8","0,9",93,Grønnsaker,Krydder/urter
+"Fersken, hermetisk, med egen saft",43,0,"9,7","0,6",100,Frukt/Bær,Frukt
+"Fersken, hermetisk, med sukkerlake",60,0,14,"0,5",100,Frukt/Bær,Frukt
+"Fersken, rå",42,"0,2","8,4","0,9",96,Frukt/Bær,Frukt
+"Feta, ost med geitmelk",250,"20,2","1,5","15,6",100,Pålegg,Ost-gul
+"Fiken, tørket",253,"0,9",53,"3,3",96,Frukt/Bær,Frukt
+"Fiskeboller, kjølevare",68,"0,9","5,5","9,5",100,Sjømat,Bearbeidet
+"Fiskegrateng, kjøpt",119,"4,6","11,6","7,5",100,Sjømat,Bearbeidet
+"Fiskekaker, kjøpt",110,"4,2","5,9","11,8",100,Sjømat,Bearbeidet
+"Fiskekarbonader, kjøpt",107,"3,7","6,5","11,5",100,Sjømat,Bearbeidet
+Fiskepudding,72,1,"7,5","8,1",100,Sjømat,Bearbeidet
+"Fiskepudding, fløtepudding",102,"4,6","7,2",8,100,Sjømat,Bearbeidet
+"Flatbrød, kjøpt",340,"1,2","67,4","10,4",100,Brødmat,Flat-/knekkebrød
+"Fløtemysost, brunost",422,26,36,11,100,Pålegg,Ost-brun
+"Fløtemysost, brunost, lettere",368,16,44,12,100,Pålegg,Ost-brun
+Focaccia,316,"12,2","43,3","7,1",100,Brødmat,Brød
+"Formkake, fet, dansk sandkake",413,23,"46,4","4,9",100,Brødmat,Kake
+"Formkake, marmor",368,"17,4","45,1",7,100,Brødmat,Kake
+"Formkake, med epler",265,"13,5","31,4","3,8",100,Brødmat,Kake
+"Fyrstekake, med mandler",430,"21,9","48,5","8,5",100,Brødmat,Kake
+Fårepølse,339,"27,1","0,5","23,3",100,Pålegg,Kjøtt
+"Gaffelbiter, sild, hermetisk",240,16,8,16,100,Pålegg,Fisk
+Gamalost,221,"0,6",0,54,100,Pålegg,Ost-gul
+"Geitmelk, langtidsholdbar",61,"3,6",4,"3,1",100,Meieriprodukt,Melk
+"Geitost, brunost",439,27,36,13,100,Pålegg,Ost-brun
+"Geitost, smørbar, naturell, Snøfrisk",259,25,2,"6,6",100,Pålegg,Ost-smørbar
+"Geléfrukt, Seigmenn",292,0,"65,5","7,6",100,Snacks,Søt
+"Gjedde, rå",83,"0,2",0,"20,2",55,Sjømat,Fisk
+"Gjær, tørrgjær",341,"7,6","14,3","40,4",100,Brødmat,diverse
+"Gorgonzola, blåmuggost",359,"31,2","0,1","19,4",100,Pålegg,Ost – blåmugg
+"Granateple, rå",80,"1,2","13,7","1,7",66,Frukt/Bær,Frukt
+"Grapefrukt, rå",34,"0,1","6,9","0,9",50,Frukt/Bær,Frukt
+"Gresskar, rå",13,"0,1","1,7",1,70,Grønnsaker,diverse
+Grillpølse,261,"21,4","5,5","11,5",100,Kjøtt,Pølse
+Gräddost,418,38,0,19,100,Pålegg,Ost-myk
+"Grønnkål, rå",36,"0,7","2,2","3,3",61,Grønnsaker,Kål
+"Guava, rå",39,1,5,"0,8",88,Frukt/Bær,Frukt
+"Gudbrandsdalsost, brunost",436,28,35,11,100,Pålegg,Ost-brun
+"Gudbrandsdalsost, brunost, lettere",364,16,43,12,100,Pålegg,Ost-brun
+"Gulløl, 5,7 vol-% alkohol",58,0,"6,1","0,5",100,Drikke,Alkohol
+"Gulost, uspesifisert",348,"26,7",0,27,100,Pålegg,Ost-gul
+"Gulrot, uspesifisert, rå",36,"0,1","6,7","0,7",89,Grønnsaker,Rotgrønnsak
+"Gulrotkake, med ostekrem, kjøpt",331,"12,4","50,3","3,8",100,Brødmat,Kake
+"Gås, kjøtt med skinn, rå",366,"33,6",0,"15,9",100,Kjøtt,Fugl
+"Halloumi, ost",290,"21,9","0,9","22,3",100,Pålegg,Ost-gul
+"Hamburger, rå",167,"11,2",0,"16,6",100,Kjøtt,bearbeidet/div
+"Hamburgerbrød, fint, kjøpt",303,"8,3","49,5","6,6",100,Brødmat,Brød
+"Hare, kjøtt, rå",129,5,0,"21,1",100,Kjøtt,Vilt
+Hasselnøtter,645,"60,8","4,8",15,41,Korn/nøtter,Nøtter
+"Havregryn, lettkokte/store",389,"7,8","63,1","11,4",100,Korn/nøtter,Korn
+Havrekli,361,"7,5","54,6","12,3",100,Korn/nøtter,Korn
+Havremel,373,7,"61,7","11,7",100,Korn/nøtter,Korn
+"Helmelk, uspesifisert",64,"3,6","4,5","3,4",100,Meieriprodukt,Melk
+"Hjerte, rå",107,"3,9",0,18,82,Kjøtt,bearbeidet/div
+"Hjort, stek, rå",98,"1,3",0,"21,7",100,Kjøtt,Vilt
+"Hodekål, rå",32,"0,1","5,2","1,4",92,Grønnsaker,Kål
+Honning,317,0,"78,9","0,3",100,Diverse,Søtt
+"Honningmelon, rå",37,"0,1","8,1","0,5",46,Frukt/Bær,Frukt
+"Hummer, kokt",66,"0,6",0,"15,2",28,Sjømat,Skjell/bløtdyr
+"Hval, kjøtt, rå",120,"2,1",0,"25,2",100,Sjømat,Fisk-diverse
+Hvetekli,294,5,"30,4","16,6",100,Korn/nøtter,Korn
+"Hvite bønner, tørre",312,"0,8","45,2","23,4",100,Grønnsaker,Bønner/erter
+Hvite kakemenn,371,"9,3","64,5","6,5",100,Brødmat,Kake
+"Hvitløk, rå",106,"0,6","16,3","7,9",79,Grønnsaker,Løk
+"Hvitting, rå",79,"0,6",0,"18,3",79,Sjømat,Fisk
+"Hvitvin, halvtørr, 10 vol-% alkohol",72,0,"0,6","0,1",100,Drikke,Alkohol
+"Hyllebær, rå",47,"0,5","6,5","0,7",83,Frukt/Bær,Bær
+"Hyse, kolje, rå",68,"0,2",0,"16,6",50,Sjømat,Fisk
+"Håbrann, filet, rå",85,"0,4",0,"20,3",95,Sjømat,Fisk
+"Ingefærrot, rå",50,"0,8","8,1","1,8",94,Grønnsaker,Rotgrønnsak
+"Isbergsalat, issalat, norsk, rå",12,"0,1","1,5","0,8",92,Grønnsaker,Salat
+"Iskrem, fløte, med sjokoladebiter",241,"12,6","28,1","3,5",100,Snacks,Søt
+"Iste, Nestea",18,0,"4,5",0,100,Drikke,Søt
+"Italiensk salat, majonessalat, 37 % fett",360,"37,3","4,4",1,100,Pålegg,Salat
+"Jarlsberg, gulost",351,27,0,27,100,Pålegg,Ost-gul
+"Jordbær, rå",34,"0,2","6,6","0,5",98,Frukt/Bær,Bær
+"Jordskokk, rå",65,"0,6","11,5","2,1",69,Grønnsaker,Rotgrønnsak
+"Kaffefløte, 10 % fett",119,10,"4,3",3,100,Meieriprodukt,Melk
+"Kaffemelk, 3,5 % fett",62,"3,5","4,4","3,3",100,Meieriprodukt,Melk
+"Kakao, med lettmelk, tilberedt",87,"2,3",12,4,100,Drikke,Søt
+"Kalkun, bryst, filet, uten skinn, rå",114,"1,4",0,"25,3",100,Kjøtt,Fugl
+"Kalkun, kjøtt med skinn, rå",133,"5,2",0,"21,6",100,Kjøtt,Fugl
+"Kalv, koteletter, rå",117,3,0,"22,5",73,Kjøtt,Storfe
+"Kalv, stek, rå",107,"2,4",0,"21,4",79,Kjøtt,Storfe
+Kalverull,144,"8,2",2,"15,4",100,Pålegg,Kjøtt
+"Kamskjell, filet, rå",81,"1,1",0,"17,9",100,Sjømat,Skjell/bløtdyr
+"Kanelbolle, skillingsbolle, med sukkerstrø, kjøpt",292,"5,2","51,8","8,4",100,Brødmat,Bolle/lefse
+"Kanin, kjøtt, rå",124,4,0,22,100,Kjøtt,Vilt
+"Kantarell, rå",17,"0,5","0,4","1,8",89,Grønnsaker,Sopp
+Karamell,376,22,"42,9","1,5",100,Snacks,Søt
+"Karamellpudding, Piano",128,"5,8",16,"2,8",100,Snacks,Søt
+"Karbonadedeig, rå",103,"2,2",0,"20,9",100,Kjøtt,bearbeidet/div
+"Kardemomme, malt",321,"6,7","40,5","10,8",100,Grønnsaker,Krydder/urter
+"Karri, malt",301,14,"2,8","14,3",100,Grønnsaker,Krydder/urter
+"Karve, kummin, hel",334,"14,6","11,9","19,8",100,Grønnsaker,Krydder/urter
+"Kaviar, av torskerogn",413,"35,2","13,7","10,5",100,Sjømat,Fisk-diverse
+Kaviarmix,542,"53,1","9,2","6,8",100,Pålegg,Fisk
+"Ketchup, tomatketchup",107,"0,4","23,5","1,8",100,Saus/olje,Saus
+"Kikerter, hermetiske",124,"2,5","14,8","7,5",100,Grønnsaker,Bønner/erter
+"Kikerter, tørre",341,"5,4","46,4","21,3",100,Grønnsaker,Bønner/erter
+"Kinakål, norsk, rå",15,"0,1","1,8","1,1",92,Grønnsaker,Kål
+"Kirsebær, rå",41,0,9,"0,7",86,Frukt/Bær,Bær
+"Kiwi, rå",50,"0,9","8,3","0,8",74,Frukt/Bær,Frukt
+"Kjeks, salt, fet, Ritz, Seltiner",466,"23,4","53,5","8,6",100,Brødmat,Kjeks
+"Kjeks, søt,  sjokoladebiter, cookies, store",420,"16,4","60,7","6,1",100,Brødmat,Kjeks
+"Kjeks, søt, Ballerina",465,"20,7","62,4","6,1",100,Brødmat,Kjeks
+"Kjeks, søt, Gjende",463,"18,6","65,4","6,6",100,Brødmat,Kjeks
+"Kjeks, søt, grov, Digestive",470,"20,3","62,9","7,2",100,Brødmat,Kjeks
+"Kjeks, søt, havre, Bixit",458,"19,1","60,9","7,7",100,Brødmat,Kjeks
+"Kjeks, søt, vaffel, fylt",512,"23,5","70,3","4,1",100,Brødmat,Kjeks
+"Kjøttdeig, kylling, rå",145,"8,1",0,18,100,Kjøtt,bearbeidet/div
+"Kjøttdeig, storfe, uten salt og vann, rå",196,"13,2",0,"19,4",100,Kjøtt,bearbeidet/div
+"Kjøttdeig, svin, rå",144,"6,7",0,21,100,Kjøtt,Svin
+"Kjøttfarse, rå",165,"11,2",5,11,100,Kjøtt,bearbeidet/div
+"Klementin, rå",45,"0,2","9,2","0,8",77,Frukt/Bær,Frukt
+"Klippfisk, saltet og tørket",271,"1,2",0,65,75,Sjømat,Fisk-diverse
+"Knekkebrød, havre",364,"5,3",61,13,100,Brødmat,Flat-/knekkebrød
+"Knekkebrød, lyst",403,"8,5","67,7",11,100,Brødmat,Flat-/knekkebrød
+"Knekkebrød, med ekstra fiber",349,8,"43,2",13,100,Brødmat,Flat-/knekkebrød
+"Knekkebrød, rug, Husman",319,"1,1","62,3","7,8",100,Brødmat,Flat-/knekkebrød
+"Knekkebrød, rug, Ryvita",336,"1,1","64,6","9,1",100,Brødmat,Flat-/knekkebrød
+Kokosbolle,376,"14,8","55,2","4,5",100,Snacks,Søt
+Kokosmelk,209,"21,3","1,5",2,100,Drikke,Diverse
+"Kokt skinke, First Price",104,4,"0,9",16,100,Pålegg,Kjøtt
+"Kongereke, rå",77,"0,7",0,"17,6",85,Sjømat,Skjell/bløtdyr
+"Koriander, rå",24,"0,5","1,2","2,1",85,Grønnsaker,Krydder/urter
+"Kornblanding,  4-korn",324,"3,2","56,7","10,6",100,Korn/nøtter,Korn
+"Krabbe, kokt",108,"1,8",0,"22,9",40,Sjømat,Skjell/bløtdyr
+Kransekake,480,"24,5","51,3","11,2",100,Brødmat,Kake
+"Krekling, krøkebær, rå",38,"0,5","5,3","0,3",100,Frukt/Bær,Bær
+"Kremfløte, 38 % fett",362,38,"2,9","2,1",100,Meieriprodukt,Melk
+"Kremost, mager, Philadelphia",189,16,"3,4","7,8",100,Pålegg,Ost-smørbar
+"Kremost, naturell",277,27,"2,7","5,7",100,Pålegg,Ost-smørbar
+"Kremost, Philadelphia",281,"27,3","2,7","6,1",100,Pålegg,Ost-smørbar
+"Kreps, kokt",54,"1,3",0,"10,7",12,Sjømat,Skjell/bløtdyr
+"Kvarg, 1 % fett, Kesam",66,1,"4,3",10,100,Meieriprodukt,Rømme o.l.
+"Kvarg, 7 % fett, Kesam",108,"7,1",4,7,100,Meieriprodukt,Rømme o.l.
+"Kveite, hellefisk, filet,  rå",102,"2,4",0,20,100,Sjømat,Fisk
+"Kylling- og kalkunpølse, med mindre fett",168,"10,6",5,"13,1",100,Kjøtt,Pølse
+"Kylling- og kalkunpølse, med ost",201,"14,1","4,6","13,4",100,Kjøtt,Pølse
+"Kylling, filet, uten skinn, rå",111,"2,1",0,23,100,Kjøtt,Fugl
+"Kylling, hel, med skinn, rå",165,"10,2",0,"18,2",100,Kjøtt,Fugl
+"Kylling, hel, uten skinn, rå",107,3,0,20,100,Kjøtt,Fugl
+"Kylling, lår (overlår og lårklubbe), med skinn, rå",171,"11,5",0,"16,9",78,Kjøtt,Fugl
+Kyllingpostei,134,"7,8","5,8","10,1",100,Pålegg,Kjøtt
+"Kålrot, kålrabi, norsk, rå",35,"0,1","6,4","0,9",83,Grønnsaker,Kål
+"Laks, filet, gravet",179,"9,2","2,8","21,2",100,Pålegg,Fisk
+"Laks, oppdrett, rå",224,16,0,20,90,Sjømat,Fisk-rød
+"Laks, røkt",225,"14,7",0,"23,2",90,Sjømat,Fisk-rød
+"Lam, bogstek, rå",187,"12,6",0,"18,5",98,Kjøtt,Lam/sau
+"Lam, flatbiff, rå",104,"2,1",0,"21,3",100,Kjøtt,Lam/sau
+"Lam, fårikålkjøtt, rå",230,"17,7",0,"17,6",80,Kjøtt,Lam/sau
+"Lam, grytekjøtt, rå",192,"13,2",0,"18,4",98,Kjøtt,Lam/sau
+"Lam, indrefilet, rå",116,"3,8",0,"20,4",100,Kjøtt,Lam/sau
+"Lam, kotelett og sadel, kjøtt med fettrand, rå",257,"20,4",0,"18,3",73,Kjøtt,Lam/sau
+"Lam, lår med mørbrad, rå",181,"11,6",0,"19,1",79,Kjøtt,Lam/sau
+"Lam, ribbe, side med ben, rå",285,"24,2",0,"16,8",87,Kjøtt,Lam/sau
+"Lam, sadel, rå",227,"17,1",0,"18,3",79,Kjøtt,Lam/sau
+"Lam, ytrefilet, rå",120,"3,9",0,"21,3",100,Kjøtt,Lam/sau
+Lammerull,251,"20,3","0,2","16,8",100,Pålegg,Kjøtt
+"Lange, file, rå",72,"0,2",0,"17,5",100,Sjømat,Fisk
+"Lefse, ferdig smurt, Vestlandslefsa",347,"17,2","41,4","5,8",100,Brødmat,Bolle/lefse
+"Lettmelk, 0,7 % fett, vitamin D",38,"0,7","4,5","3,5",100,Meieriprodukt,Melk
+"Lettmelk, 1,0 % fett",41,1,"4,6","3,5",100,Meieriprodukt,Melk
+"Lettrømme, 10 % fett",119,10,"4,1","3,1",100,Meieriprodukt,Rømme o.l.
+"Lettrømme, 18 % fett",188,18,"3,7","2,8",100,Meieriprodukt,Rømme o.l.
+"Lettøl, lett, 2,5 vol-% alkohol",25,0,"2,5","0,2",100,Drikke,Alkohol
+"Lever, kylling, rå",113,"4,1",0,"19,1",100,Kjøtt,Fugl
+"Lever, lam, rå",128,"4,1",2,"20,7",100,Kjøtt,Lam/sau
+"Lever, rein, rå",128,"4,1","3,3","19,5",100,Kjøtt,Vilt
+"Lever, storfe, rå",124,"3,2","3,5","20,3",100,Kjøtt,Storfe
+"Lever, svin, rå",120,"3,4","0,8","21,4",100,Kjøtt,Svin
+"Leverpostei, hermetisk, Stabburet",237,20,"4,3","9,9",100,Pålegg,Kjøtt
+"Likør, 35 vol-% alkohol",313,0,"27,5",0,100,Drikke,Alkohol
+"Limabønner, smørbønner, tørr",307,"0,7","44,4","21,5",100,Grønnsaker,Bønner/erter
+"Lime, rå",17,"0,2","1,7","0,7",74,Frukt/Bær,Frukt
+"Linfrø, knuste",513,"42,2","1,6","18,3",100,Korn/nøtter,Korn
+"Linser, grønne og brune, tørre",307,2,"41,6","25,1",100,Grønnsaker,Bønner/erter
+"Linser, røde/rosa, tørr",346,"2,2","52,3","23,9",100,Grønnsaker,Bønner/erter
+"Litchi, rå",71,"0,4","15,2","0,8",60,Frukt/Bær,Frukt
+"Loff, fint brød (0-25 %), kjøpt",272,"2,3",53,"8,6",100,Brødmat,Brød
+"Lutefisk, tørr vare, rå",50,"0,7",0,"10,9",90,Sjømat,Fisk-diverse
+"Løk, gul/rød, norsk, rå",32,"0,1","5,7","1,1",93,Grønnsaker,Løk
+Macadamianøtter,753,"75,8","5,6","7,9",100,Korn/nøtter,Nøtter
+"Magerost, smørbar, 10 % fett",162,10,0,18,100,Pålegg,Ost-smørbar
+"Magerost, smørbar, 3 % fett",100,3,0,17,100,Pålegg,Ost-smørbar
+"Magerost, smørbar, 7 % fett",130,"6,5",0,18,100,Pålegg,Ost-smørbar
+"Mais, hermetisk",85,"1,1","15,4","2,5",100,Grønnsaker,diverse
+"Mais, norsk, rå",85,"1,7","12,6","3,2",56,Grønnsaker,diverse
+Maisolje,892,99,0,"0,2",100,Saus/olje,Fet
+"Majones, ekstra lett, 25 % fett",257,"26,1","4,9","0,7",100,Saus/olje,Fet
+"Majones, ekte",728,"79,6",2,"0,9",100,Saus/olje,Fet
+"Majones, lett, 50 % fett",465,"48,6","6,1","0,7",100,Saus/olje,Fet
+"Makrell, mai-juni, rå",123,"5,4",0,"18,6",50,Sjømat,Fisk-fet
+"Makrell, vill (høst), rå",293,25,0,17,50,Sjømat,Fisk-fet
+"Makrellfilet, i tomat, 60 % makrell, hermetisk",241,"19,4","3,9","11,9",100,Pålegg,Fisk
+Mandeldrikke,26,"1,3","3,5",0,100,Drikke,Diverse
+Mandler,577,"49,2","6,3","21,2",100,Korn/nøtter,Nøtter
+"Mango, rå",49,"0,3","10,4","0,7",71,Frukt/Bær,Frukt
+"Margarin, Melange",722,80,"0,3","0,2",100,Saus/olje,Fet
+"Margarin, Soft Flora lett",364,40,"0,5","0,5",100,Pålegg,Smør
+"Margarin, Soft Flora, original",632,70,"0,3","0,2",100,Pålegg,Smør
+"Marsipan, 50 % mandler",508,"27,5","52,7","10,5",100,Snacks,Søt
+"Marsipanbrød, med sjokoladetrekk",514,"29,5",52,9,100,Snacks,Søt
+"Mascarpone, kremost",436,"44,5","4,3","4,6",100,Pålegg,Ost-smørbar
+"Matfløte, 20 % fett",206,20,"3,9","2,7",100,Meieriprodukt,Melk
+"Medisterdeig, rå",206,"15,5",0,"16,7",100,Kjøtt,bearbeidet/div
+Melis,400,0,100,0,100,Diverse,Søtt
+"Merian, tørket",276,7,"20,3","12,7",100,Grønnsaker,Krydder/urter
+"Meterbønner, rå",45,"0,4",7,"2,8",100,Grønnsaker,Bønner/erter
+"Milkshake, sjokoladesmak",78,"1,5",12,"4,1",100,Drikke,Søt
+"Miso, fermentert soyabønnepasta",172,"4,6",21,"10,5",100,Diverse,Middag
+"Molter, rå",46,"1,1","4,4","1,6",100,Frukt/Bær,Frukt
+"Moreller, rå",52,"0,1","11,3","0,9",89,Frukt/Bær,Bær
+Morrpølse,417,"34,5","0,1","26,5",100,Pålegg,Kjøtt
+Mozzarella,317,23,"0,6",27,100,Pålegg,Ost-myk
+"Mozzarella, lettere",268,16,1,30,100,Pålegg,Ost-myk
+Muffins,411,"20,2","50,6","6,2",100,Brødmat,Kake
+"Mungbønner, tørre",295,"1,1","42,4","23,9",100,Grønnsaker,Bønner/erter
+"Nektarin, rå",48,"0,3","9,8",1,91,Frukt/Bær,Frukt
+"Neper, norsk, rå",29,"0,3","4,7","0,9",77,Grønnsaker,Rotgrønnsak
+"Normanna, blåmuggost",336,28,0,21,100,Pålegg,Ost – blåmugg
+"Norvegia, gulost, fyldig",370,30,0,25,100,Pålegg,Ost-gul
+"Norvegia, gulost, lettere",268,16,0,31,100,Pålegg,Ost-gul
+"Norvegia, gulost, vellagret",360,28,0,27,100,Pålegg,Ost-gul
+"Norzola, blåmuggost",383,35,0,17,100,Pålegg,Ost – blåmugg
+"Nudler, med egg, tørr",359,2,"72,6",12,100,Ris/pasta,Nudler/pasta
+"Nudler, uten egg, tørr",343,"3,3","66,4","10,2",100,Ris/pasta,Nudler/pasta
+"Nype, rå",53,"0,5","8,6","0,6",65,Frukt/Bær,Frukt
+Nøkkelost,351,27,0,27,100,Pålegg,Ost-gul
+"Nøkkelost, lettere",272,16,0,32,100,Pålegg,Ost-gul
+"Nøttepålegg, med mindre sukker, Nugatti",489,"29,7","41,1","6,3",100,Pålegg,Søt
+"Nøttepålegg, Nugatti",525,"28,1","62,1","4,9",100,Pålegg,Søt
+"Okra, rå",28,"0,2",3,"1,9",86,Grønnsaker,Rotgrønnsak
+Okserull,166,"8,7","0,5","21,4",100,Pålegg,Kjøtt
+"Oliven, grønne, med paprikafyll",130,"13,1","1,1","0,6",100,Grønnsaker,diverse
+"Oliven, sorte, i olje, hermetisk",348,36,"1,8","2,2",80,Grønnsaker,diverse
+Ostepop,495,"30,2","44,4","9,8",100,Snacks,Salt
+"Pangasius, filet, rå",63,"1,1",0,"13,1",90,Sjømat,Fisk
+"Papaya, rå",47,"0,3","9,5","0,7",62,Frukt/Bær,Frukt
+"Papaya, tørket",259,"0,6","57,6","3,4",100,Frukt/Bær,Frukt
+"Paprika, grønn, rå",21,"0,3","2,8","0,8",85,Grønnsaker,Tomat/agurk/paprika
+"Paprika, gul/oransje, rå",26,"0,2",5,"0,5",85,Grønnsaker,Tomat/agurk/paprika
+"Paprika, rød, rå",26,"0,2","4,2","0,8",85,Grønnsaker,Tomat/agurk/paprika
+"Paradisepler, rå",31,"0,3","5,8","0,4",92,Frukt/Bær,Frukt
+Paranøtter,680,"66,4","2,6","14,3",51,Korn/nøtter,Nøtter
+"Parmesan, ost",416,"29,7","0,9","36,2",100,Pålegg,Ost-gul
+"Pasjonsfrukt, rå",44,"0,4","5,8","2,6",61,Frukt/Bær,Frukt
+"Pasta, fullkorn, tørr",362,"2,5","68,3","12,6",100,Ris/pasta,
+"Pasta, grønn, fersk, rå",229,"3,9","38,3","9,1",100,Ris/pasta,
+"Pasta, naturell, fersk, rå",244,4,"41,5","9,5",100,Ris/pasta,
+"Pasta, naturell, tørr",347,"1,3","69,8","11,9",100,Ris/pasta,
+"Pastinakk, rå",65,"0,6","11,2","1,7",80,Grønnsaker,Krydder/urter
+Peanøttsmør,620,"51,8","13,1","22,8",100,Pålegg,Søt
+"Pepper, cayenne, rød",375,"17,3","29,4",12,100,Grønnsaker,Krydder/urter
+"Pepper, hvit",283,"2,1","42,4","10,4",100,Grønnsaker,Krydder/urter
+Pepperkaker,459,"15,9","72,9","5,3",100,Brødmat,Kake
+"Pepperrot, rå",96,"0,7",11,"7,7",27,Grønnsaker,Rotgrønnsak
+"Persille, norsk, rå",32,"0,4","1,6","3,1",66,Grønnsaker,Krydder/urter
+"Persillerot, norsk, rå",46,"0,3","7,3","1,7",91,Grønnsaker,Rotgrønnsak
+"Pesto, grønn, kjøpt",520,"52,9","4,9","5,2",100,Saus/olje,saus
+"Physalis, rå",64,"0,6","10,7","1,8",94,Frukt/Bær,Frukt
+"Pigghå, håbrann, rå",129,"6,4",0,"17,9",100,Sjømat,Fisk
+"Piggvar, rå",85,"2,4",0,"15,9",100,Sjømat,Fisk
+"Pils, 4,7 vol-% alkohol",41,0,"3,2","0,4",100,Drikke,Alkohol
+Pinjekjerner,697,"68,4",5,"13,7",100,Korn/nøtter,Nøtter
+"Pinnekjøtt, råvare",452,37,0,"29,8",77,Kjøtt,bearbeidet/div
+"Pitabrød, fint, kjøpt",235,"1,1","47,3","7,4",100,Brødmat,Brød
+"Pizzabunn, uten fyll",244,"3,3","44,8","7,5",100,Diverse,Middag
+"Plomme, rå",44,"0,1","9,3","0,5",94,Frukt/Bær,Frukt
+"Polarbrød, hvete",321,"5,1","58,4","9,1",100,Brødmat,Brød
+"Pomelo, rå",33,"0,2","6,8","0,6",61,Grønnsaker,diverse
+"Pommes frites, fryst",153,"5,2",22,"2,2",100,Grønnsaker,Rotgrønnsak
+"Popcorn, kjøpt",398,"14,5","51,4","10,1",100,Snacks,Salt
+"Port Salut, kittmodnet ost",321,25,0,24,100,Pålegg,Ost-gul
+"Potet, lagringspotet, rå",80,"0,1","17,1","1,9",82,Grønnsaker,Rotgrønnsak
+Potetchips,517,"31,5","50,5","5,2",100,Snacks,Salt
+"Potetsalat, med ekte majones",325,"29,7","12,3","1,6",100,Diverse,Middag
+"Potetsalat, med lettmajones (40 % fett)",195,"14,5","14,1","1,4",100,Diverse,Middag
+"Potetsalat, med lettrømme",107,"5,3","12,2","1,9",100,Diverse,Middag
+Prim,283,8,46,"6,7",100,Pålegg,Søt
+"Prim, mager",256,4,48,7,100,Pålegg,Søt
+"Purreløk, norsk, rå",28,"0,2","3,6","1,6",83,Grønnsaker,Løk
+"Pære, uspesifisert, rå",44,"0,1","8,8","0,4",90,Frukt/Bær,Frukt
+"Pølsebrød, fint, kjøpt",304,"8,2","50,1","6,5",100,Brødmat,Brød
+"Quinoa, tørr",358,"6,1","58,3","14,1",100,Ris/pasta,
+"Rabarbra, rå",20,"0,2","1,9","0,9",75,Frukt/Bær,Frukt
+"Raclette, ost",357,"27,9",0,"26,4",100,Pålegg,Ost-gul
+"Rapidsalat, norsk, rå",11,"0,2","0,3","1,4",94,Grønnsaker,Salat
+"Reddik, norsk, rå",16,"0,1","2,5","0,7",94,Grønnsaker,Rotgrønnsak
+"Reinsdyr, bog, stek, rå",118,"3,6",0,"21,3",100,Kjøtt,Vilt
+"Reinsdyr, kjøtt, tørket, rå",318,"17,6",0,40,100,Kjøtt,Vilt
+Reinsdyrpølse,426,"38,5",0,20,100,Pålegg,Kjøtt
+"Reinsdyrskav, fryst, rå",145,"7,5",0,"19,3",100,Kjøtt,Vilt
+"Reker, i lake, avrent",58,"0,6",0,"13,2",100,Sjømat,Skjell/bløtdyr
+"Rekesalat, majonessalat, 35 % fett",359,36,"5,2","3,2",100,Pålegg,Salat
+Remulade,617,"65,6","5,6","0,9",100,Saus/olje,Fet
+"Ribberull, skiver",193,"13,5",0,18,100,Pålegg,Kjøtt
+"Ricotta, ferskost",163,13,"0,3","11,3",100,Pålegg,Ost-smørbar
+Ridderost,422,38,0,20,100,Pålegg,Ost-gul
+"Rips, rå",53,"1,2","6,9","1,2",100,Frukt/Bær,Bær
+"Ris, polert, Jasminris, tørr",354,"0,7","79,5","7,5",100,Ris/pasta,
+Risdrikke,36,"0,9","6,9","0,1",100,Drikke,Diverse
+"Riskaker, lettsaltet",380,3,78,8,100,Brødmat,diverse
+"Roastbiff, skiver",129,"2,7",0,"26,1",100,Pålegg,Kjøtt
+"Rogn, torsk, presset, hermetisk",125,"1,9",0,"27,1",100,Sjømat,Fisk-diverse
+"Romanosalat, rå",16,"0,2","1,3","1,4",94,Grønnsaker,Salat
+"Roquefort, blåmuggost",355,31,0,19,100,Pålegg,Ost – blåmugg
+"Rosenkål, norsk, rå",52,"0,6","4,4","5,1",80,Grønnsaker,Kål
+"Rosinbolle, kjøpt",357,"10,4","56,9","7,3",100,Brødmat,Bolle/lefse
+Rosiner,277,1,"62,6",3,100,Frukt/Bær,Frukt
+"Rosmarin, rå",120,"5,9","6,6","3,3",65,Grønnsaker,Krydder/urter
+"Royal Blue, blåmuggost",452,44,0,14,100,Pålegg,Ost – blåmugg
+"Ruccolasalat, rå",28,"0,7",2,"2,6",100,Grønnsaker,Salat
+"Rugbrød, fint (0-25 %), kjøpt",248,"2,6","45,7","7,9",100,Brødmat,Brød
+"Rugbrød, grovt (50-75 %), kjøpt",259,"2,4","48,4","6,9",100,Brødmat,Brød
+"Rullekake, med smørkrem av margarin",398,"19,8","48,3","6,3",100,Brødmat,Kake
+"Rundstykke, fint, kjøpt",284,"3,3","53,4","8,7",100,Brødmat,Brød
+"Rundstykke, grovt, kjøpt",256,"5,2",43,"7,6",100,Brødmat,Brød
+"Rype, bryst, uten skinn, rå",122,"4,5",0,"20,3",100,Kjøtt,Fugl
+"Rødbete, norsk, rå",49,"0,2","8,9","1,6",86,Grønnsaker,Rotgrønnsak
+"Rødbeter, syltede",59,"0,1","12,5","1,3",100,Grønnsaker,Rotgrønnsak
+"Rødbetsalat, majonessalat, 30 % fett",317,"31,6","6,2","1,2",100,Pålegg,Salat
+"Røde bønner, tørre",294,"1,4","40,5","22,1",100,Grønnsaker,Bønner/erter
+"Rødkål, rå",32,"0,3",5,"1,1",80,Grønnsaker,Kål
+"Rødspette, filet, rå",91,"2,6",0,"16,8",100,Sjømat,Fisk
+"Rødvin, 12 vol-% alkohol",74,0,"0,7","0,1",100,Drikke,Alkohol
+"Rømmedressing, med urter",136,"11,8","4,7","2,8",100,Saus/olje,Fet
+"Røye, filet, rå",128,"7,1",0,"16,1",100,Sjømat,Fisk-rød
+"Rådyr, kjøtt, rå",95,"1,2",0,21,100,Kjøtt,Vilt
+"Safran, tørket",352,"5,8","61,5","11,4",100,Grønnsaker,Krydder/urter
+"Saftis, Lollipop",120,"3,5",22,"0,1",100,Snacks,Søt
+Salami,429,"39,5","0,9","17,6",100,Pålegg,Kjøtt
+"Salsiccia, italiensk pølse",271,"18,3","4,7","21,8",100,Kjøtt,Pølse
+Saltstenger,380,"6,3","68,1","10,5",100,Snacks,Salt
+Sarah Bernhard-kake,467,"29,6","40,5",8,100,Brødmat,Kake
+"Sashimi, kveite",113,"4,3",0,"18,5",100,Sjømat,Sushi
+"Sashimi, laks",224,16,0,20,100,Sjømat,Sushi
+"Sashimi, tunfisk",105,1,0,24,100,Sjømat,Sushi
+"Sau, fårekjøtt, lettsaltet, rå",371,35,0,14,100,Kjøtt,Lam/sau
+"Scones, grove, med melk",301,"8,3","45,6","8,8",100,Brødmat,Kake
+"Sei, filet, rå",69,"0,3",0,"16,5",100,Sjømat,Fisk
+"Selbu blå, blåmuggost",420,40,0,15,100,Pålegg,Ost – blåmugg
+"Sellerirot, norsk, rå",27,"0,3","2,8","1,6",70,Grønnsaker,Rotgrønnsak
+"Semulegryn, hvetegryn",339,2,69,10,100,Korn/nøtter,Korn
+Sennep,158,"6,4","18,5","5,7",100,Saus/olje,saus
+Sennepssaus,441,"39,8","17,8","2,6",100,Saus/olje,saus
+Servelat,198,"14,5","7,1","9,9",100,Pålegg,Kjøtt
+"Servelat, mager, Gilde",145,9,"4,5","11,4",100,Pålegg,Kjøtt
+"Seterrømme, 35 % fett",335,35,"2,9","2,2",100,Meieriprodukt,Rømme o.l.
+"Sharon, kakifrukt, rå",65,"0,3",12,"0,7",84,Frukt/Bær,Frukt
+"Sik, filet, rå",89,"0,6",0,"20,9",100,Sjømat,Fisk
+"Sikorisalat, rå",15,"0,6","0,9","0,5",80,Grønnsaker,Salat
+"Sild, fetsild, sommersild, filet, rå",293,25,0,17,100,Sjømat,Fisk-fet
+"Sild, fetsild/sommersild, kokt",349,"29,8",0,"20,2",65,Sjømat,Fisk-fet
+"Sild, kryddersild",154,12,0,"11,5",100,Sjømat,Fisk-fet
+"Sild, marinert, sennepssild",250,"13,6","25,5","6,1",100,Sjømat,Fisk-fet
+"Sild, storsild, vintersild, rå",187,14,0,"15,2",100,Sjømat,Fisk-fet
+"Sild, sursild, innlagt, avrent",190,"11,7","11,1","9,9",100,Sjømat,Fisk-fet
+Sirup,297,0,"74,1","0,1",100,Diverse,Søtt
+"Sitron, rå",23,"0,3","2,5","1,1",53,Frukt/Bær,Frukt
+"Sjalottløk, rå",24,"0,2","3,3","1,5",72,Grønnsaker,Løk
+"Sjampinjong, norsk,  rå",22,"0,3","0,3","3,6",89,Grønnsaker,Sopp
+"Sjokolade, hvit",544,"30,9","58,3",8,100,Snacks,Sjokolade
+"Sjokolade, kokesjokolade, lys",527,"29,5","56,7",7,100,Snacks,Sjokolade
+"Sjokolade, mørk, 70 % kakao",584,"46,5","33,2",7,100,Snacks,Sjokolade
+"Sjokolade, Snickers",498,"28,2","52,2","7,5",100,Snacks,Sjokolade
+"Sjokoladepudding, Piano",123,"3,9",18,"3,3",100,Snacks,Sjokolade
+"Sjokoladepålegg, Sjokade",414,19,59,"1,1",100,Pålegg,Søt
+"Sjøtunge, rå",64,"0,5",0,"14,8",33,Sjømat,Fisk-diverse
+"Skate, filet, rå",58,"0,2",0,14,100,Sjømat,Fisk
+"Skinkerull, Westfalerskinke",286,20,0,"26,6",100,Pålegg,Kjøtt
+Skummet melk,33,"0,1","4,5","3,5",100,Meieriprodukt,Melk
+"Skyr, naturell",74,1,"4,3",12,100,Meieriprodukt,Rømme o.l.
+"Smoothie, med yoghurt, juice, banan og bær",60,"1,2","9,9","1,7",100,Drikke,Søt
+Smør,742,82,"0,5","0,5",100,Saus/olje,Fet
+"Snegler, hermetisk",77,"1,4",0,"16,1",100,Sjømat,Skjell/bløtdyr
+"Solbær, rå",55,1,"7,6","1,3",100,Frukt/Bær,Bær
+"Solbærsirup, drikkeklar",32,0,"7,9","0,1",100,Drikke,Søt
+"Soyaburger, stekt i vegetabilsk olje",195,11,"11,7","10,6",100,Diverse,Middag
+"Soyadrikke, tilsatt kalsium, søtet",44,"2,4","2,2","3,1",100,Drikke,Diverse
+"Soyapølse, hermetisk",201,15,"3,5",12,100,Diverse,Middag
+Soyasaus,84,0,"17,9",3,100,Diverse,Middag
+Spekeskinke,203,"9,2",0,30,100,Pålegg,Kjøtt
+"Spinat, rå",22,"0,4","0,3","3,3",70,Grønnsaker,Salat
+"Spisskål, rå",18,"0,3","0,9","2,1",80,Grønnsaker,Kål
+"Squash, zucchini, rå",17,"0,2","2,2","1,3",88,Grønnsaker,diverse
+"Stangselleri, norsk, rå",15,"0,1","1,3","1,1",76,Grønnsaker,diverse
+"Steinbit, filet, rå",97,"2,5",0,"18,6",100,Sjømat,Fisk
+"Steinsopp, rå",30,"0,2","2,4","3,1",100,Grønnsaker,Sopp
+"Sterkvin, søt, portvin, 20 vol-% alkohol",151,0,"9,6","0,1",100,Drikke,Alkohol
+"Sterkøl, bokkøl, 6,5 vol-% alkohol",63,0,6,"0,7",100,Drikke,Alkohol
+"Stikkelsbær, rå",37,"0,6","5,4","0,8",98,Frukt/Bær,Bær
+"Stilton, blåmuggost",410,35,"0,1","23,7",100,Pålegg,Ost – blåmugg
+"Storfe, bankekjøtt, rå",124,"4,1",0,"21,9",100,Kjøtt,Storfe
+"Storfe, bibringe, rå",209,"14,8",0,"18,9",79,Kjøtt,Storfe
+"Storfe, bog, uten knoke, rå",160,"8,8",0,"20,2",83,Kjøtt,Storfe
+"Storfe, bogstek, rå",120,"3,7",0,"21,8",100,Kjøtt,Storfe
+"Storfe, entrecôte, synlig fett skåret vekk, rå",141,"5,7",0,"22,4",84,Kjøtt,Storfe
+"Storfe, entrecôtekam, rå",200,"13,1",0,"20,5",78,Kjøtt,Storfe
+"Storfe, fett fra storfekjøtt, rå",732,80,0,3,100,Kjøtt,Storfe
+"Storfe, filetkam, rå",165,9,0,"21,1",79,Kjøtt,Storfe
+"Storfe, flatbiff, rå",105,"1,7",0,"22,5",100,Kjøtt,Storfe
+"Storfe, høyrygg, rå",162,"9,2",0,"19,9",80,Kjøtt,Storfe
+"Storfe, indrefilet, rå",118,"3,7",0,"21,2",100,Kjøtt,Storfe
+"Storfe, kam, rå",162,"8,6",0,"21,1",100,Kjøtt,Storfe
+"Storfe, kotelettkam, rå",170,"9,9",0,"20,2",75,Kjøtt,Storfe
+"Storfe, mørbrad, rå",109,"2,3",0,"22,2",100,Kjøtt,Storfe
+"Storfe, rundstek, rå",107,2,0,"22,2",100,Kjøtt,Storfe
+"Storfe, ytrefilet, rå",109,"2,3",0,"22,2",100,Kjøtt,Storfe
+"Strandsnegle, norsk",87,"1,4","3,3","15,2",16,Sjømat,Skjell/bløtdyr
+"Sukker, brunt",376,0,94,0,100,Diverse,Søtt
+"Sukker, hvitt",400,0,100,0,100,Diverse,Søtt
+"Sukkererter, norsk, rå",42,"0,1","5,3","3,5",94,Grønnsaker,Bønner/erter
+"Surkål, kjøpt",29,0,"5,1","1,4",100,Grønnsaker,Kål
+"Sushi, maki, kveite",116,"2,4","18,1","5,1",100,Sjømat,Sushi
+"Sushi, maki, laks",134,"4,3","18,1","5,3",100,Sjømat,Sushi
+"Sushi, maki, tunfisk",115,"1,9","18,1","5,9",100,Sjømat,Sushi
+"Sushi, nigiri, kveite",114,"1,4","17,8","7,3",100,Sjømat,Sushi
+"Sushi, nigiri, laks",147,5,"17,8","7,8",100,Sjømat,Sushi
+"Sushi, nigiri, tunfisk",112,"0,5","17,8",9,100,Sjømat,Sushi
+"Svarte bønner, hermetiske",106,1,"12,8","8,1",100,Grønnsaker,Bønner/erter
+"Svartøyebønner, tørr",324,"1,3","49,4","23,5",100,Grønnsaker,Bønner/erter
+"Sveitserost, gulost",364,28,0,28,100,Pålegg,Ost-gul
+"Svin, bacon med svor, rå",339,"31,5",0,"13,9",100,Kjøtt,Svin
+"Svin, bogstek, kjøtt uten fettrand, rå",144,"6,7",0,21,86,Kjøtt,Svin
+"Svin, bogstek, med fettrand, rå",220,"16,1",0,"18,7",100,Kjøtt,Svin
+"Svin, familieribbe, rå",328,"29,5",0,"15,6",86,Kjøtt,Svin
+"Svin, flatbiff, rå",103,"1,7",0,22,100,Kjøtt,Svin
+"Svin, grillben, rå",247,"19,9",0,17,51,Kjøtt,Svin
+"Svin, indrefilet, rå",116,"3,1",0,22,100,Kjøtt,Svin
+"Svin, kjøtt fra knoke, rå",151,"8,1",0,"19,5",51,Kjøtt,Svin
+"Svin, kotelett, kam, svinekoteletter, inntil 5 mm fettrand, rå",243,"18,3",0,"19,8",77,Kjøtt,Svin
+"Svin, midtribbe, med kam og svor, rå",328,"29,5",0,"15,6",86,Kjøtt,Svin
+"Svin, mørbrad, rå",215,"15,7",0,"18,5",79,Kjøtt,Svin
+"Svin, nakkekoteletter, rå",225,17,0,18,83,Kjøtt,Svin
+"Svin, sideflesk, lettsaltet, rå",301,"27,4",0,"13,6",100,Kjøtt,Svin
+"Svin, sideflesk, uten ben, rå",384,"36,6",0,"13,6",93,Kjøtt,Svin
+"Svin, skinke, med knoke, rå",219,"16,4",0,"17,9",86,Kjøtt,Svin
+"Svin, skinkestek med fettrand, uten svor, rå",221,16,0,"19,2",100,Kjøtt,Svin
+"Svin, skinkestek, rå",130,"4,7",0,22,85,Kjøtt,Svin
+"Svin, tynnribbe, med svor, rå",371,"35,1",0,"13,8",87,Kjøtt,Svin
+"Svin, ytrefilet, rå",110,"1,6",0,24,100,Kjøtt,Svin
+"Svinekam, røkt",209,"17,6","0,3","12,3",83,Kjøtt,Svin
+Svisker,168,"0,3","36,5","2,3",87,Frukt/Bær,Frukt
+Sylte,304,"23,2","0,3","23,6",100,Pålegg,Kjøtt
+"Syltetøy, 40 % bær, 40 % sukker",174,"0,1","42,4","0,3",100,Pålegg,Søt
+"Syltetøy, 45 % bær, 25 % sukker",130,"0,1","31,4","0,3",100,Pålegg,Søt
+"Syrnet melk, jordbær, Biola",52,"0,1","9,7","3,1",100,Meieriprodukt,Melk
+"Syrnet melk, Kulturmjølk",61,"3,5",4,"3,3",100,Meieriprodukt,Melk
+"Syrnet melk, Skumma Kulturmjølk",33,"0,4","4,1","3,2",100,Meieriprodukt,Melk
+"Søtpotet, rå",80,0,"16,8","1,6",72,Grønnsaker,Rotgrønnsak
+Taco kryddermix,226,"3,5","36,6","5,9",100,Diverse,Salt
+Tacosaus,27,"0,1",4,"1,9",100,Diverse,Middag
+Tacoskjell,462,"23,4","55,3","5,7",100,Diverse,Middag
+"Taffelost, tomat",313,24,"0,3",24,100,Pålegg,Ost-gul
+"Terte, uten fyll",527,"29,8","56,4","7,5",100,Brødmat,Brød
+"Timian, rå",107,"1,7","10,4","5,6",68,Grønnsaker,Krydder/urter
+"Tofu, soyabønneost",77,"4,2","0,6","8,1",100,Diverse,Middag
+"Tomat, hermetisk",20,"0,2","3,3","0,8",100,Grønnsaker,Tomat/agurk/paprika
+"Tomat, norsk, rå",18,"0,2","2,5","0,7",100,Grønnsaker,Tomat/agurk/paprika
+"Tomater, soltørkede, tørr",280,3,43,"14,1",100,Grønnsaker,Tomat/agurk/paprika
+"Tomatpuré, hermetisk",84,"0,2","14,5","4,8",100,Saus/olje,saus
+"Torsk, filet, rå",81,1,0,"18,1",100,Sjømat,Fisk
+"Tortilla, maislefse",258,"2,8","50,1","6,2",100,Diverse,Middag
+"Tortillachips, nachochips",475,"22,4","57,4","7,4",100,Snacks,Salt
+"Tranebær, rå",28,"0,1",4,"0,4",100,Frukt/Bær,Bær
+"Tunfisk, i gele, hermetisk",70,"0,4",0,"16,5",100,Sjømat,Fisk-rød
+"Tunfisk, i olje, avrent, hermetisk",259,"18,9",0,"22,3",100,Sjømat,Fisk-rød
+"Tunfisk, i vann, avrent, hermetisk",105,1,0,"24,1",100,Sjømat,Fisk-rød
+"Tunfisk, makrellstørje, rå",105,1,0,24,100,Sjømat,Fisk-rød
+"Tyttebær, rå",44,"0,6",7,"0,7",100,Frukt/Bær,Bær
+Tørrfisk,327,"1,4",0,"78,5",90,Sjømat,Fisk-diverse
+"Uer, filet, rå",94,"2,8",0,"17,1",100,Sjømat,Fisk
+Urtesalt,47,"1,7","0,3","7,6",100,Diverse,Salt
+"Vafler, grove",226,"8,9","27,1","8,5",100,Brødmat,Kake
+"Vafler, med egg, lettmelk",218,"8,8","27,2",7,100,Brødmat,Kake
+Valnøtter,672,"65,2","2,7","15,2",45,Korn/nøtter,Nøtter
+"Vaniljesaus, Piano",147,"8,4",15,"2,7",100,Snacks,Søt
+Vaniljesukker,364,0,"91,1",0,100,Diverse,Søtt
+"Vannkastanje, rå",52,"0,2","10,4","1,4",73,Grønnsaker,Rotgrønnsak
+"Vannmelon, rå",35,"0,1","7,6","0,8",46,Frukt/Bær,Frukt
+"Villsvin, kjøtt, rå",105,"1,5",0,23,100,Kjøtt,Vilt
+"Vin, alkoholfri",17,0,4,"0,2",100,Drikke,Alkohol
+"Vin, alkoholsvak",36,0,"6,1",0,100,Drikke,Alkohol
+"Vårløk, rå",23,"0,2","2,3","1,8",96,Grønnsaker,Løk
+"Wienerbrød, med eggekrem",401,"24,4",38,"6,5",100,Brødmat,Kake
+"Wienerkringle, med mandelfyll",496,"35,8","36,4","6,2",100,Brødmat,Kake
+Wienerpølse,256,"21,2","5,4","10,9",100,Kjøtt,Pølse
+"Wienerpølse, med mindre fett",160,"10,7","5,8","10,1",100,Kjøtt,Pølse
+"Wienersnitzel, rå",244,"15,8","5,8","19,7",100,Kjøtt,bearbeidet/div
+"Wokblanding, klassisk",34,"0,3","4,8","1,9",100,Diverse,middag
+"Yoghurt, frukt, 0,1 % fett, lett, Yoplait",52,"0,1","8,9","3,9",100,Meieriprodukt,Rømme o.l.
+"Yoghurt, jordbær",88,3,"11,5","3,7",100,Meieriprodukt,Rømme o.l.
+"Øl, alkoholfritt",24,0,5,"0,4",100,Drikke,Alkohol
+"Øl, redusert energiinnhold, lavkarbo",32,0,1,"0,4",100,Drikke,Alkohol
+"Ørret, oppdrett, filet, rå",166,10,0,19,100,Sjømat,Fisk-rød
+"Ørret, sjøørret, hel, rå",110,"3,3",0,20,70,Sjømat,Fisk-rød
+"Østers, rå",59,"2,4",0,"9,3",10,Sjømat,Skjell/bløtdyr
+"Østerssopp, rå",26,"0,3","2,6",2,89,Grønnsaker,Sopp
+"Åbor, abbor, filet, rå",85,"0,6",0,"19,8",100,Sjømat,Fisk
+"Ål, filet, rå",362,"32,5",0,"17,3",100,Sjømat,Fisk-fet
