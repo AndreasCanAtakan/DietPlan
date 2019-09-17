@@ -769,7 +769,7 @@ removeFromArray(dag,0);
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
   +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
-  +sum+" gram summert <br>";
+  +sum+" gram summert F, C & P <br>";
 
 document.getElementById("paraId").innerHTML = str;
 //reset maaltid
