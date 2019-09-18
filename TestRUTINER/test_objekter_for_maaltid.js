@@ -711,6 +711,21 @@ function putMaaltidInDay(dag, maaltid, ID) {
 // TODO
 // }
 
+// <<<<functions for users profiles>>>>
+
+function calculateMaleBMR(year, vekt, height, activityLevel) {
+    thisYear = new Date().getFullYear();
+    BMR = 66.5+(13.75*vekt)+(5.003*height)-(6.755*(thisYear-year));
+   return parseInt((BMR*activityLevel).toFixed(0));
+}
+
+function calculateFemaleBMR(year, vekt, height, activityLevel) {
+    thisYear = new Date().getFullYear();
+    BMR = 655.1+(9.563*vekt)+(1.850*height)-(4.676*(thisYear-year))
+    return parseInt((BMR*activityLevel).toFixed(0));
+}
+
+
 // **************** END OF FUNCTIONS ****************
 
 
@@ -725,6 +740,20 @@ for (i in values) {
   var obj = makeMatvare(values[i],value); // making one matvare-object
   addToArray(maaltid, obj); // adding matvare-object to maaltid
 }
+
+var vekt=100;
+var year = 1966;
+var height = 175;
+var activityLevel = 1.4;
+var yourBMR = calculateMaleBMR(year ,vekt , height, activityLevel);
+console.log("Male: "+yourBMR);
+
+vekt=90;
+year = 1966;
+height = 175;
+activityLevel = 1.4;
+yourBMR = calculateFemaleBMR(year ,vekt , height, activityLevel);
+console.log("Female: "+yourBMR);
 
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
