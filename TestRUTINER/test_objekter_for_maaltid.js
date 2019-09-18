@@ -746,15 +746,15 @@ var year = 1966;
 var height = 175;
 var activityLevel = 1.4;
 var maleBMR = calculateMaleBMR(year ,vekt , height, activityLevel);
-console.log("Male: "+maleBMR);
+str+="MALE: <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+year+" Level of activity: "+activityLevel+" gives BMR of "+maleBMR+ " kcal<br>  ";
+
 
 vekt=90;
 year = 1966;
 height = 170;
 activityLevel = 1.4;
 var femaleBMR = calculateFemaleBMR(year ,vekt , height, activityLevel);
-console.log("Female: "+femaleBMR);
-console.log("DIFFERENCE: "+(parseInt(maleBMR)-parseInt(femaleBMR)));
+str+="FEMALE: <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+year+" Level of activity: "+activityLevel+" gives BMR of "+femaleBMR+ " kcal<br><br>  ";
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
 
@@ -786,9 +786,7 @@ putMaaltidInDay(dag, maaltid, 1); // put maaltid in dag on place 1
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
   +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
-  +sum+" gram summert F, C & P <br><br>"
-  +"<b>Male:</b> "+maleBMR+"<br>"
-  +"<b>Female:</b> "+femaleBMR+"<br>";
+  +sum+" gram summert F, C & P <br><br>";
 
 document.getElementById("paraId").innerHTML = str;
 // to test import from array to current maaltid:
