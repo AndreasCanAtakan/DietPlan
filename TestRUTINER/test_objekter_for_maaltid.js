@@ -609,6 +609,12 @@ mat=
 
 // ************** FUNCTIONS FIRST **************
 
+// function to check all parameters in a maaltid-objects
+// INPUT: a correct maaltid-object, including also weight
+// RETURN: object, containing:
+//    TOTAL fat[1], TOTAL carbo[3],
+//    TOTAL protein[5], TOTAL weight of nutritients[7],
+//    TOTAL kcal[8], and check-values for nutrition-limits [2],[4] & [6]
 function checkMeal (maaltid) {
   var kcal = 0.0; var fett = 0.0; var carbo = 0.0; var protein = 0.0;
   var respons = [{}]; var sum = 0.0;
@@ -626,18 +632,24 @@ function checkMeal (maaltid) {
 }
 
 // Check for fat within limits
+// INPUT: fat, total, upper limit, lower limits
+// RETURN OK/UTENFOR, and printout of given limits in %
 function checkFett(fett, total, upper, lower) {
   if (fett/total<=upper && fett/total>=lower){ return "OK ("+lower*100+"-"+upper*100+"%)";  }
   else  { return "UTENFOR ("+lower*100+"-"+upper*100+"%)"; }
 }
 
 // Check for carbo within limits
+// INPUT: carbo, total, upper limit, lower limits
+// RETURN OK/UTENFOR, and printout of given limits in %
 function checkCarbo(carbo, total, upper, lower) {
   if (carbo/total<=upper && carbo/total>=lower){return "OK ("+lower*100+"-"+upper*100+"%)";}
   else  {return "UTENFOR ("+lower*100+"-"+upper*100+"%)";}
 }
 
 // Check for protein within limits
+// INPUT: protein, total, upper limit, lower limits
+// RETURN OK/UTENFOR, and printout of given limits in %
 function checkProtein(protein, total, upper, lower) {
   if (protein/total<=upper && protein/total>=lower){return "OK ("+lower*100+"-"+upper*100+"%)";}
   else  {return "UTENFOR ("+lower*100+"-"+upper*100+"%)";}
@@ -651,6 +663,10 @@ function removeFromArray (liste, element) {
 // adds matvare to the JSON-array liste
 function addToArray (liste, matvare) {
   liste.push(matvare);
+}
+
+function replaceInArray (liste, matvare, ID) {
+  liste.splice(ID, 1, matvare);
 }
 
 // make a complete object of one matvare - from input ID in main array
@@ -670,6 +686,7 @@ function addToWeek (ukesMeny, dagsMeny) {
 // function (for testing) to add number of random makeRandomValues
 // to an object and return object with Integers
 // INPUT: number of random numbers required
+// RETURN: object of integers, limited by elements in 'mat'
 function makeRandomValues(antall) {
   var verdier = [];
   for (i=0; i<antall; i++) {verdier.push(parseInt((Math.random() * (mat.length-1)).toFixed(0)));
@@ -724,7 +741,7 @@ for (i in values) {
 
 // the maaltid-object is current maaltid, the one that is edited
 // running through all elements in maaltid and adding to output string (str)
-// calculating totals og kcal, fett, karbohydrater & Protein
+
 for (i in maaltid) {
   str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
   +(maaltid[i].Fett*maaltid[i].weight/100).toFixed(1)+" g fett  -  " +(maaltid[i].Karbohydrat*maaltid[i].weight/100).toFixed(1)+" g karbo  -  "
