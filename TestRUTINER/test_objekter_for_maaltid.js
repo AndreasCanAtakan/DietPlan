@@ -676,17 +676,6 @@ function makeMatvare (number, vekt) {
   return { Matvare: mat[number].Matvare, Kilokalorier: mat[number].Kilokalorier, Fett: mat[number].Fett,
     Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein, Spiselig: mat[number].Spiselig, weight: vekt};}
 
-function setUserData (gender, vekt, BirthYear, height, activitylevel) {
-  obj = [];
-  kcal = 0;
-  if (gender=="mann") {
-    (kcal=calculateMaleBMR(BirthYear, vekt, height, activityLevel))}
-  else {
-    kcal=calculateFemaleBMR(BirthYear, vekt, height, activityLevel)}
-
-  return {Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal }
-    }
-
 // function to add maaltid to a day-menu
 function addToDay (dagsMeny,maaltid) {
   dagsMeny.push(maaltid);}
@@ -736,8 +725,6 @@ function saveStaticDataToFile() {
 // <<<<functions for users profiles>>>>
 
 
-
-
 // calculates BMR of men
 // INPUT: birthyear(int), weight(int), height(int in cm) and activitylevel (float)
 // OUTPUT: integer representing needed kcal per day
@@ -756,10 +743,32 @@ function calculateFemaleBMR(year, vekt, height, activityLevel) {
     return parseInt((BMR*activityLevel).toFixed(0));
 }
 
+// Lite eller ingen trening: 						        BMR x 1.2
+// Lett trening (1-3 dager i uka):		          BMR x 1,375
+// Moderat trening (3-5 dager i uka): 		      BMR x 1,55
+// Hard trening (6-7 dager i uka):				      BMR x 1,725
+// Veldig hard trening
+// (to ganger om dagen, hard styrketrening): 	  BMR x 1,9
+
+function setUserData (gender, vekt, BirthYear, height, activitylevel) {
+  obj = []; kcal = 0;
+  if (gender=="mann") {(kcal=calculateMaleBMR(BirthYear, vekt, height, activityLevel))}
+  else                {kcal=calculateFemaleBMR(BirthYear, vekt, height, activityLevel)}
+  return {Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal}
+}
+
+function eveluateEnergy (user, maaltid) {
+    var balance = 0;
+    var tallObjekt = checkMeal(maaltid);
+    var mealKcal = parseInt(tallObjekt[8].toFixed(0));
+    balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
+   console.log(user.Energy, mealKcal, balance);
+    return balance;
+}
 
 // **************** END OF FUNCTIONS ****************
 
-
+var user;
 var kcal = 0; var fett = 0; var carbo = 0; var protein = 0; var sum = 0.0;
 var str = "";
 var values = makeRandomValues(6); // makes a list of values used for creating each matvare in maaltid
@@ -823,7 +832,7 @@ makeDay(dag); // makes empty day
 putMaaltidInDay(dag, maaltid, 1); // put maaltid in dag on place 1
 
 // get all calculations and put in output string
-  str+="<br><b>TOTAL "+kcal+" kcal: </b><br>"
+  str+="<br><b>TOTAL "+kcal+" kcal MALE: "+eveluateEnergy(user1,maaltid)+" %  -  FEMALE: "+eveluateEnergy(user2,maaltid)+" %</b><br>"
   +"<br><b>BALANCE OF MEAL:</b> <br>"
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
