@@ -676,6 +676,17 @@ function makeMatvare (number, vekt) {
   return { Matvare: mat[number].Matvare, Kilokalorier: mat[number].Kilokalorier, Fett: mat[number].Fett,
     Karbohydrat: mat[number].Karbohydrat, Protein: mat[number].Protein, Spiselig: mat[number].Spiselig, weight: vekt};}
 
+function setUserData (gender, vekt, BirthYear, height, activitylevel) {
+  obj = [];
+  kcal = 0;
+  if (gender=="mann") {
+    (kcal=calculateMaleBMR(BirthYear, vekt, height, activityLevel))}
+  else {
+    kcal=calculateFemaleBMR(BirthYear, vekt, height, activityLevel)}
+
+  return {Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal }
+    }
+
 // function to add maaltid to a day-menu
 function addToDay (dagsMeny,maaltid) {
   dagsMeny.push(maaltid);}
@@ -712,7 +723,20 @@ function putMaaltidInDay(dag, maaltid, ID) {
 // TODO
 // }
 
+
+
+function saveStaticDataToFile() {
+    var blob = new Blob(["Welcome to Websparrow.org."],
+    { type: "text/plain;charset=utf-8" });
+  //  saveAs(blob, "static.txt");
+        }
+
+
+
 // <<<<functions for users profiles>>>>
+
+
+
 
 // calculates BMR of men
 // INPUT: birthyear(int), weight(int), height(int in cm) and activitylevel (float)
@@ -749,19 +773,25 @@ for (i in values) {
 }
 
 var vekt=100;
-var year = 1966;
+var BirthYear = 1966;
 var height = 175;
 var activityLevel = 1.4;
-var maleBMR = calculateMaleBMR(year ,vekt , height, activityLevel);
-str+="MALE: <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+year+" Level of activity: "+activityLevel+" gives BMR of "+maleBMR+ " kcal<br>  ";
+var maleBMR = calculateMaleBMR(BirthYear ,vekt , height, activityLevel);
+var user1=setUserData("mann",vekt,BirthYear,height,1.4);
+console.log(user1);
 
+str+="<b>MALE:</b> <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+BirthYear+" Level of activity: "+activityLevel+" gives BMR of "+maleBMR+ " kcal<br>  ";
+
+saveStaticDataToFile();
 
 vekt=90;
-year = 1966;
+BirthYear = 1966;
 height = 170;
 activityLevel = 1.4;
-var femaleBMR = calculateFemaleBMR(year ,vekt , height, activityLevel);
-str+="FEMALE: <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+year+" Level of activity: "+activityLevel+" gives BMR of "+femaleBMR+ " kcal<br><br>  ";
+var femaleBMR = calculateFemaleBMR(BirthYear ,vekt , height, activityLevel);
+var user2=setUserData("kvinne",vekt,BirthYear,height,1.4);
+console.log(user2);
+str+="<b>FEMALE:</b> <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+BirthYear+" Level of activity: "+activityLevel+" gives BMR of "+femaleBMR+ " kcal<br><br>  ";
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
 
@@ -777,7 +807,7 @@ str+="FEMALE: <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+year+" Level of 
 
 // the maaltid-object is current maaltid, the one that is edited
 // running through all elements in maaltid and adding to output string (str)
-
+str+="<b>RANDOM MEAL:</b><br>"
 for (i in maaltid) {
   str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
   +(maaltid[i].Fett*maaltid[i].weight/100).toFixed(1)+" g fett  -  " +(maaltid[i].Karbohydrat*maaltid[i].weight/100).toFixed(1)+" g karbo  -  "
@@ -790,6 +820,7 @@ putMaaltidInDay(dag, maaltid, 1); // put maaltid in dag on place 1
 
 // get all calculations and put in output string
   str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
+  +"<br><b>MÅLTIDSBALANSE:</b> <br>"
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
   +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
