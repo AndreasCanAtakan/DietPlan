@@ -719,7 +719,6 @@ function eveluateEnergy (user, maaltid) {
     var tallObjekt = checkMeal(maaltid);
     var mealKcal = parseInt(tallObjekt[8].toFixed(0));
     balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
-   console.log(user.Energy, mealKcal, balance);
     return balance;
 }
 
@@ -734,9 +733,10 @@ function eveluateEnergy (user, maaltid) {
 // add value for each meal to sum-variables
 // divide sumFAT, sumCARB, sumPROT with number of meals to get average in days
 // calculate balance=sumCAL/user.Energy
-// return object with balance, sumKCAL, avgFAT, avgCARB, avgPROT
+// return object with           %FAT for each meal, %CARB for each meal, %PROT for each meal,
+//                              sumKCAL, avgFAT, avgCARB, avgPROT, user/meal-balance
 function evaluateDay (user,day) {
-  
+
 }
 
 function saveStaticDataToFile() {
@@ -775,17 +775,17 @@ function calculateFemaleBMR(year, vekt, height, activityLevel) {
 // Veldig hard trening
 // (to ganger om dagen, hard styrketrening): 	  BMR x 1,9
 
-function setUserData (gender, vekt, BirthYear, height, activitylevel) {
+function setUserData (userName, gender, vekt, BirthYear, height, activitylevel) {
   obj = []; kcal = 0;
   if (gender=="mann") {(kcal=calculateMaleBMR(BirthYear, vekt, height, activityLevel))}
   else                {kcal=calculateFemaleBMR(BirthYear, vekt, height, activityLevel)}
-  return {Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal}
+  return {Username: userName, Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal}
 }
 
 
 // **************** END OF FUNCTIONS ****************
 
-var user;
+var user; var Username="anonymous";
 var kcal = 0; var fett = 0; var carbo = 0; var protein = 0; var sum = 0.0;
 var str = "";
 var values = makeRandomValues(6); // makes a list of values used for creating each matvare in maaltid
@@ -798,28 +798,27 @@ for (i in values) {
   addToArray(maaltid, obj); // adding matvare-object to maaltid
 }
 
+userName="Bob";
 var vekt=100;
 var BirthYear = 1966;
 age = (new Date().getFullYear())-BirthYear;
 var height = 175;
 var activityLevel = 1.4;
-var maleBMR = calculateMaleBMR(BirthYear ,vekt , height, activityLevel);
-var user1=setUserData("mann",vekt,BirthYear,height,1.4);
+var user1=setUserData(userName,"mann",vekt,BirthYear,height,1.4);
 
-str+="<b>MALE:</b> <br>weight:"+user1.Vekt+"<br>height:"+user1.Height+"<br>birthyear:"+user1.BirthYear+" ("+age+" years)"+
+str+="<b>"+user1.Username+":</b> <br>weight:"+user1.Vekt+"<br>height:"+user1.Height+"<br>birthyear:"+user1.BirthYear+" ("+age+" years)"+
 "<br>Level of activity: "+user1.Activity+"<br>dayly energy:  "+user1.Energy+ " kcal<br><br>  ";
 
 // saveStaticDataToFile();
-
+userName="Alice";
 vekt=100;
 BirthYear = 1966;
 age = (new Date().getFullYear())-BirthYear;
 height = 175;
 activityLevel = 1.4;
-var femaleBMR = calculateFemaleBMR(BirthYear ,vekt , height, activityLevel);
-var user2=setUserData("kvinne",vekt,BirthYear,height,1.4);
+var user2=setUserData(userName, "kvinne",vekt,BirthYear,height,1.4);
 
-str+="<b>FEMALE:</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Height+"<br>birthyear:"+user2.BirthYear+" ("+age+" years)"+
+str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Height+"<br>birthyear:"+user2.BirthYear+" ("+age+" years)"+
 "<br>Level of activity: "+user2.Activity+"<br>dayly energy:  "+user2.Energy+ " kcal<br><br>  ";
 
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
