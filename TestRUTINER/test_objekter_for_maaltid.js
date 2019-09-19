@@ -712,7 +712,32 @@ function putMaaltidInDay(dag, maaltid, ID) {
 // TODO
 // }
 
+// evaluates meal towards user energy
+// must be changed to evaluate day with meals
+function eveluateEnergy (user, maaltid) {
+    var balance = 0;
+    var tallObjekt = checkMeal(maaltid);
+    var mealKcal = parseInt(tallObjekt[8].toFixed(0));
+    balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
+   console.log(user.Energy, mealKcal, balance);
+    return balance;
+}
 
+
+// evaluate day
+// INPUT: user, day-object
+// OUTPUT: object with total KCAL, balance of Fat, Carbo and Protein
+// use checkMeal, to extract values from each meal and calculate
+// sum og kcal, and average % of nutritient
+// make variables for needed values to sum; sumKCAL, sumFAT, sumCARB, sumPROT
+// iterate all elements in day
+// add value for each meal to sum-variables
+// divide sumFAT, sumCARB, sumPROT with number of meals to get average in days
+// calculate balance=sumCAL/user.Energy
+// return object with balance, sumKCAL, avgFAT, avgCARB, avgPROT
+function evaluateDay (user,day) {
+  
+}
 
 function saveStaticDataToFile() {
     var blob = new Blob(["Welcome to Websparrow.org."],
@@ -757,14 +782,6 @@ function setUserData (gender, vekt, BirthYear, height, activitylevel) {
   return {Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal}
 }
 
-function eveluateEnergy (user, maaltid) {
-    var balance = 0;
-    var tallObjekt = checkMeal(maaltid);
-    var mealKcal = parseInt(tallObjekt[8].toFixed(0));
-    balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
-   console.log(user.Energy, mealKcal, balance);
-    return balance;
-}
 
 // **************** END OF FUNCTIONS ****************
 
