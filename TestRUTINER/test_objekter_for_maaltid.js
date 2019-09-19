@@ -604,8 +604,6 @@ mat=
 {"Matvare":"Åbor, abbor, filet, rå","Kilokalorier":85,"Fett":0.6,"Karbohydrat":0,"Protein":19.8,"Spiselig":100,"Kategori":"Sjømat","underkategori":"Fisk"},
 {"Matvare":"Ål, filet, rå","Kilokalorier":362,"Fett":32.5,"Karbohydrat":0,"Protein":17.3,"Spiselig":100,"Kategori":"Sjømat","underkategori":"Fisk-fet"}];
 
-// get maaltid object, and do all checks
-// set values to global variables
 
 // ************** FUNCTIONS FIRST **************
 
@@ -661,10 +659,13 @@ function removeFromArray (liste, element) {
 }
 
 // adds matvare to the JSON-array liste
+
 function addToArray (liste, matvare) {
   liste.push(matvare);
 }
 
+// replace element in addToArray
+// INPUT: list to replace element in, element to replace with, and ID of element to be replaced
 function replaceInArray (liste, matvare, ID) {
   liste.splice(ID, 1, matvare);
 }
@@ -693,13 +694,13 @@ function makeRandomValues(antall) {
   } return verdier;}
 
 
-// lager en tom dag
+// function to make an empty day
 function makeDay() {
   var dag=[];var tom = {};
   for (i=0; i<7; i++) { addToDay(dag, tom);
   } removeFromArray(dag,0); return dag; }
 
-// legg maaltid til dag på plass ID
+// add meal to day in position of ID
 function putMaaltidInDay(dag, maaltid, ID) {
   dag.splice(ID, 1, maaltid);}
 
@@ -713,12 +714,18 @@ function putMaaltidInDay(dag, maaltid, ID) {
 
 // <<<<functions for users profiles>>>>
 
+// calculates BMR of men
+// INPUT: birthyear(int), weight(int), height(int in cm) and activitylevel (float)
+// OUTPUT: integer representing needed kcal per day
 function calculateMaleBMR(year, vekt, height, activityLevel) {
     thisYear = new Date().getFullYear();
     BMR = 66.5+(13.75*vekt)+(5.003*height)-(6.755*(thisYear-year));
    return parseInt((BMR*activityLevel).toFixed(0));
 }
 
+// calculates BMR of women
+// INPUT: birthyear(int), weight(int), height(int in cm) and activitylevel (float)
+// OUTPUT: integer representing needed kcal per day
 function calculateFemaleBMR(year, vekt, height, activityLevel) {
     thisYear = new Date().getFullYear();
     BMR = 655.1+(9.563*vekt)+(1.850*height)-(4.676*(thisYear-year))
