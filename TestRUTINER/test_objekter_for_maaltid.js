@@ -774,24 +774,28 @@ for (i in values) {
 
 var vekt=100;
 var BirthYear = 1966;
+age = (new Date().getFullYear())-BirthYear;
 var height = 175;
 var activityLevel = 1.4;
 var maleBMR = calculateMaleBMR(BirthYear ,vekt , height, activityLevel);
 var user1=setUserData("mann",vekt,BirthYear,height,1.4);
-console.log(user1);
 
-str+="<b>MALE:</b> <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+BirthYear+" Level of activity: "+activityLevel+" gives BMR of "+maleBMR+ " kcal<br>  ";
+str+="<b>MALE:</b> <br>weight:"+user1.Vekt+"<br>height:"+user1.Height+"<br>birthyear:"+user1.BirthYear+" ("+age+" years)"+
+"<br>Level of activity: "+user1.Activity+"<br>dayly energy:  "+user1.Energy+ " kcal<br><br>  ";
 
-saveStaticDataToFile();
+// saveStaticDataToFile();
 
-vekt=90;
+vekt=100;
 BirthYear = 1966;
-height = 170;
+age = (new Date().getFullYear())-BirthYear;
+height = 175;
 activityLevel = 1.4;
 var femaleBMR = calculateFemaleBMR(BirthYear ,vekt , height, activityLevel);
 var user2=setUserData("kvinne",vekt,BirthYear,height,1.4);
-console.log(user2);
-str+="<b>FEMALE:</b> <br>vekt:"+vekt+"  høyde:"+height+"  birthyear:"+BirthYear+" Level of activity: "+activityLevel+" gives BMR of "+femaleBMR+ " kcal<br><br>  ";
+
+str+="<b>FEMALE:</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Height+"<br>birthyear:"+user2.BirthYear+" ("+age+" years)"+
+"<br>Level of activity: "+user2.Activity+"<br>dayly energy:  "+user2.Energy+ " kcal<br><br>  ";
+
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
 
@@ -819,8 +823,8 @@ makeDay(dag); // makes empty day
 putMaaltidInDay(dag, maaltid, 1); // put maaltid in dag on place 1
 
 // get all calculations and put in output string
-  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
-  +"<br><b>MÅLTIDSBALANSE:</b> <br>"
+  str+="<br><b>TOTAL "+kcal+" kcal: </b><br>"
+  +"<br><b>BALANCE OF MEAL:</b> <br>"
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
   +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
