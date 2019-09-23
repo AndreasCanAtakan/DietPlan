@@ -693,13 +693,6 @@ function makeRandomValues(antall) {
   for (i=0; i<antall; i++) {verdier.push(parseInt((Math.random() * (mat.length-1)).toFixed(0)));
   } return verdier;}
 
-
-// function to make an empty day
-function makeDay() {
-  var dag=[];var tom = {};
-  for (i=0; i<7; i++) { addToDay(dag, tom);
-  } removeFromArray(dag,0); return dag; }
-
 // add meal to day in position of ID
 function putMaaltidInDay(dag, maaltid, ID) {
   dag.splice(ID, 1, maaltid);}
@@ -714,12 +707,12 @@ function putMaaltidInDay(dag, maaltid, ID) {
 
 // evaluates meal towards user energy
 // must be changed to evaluate day with meals
-function eveluateEnergy (user, maaltid) {
+function evaluateEnergy (maaltid) {
     var balance = 0;
     var tallObjekt = checkMeal(maaltid);
     var mealKcal = parseInt(tallObjekt[8].toFixed(0));
-    balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
-    return balance;
+    // balance = parseInt((mealKcal/user.Energy).toFixed(2)*100);
+    return mealKcal;
 }
 
 
@@ -735,8 +728,13 @@ function eveluateEnergy (user, maaltid) {
 // calculate balance=sumCAL/user.Energy
 // return object with           %FAT for each meal, %CARB for each meal, %PROT for each meal,
 //                              sumKCAL, avgFAT, avgCARB, avgPROT, user/meal-balance
-function evaluateDay (user,day) {
-
+function evaluateDayOfMeals(day) {
+var energi = 0;
+  for (i in day) {
+    energi += evaluateEnergy(day[i]);
+  }
+console.log(energi);
+return energi;
 }
 
 function saveStaticDataToFile() {
@@ -792,7 +790,7 @@ var values = makeRandomValues(6); // makes a list of values used for creating ea
 var dag = [{}]; var maaltid = [{}]; // making empty object 'maaltid' & 'dag'
 
 for (i in values) {
-  min = 40; var max = 350;    // for getting random weight of each element
+  min = 20; var max = 70;    // for getting random weight of each element
   value = parseInt((Math.random() * (+max - +min) + +min).toFixed(0), 10);
   var obj = makeMatvare(values[i],value); // making one matvare-object
   addToArray(maaltid, obj); // adding matvare-object to maaltid
@@ -834,9 +832,18 @@ str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Hei
  var kcal = verdiObjekt[8].toFixed(1);
  var counter=1; // for the list below
 
+
+ var dag;
+ for (i=0; i<5; i++) {
+   putMaaltidInDay(dag, maaltid, i); // put maaltid in dag on place i
+ }
+
+evaluateDayOfMeals(dag);
+evaluateDayOfMeals(dag);
+
 // the maaltid-object is current maaltid, the one that is edited
 // running through all elements in maaltid and adding to output string (str)
-str+="<b>RANDOM MEAL:</b><br>"
+str+="<b>RANDOM MEALS ("+dag.length+") :</b><br>"
 for (i in maaltid) {
   str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
   +(maaltid[i].Fett*maaltid[i].weight/100).toFixed(1)+" g fett  -  " +(maaltid[i].Karbohydrat*maaltid[i].weight/100).toFixed(1)+" g karbo  -  "
@@ -844,11 +851,10 @@ for (i in maaltid) {
   counter++;
 }
 
-makeDay(dag); // makes empty day
-putMaaltidInDay(dag, maaltid, 1); // put maaltid in dag on place 1
+
 
 // get all calculations and put in output string
-  str+="<br><b>TOTAL "+kcal+" kcal MALE: "+eveluateEnergy(user1,maaltid)+" %  -  FEMALE: "+eveluateEnergy(user2,maaltid)+" %</b><br>"
+  str+="<br><b>TOTAL "+(evaluateDayOfMeals(dag))+" kcal MALE: "+(evaluateDayOfMeals(dag)/user1.Energy*100).toFixed(0)+" %  -  FEMALE: "+(evaluateDayOfMeals(dag)/user2.Energy*100).toFixed(0)+" %</b><br>"
   +"<br><b>BALANCE OF MEAL:</b> <br>"
   +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
