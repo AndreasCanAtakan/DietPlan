@@ -702,7 +702,7 @@ function makeRandom (min, max) {
 
 function makeRandomMeal (meal) {
   var food = makeRandomValues(6);
-  console.log(food);
+
   for (i in food) {
     var random = makeRandom(20, 60);
     var mat = makeMatvare(food[i],random);
@@ -725,88 +725,46 @@ function putMaaltidInDay(dag, maaltid, ID) {
 // evaluates meal towards user energy
 // must be changed to evaluate day with meals
 function getMealEnergy(maaltid) {
-    var balance = 0;
     var tallObjekt = checkMeal(maaltid);
     var mealKcal = parseInt(tallObjekt[8].toFixed(0));
     return mealKcal;
 }
 
-// return amount of kcal in day
+function getMealValues(maaltid) {
+  // return a object with all values:
+  // sum of: kcal, fat, carbo, protein
+  var kcalSum=0;var fatSum=0;
+  var carbSum=0;var protSum=0;
+  for (i in maaltid) {
+    kcalSum+=parseInt(maaltid[i].Kilokalorier);
+    fatSum+=parseInt(maaltid[i].Fett);
+    carbSum+=parseInt(maaltid[i].Karbohydrat);
+    protSum+=parseInt(maaltid[i].Protein);
+  }
+  var totalSum={KCAL: kcalSum, FAT:fatSum, CARB:carbSum, PROT:protSum};
+  return totalSum;
+}
+
+
+// return amount of kcal, fat, carb, protein in day
 // INPUT: day-object
-// OUTPUT: total KCAL
-function getDailyEnergy(day) {
-var energi = 0;
+// OUTPUT: object:{totalKCAL, totalFAT, totalCARB, totalPROT}
+function getDailyValues(day) {
+  var innhold;
+  var kcalSum=0;var fatSum=0;
+  var carbSum=0;var protSum=0;
   for (i in day) {
-    energi += getMealEnergy(day[i]);
+    innhold = getMealValues(day[i]);
+    kcalSum+=parseInt(innhold.KCAL);
+    fatSum+=parseInt(innhold.FAT);
+    carbSum+=parseInt(innhold.CARB);
+    protSum+=parseInt(innhold.PROT);
   }
-return energi;
+  var totalSum={KCAL: kcalSum, FAT:fatSum, CARB:carbSum, PROT:protSum};
+  // console.log(totalSum);
+  return totalSum;
 }
 
-// return amount of fat in meal
-// INPUT: Meal - object
-// OUTPUT: total fat in given meal
-function fatInMeal (meal) {
-var total=0;
-    for (i in meal) {
-      total+=meal[i].Fett;
-    }
-    return total;
-}
-
-// return amount of carbo in meal
-// INPUT: Meal - object
-// OUTPUT: total carbs in given meal
-function carboInMeal (meal) {
-var total=0;
-var total=0;
-  for (i in meal) {
-    total+=meal[i].Karbohydrat;
-  }
-  return total;
-}
-
-// return amount of protein in meal
-// INPUT: Meal - object
-// OUTPUT: total proteins in given meal
-function proteinInMeal (meal) {
-var total=0;
-  for (i in meal) {
-    total+=meal[i].Protein;
-  }
-  return total;
-}
-
-// fat in days
-// INPUT: day-object with meals
-// OUTPUT: total fat in all meals in given day
-function fatInDay(day) {
-  var total=0;
-  for (i in day) {
-    total+=fatInMeal(day[i]);
-  }
-  return total;
-}
-// carbo in day
-// INPUT: day-object with meals
-// OUTPUT: total carbs in all meals in given day
-function carboInDay(day) {
-  var total=0;
-  for (i in day) {
-    total+=carboInMeal(day[i]);
-  }
-  return total;
-}
-
-// protein in day
-// INPUT: day-object with meals
-// OUTPUT: total proteins in all meals in given day
-function proteinInDay(day) {
-  var total=0;
-  for (i in day) {
-    total+=proteinInMeal(day[i]);
-  }
-  return total;
-}
 
 //   *** INCOMPLETE ***   function to save to file  *** INCOMPLETE ***
 function saveStaticDataToFile() {
@@ -853,13 +811,17 @@ function setUserData (userName, gender, vekt, BirthYear, height, activitylevel) 
 var user; var Username="anonymous";
 var kcal = 0; var fett = 0; var carbo = 0; var protein = 0; var sum = 0.0;
 var str = "";
+var IDlist = [];
+for (i=0; i<5; i++) {
+  addToArray(IDlist,makeRandomValues(7));
+}
 // var values = makeRandomValues(6); // makes a list of values used for creating each matvare in maaltid
 var dag = [{}]; var maaltid = [{}]; // making empty object 'maaltid' & 'dag'
 
 for (i=0; i<5; i++) {
     makeRandomMeal(maaltid);putMaaltidInDay(dag, maaltid, i);
 }
-
+getDailyValues(dag);
 
 userName="Bob";
 var vekt=100;
@@ -886,6 +848,7 @@ str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Hei
 
 //CLEANUP - removing undefined object (no 0) in the JSON-array ;
  removeFromArray (maaltid,0);
+ var test = getMealValues(maaltid);
 
  // make random meals
 
@@ -896,12 +859,13 @@ str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Hei
 
  // getting values from object, containing all checks of totals
  // and balance in the maaltid-object
- var sum = parseInt(fatInDay(dag)+carboInDay(dag)+proteinInDay(dag));
- var fett = parseInt(fatInDay(dag));  var andelFett= (fett/sum*100).toFixed(1);
- var carbo = parseInt(carboInDay(dag)); var andelCarbo = (carbo/sum*100).toFixed(1);
- var protein = parseInt(proteinInDay(dag)); var andelProtein = (protein/sum*100).toFixed(1);
- var kcal = getDailyEnergy(dag);
+ var sum = parseInt((getDailyValues(dag).FAT)+parseInt(getDailyValues(dag).CARB)+parseInt(getDailyValues(dag).PROT));
+ var fett = parseInt(getDailyValues(dag).FAT);  var andelFett= (fett/sum*100).toFixed(1);
+ var carbo = parseInt(getDailyValues(dag).CARB); var andelCarbo = (carbo/sum*100).toFixed(1);
+ var protein = parseInt(getDailyValues(dag).PROT); var andelProtein = (protein/sum*100).toFixed(1);
+ var kcal = parseInt(getDailyValues(dag).KCAL);
  var counter=1; // for the list below
+ console.log(fett, carbo, getDailyValues(dag).CARB, protein, kcal, sum);
 
 // the maaltid-object is current maaltid, the one that is viewed/edited
 // running through all elements in maaltid and adding to output string (str)
@@ -914,11 +878,12 @@ for (i in maaltid) {
 }
 
 // get all calculations and put in output string
-  str+="<br><b>TOTAL "+(getDailyEnergy(dag))+" kcal MALE: "+(getDailyEnergy(dag)/user1.Energy*100).toFixed(0)+" %  -  FEMALE: "+(getDailyEnergy(dag)/user2.Energy*100).toFixed(0)+" %</b><br>"
+  str+="<br><b>TOTAL "+(getDailyValues(dag).KCAL)+" kcal MALE: "+(getDailyValues(dag).KCAL/user1.Energy*100).toFixed(0)
+  +" %  -  FEMALE: "+(getDailyValues(dag).KCAL/user2.Energy*100).toFixed(0)+" %</b><br>"
   +"<br><b>BALANCE OF MEALS:</b> <br>"
-  +fett+" g fett ("+ andelFett + " %) " + (checkMeal(maaltid))[2] + "<br> "
-  +carbo+" g karbohydrater ("+ andelCarbo + " %) " + (checkMeal(maaltid))[4] + "<br> "
-  +protein+" g proteiner ("+ andelProtein + " %) " + (checkMeal(maaltid))[6] + " <br>"
+  +fett+" g fett ("+ andelFett + " %) "+checkCarbo(fett,sum, 0.5, 0.4)+"<br> "
+  +carbo+" g karbohydrater ("+ andelCarbo + " %) "+checkCarbo(carbo,sum, 0.5, 0.4)+" <br> "
+  +protein+" g proteiner ("+ andelProtein + " %) "+checkCarbo(protein,sum, 0.5, 0.4)+"<br>"
   +sum+" gram summert F, C & P <br><br>";
 
 document.getElementById("paraId").innerHTML = str;
