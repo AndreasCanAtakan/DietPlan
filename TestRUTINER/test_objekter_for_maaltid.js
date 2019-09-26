@@ -640,10 +640,10 @@ function replaceInArray (liste, matvare, ID) {
 }
 
 // TODO NB! CHECK FUNCTIONALITY!
+// NOT WORKING 26.09. kl. 12:00
 // function to add maaltid to a day-menu
 function addToDay (dagsMeny,meal) {
   dagsMeny.push(meal);
-  console.log(dagsMeny);
 }
 
 // function to add a day to a week-menu
