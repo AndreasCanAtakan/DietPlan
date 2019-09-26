@@ -833,10 +833,10 @@ str+="<b>"+user1.Username+":</b> <br>weight:"+user1.Vekt+"<br>height:"+user1.Hei
 // saveStaticDataToFile();
 userName="Alice";
 vekt=80;
-BirthYear = 1966;
+BirthYear = 1969;
 age = (new Date().getFullYear())-BirthYear;
-height = 175;
-activityLevel = getActivityLevel("Hard trening");
+height = 172;
+activityLevel = getActivityLevel("Lett trening");
 var user2=setUserData(userName, "kvinne",vekt,BirthYear,height,activityLevel);
 
 str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Height+"<br>birthyear:"+user2.BirthYear+" ("+age+" years)"+
@@ -855,8 +855,8 @@ str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Hei
 // running through all elements in maaltid and adding to output string (str)
 for (j in dag) {
   maaltid = dag[j];
-
-  str+="<b><br>MEAL ("+(parseInt(j)+1)+") :</b><br>"
+  var counter=1;
+  str+="<b><br>MÅLTID ("+(parseInt(j)+1)+") :</b><br>"
   for (i in maaltid) {
     str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
     +maaltid[i].Fett.toFixed(1)+" g fett  -  " +maaltid[i].Karbohydrat.toFixed(1)+" g karbo  -  "
