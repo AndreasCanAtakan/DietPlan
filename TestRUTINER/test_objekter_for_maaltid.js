@@ -679,7 +679,7 @@ function getMealValues(maaltid) {
 // OUTPUT: object:{totalKCAL, totalFAT, totalCARB, totalPROT}
 function getDailyValues(day) {
   var innhold; var kcalSum=0;var fatSum=0; var carbSum=0;var protSum=0;
-  removeFromArray(day,0)
+
   for (i in day) {
     innhold = getMealValues(day[i]);
     kcalSum+=parseInt(innhold.KCAL); fatSum+=parseInt(innhold.FAT);
@@ -748,6 +748,10 @@ function setUserData (userName, gender, vekt, BirthYear, height, activitylevel) 
   return {Username: userName, Gender: gender, BirthYear: BirthYear, Vekt: vekt, Height: height, Activity: activitylevel, Energy: kcal}
 }
 
+function setDailyMeal () {
+  return {}
+}
+
 // ********** TESTING FUNCTIONS **********
 
 // function (for testing) to add number of random makeRandomValues
@@ -793,13 +797,27 @@ for (i=0; i<5; i++) {
   addToArray(IDlist,makeRandomValues(7));
 }
 
+// test to make one day with 5 MEALS
+// to test functions to get values from complete days of MEALS
+// WORKS to put MEALS in DAY
 var dag = []; var maaltid = []; // making empty object 'maaltid' & 'dag'
 
-makeRandomMeal(maaltid);
-addToDay(dag, maaltid);
-maaltid = [];
-makeRandomMeal(maaltid);
-addToDay(dag, maaltid);
+  makeRandomMeal(maaltid);
+  addToDay(dag, maaltid);
+  maaltid = [];
+  makeRandomMeal(maaltid);
+  addToDay(dag, maaltid);
+  maaltid = [];
+  makeRandomMeal(maaltid);
+  addToDay(dag, maaltid);
+  maaltid = [];
+  makeRandomMeal(maaltid);
+  addToDay(dag, maaltid);
+  maaltid = [];
+  makeRandomMeal(maaltid);
+  addToDay(dag, maaltid);
+  maaltid = dag[3];     // meal to show in list -> import from dag to current
+
 
 userName="Bob";
 var vekt=100;
@@ -824,33 +842,35 @@ var user2=setUserData(userName, "kvinne",vekt,BirthYear,height,activityLevel);
 str+="<b>"+user2.Username+":</b> <br>weight:"+user2.Vekt+"<br>height:"+user2.Height+"<br>birthyear:"+user2.BirthYear+" ("+age+" years)"+
 "<br>Level of activity: "+user2.Activity+"<br>dayly energy:  "+user2.Energy+ " kcal<br><br>  ";
 
- removeFromArray (maaltid,0); //CLEANUP - removing undefined object (no 0) in the JSON-array ;
 
  // getting values from object, containing all checks of totals
  // and balance in the maaltid-object
- var sum = parseInt(getMealValues(maaltid).FAT)+parseInt(getMealValues(maaltid).CARB)+parseInt(getMealValues(maaltid).PROT);
- var fett = parseInt(getMealValues(maaltid).FAT);  var andelFett= (fett/sum*100).toFixed(1);
- var carbo = parseInt(getMealValues(maaltid).CARB); var andelCarbo = (carbo/sum*100).toFixed(1);
- var protein = parseInt(getMealValues(maaltid).PROT); var andelProtein = (protein/sum*100).toFixed(1);
- var kcal = parseInt(getMealValues(maaltid).KCAL);
+ var sum = parseInt(getDailyValues(dag).FAT)+parseInt(getDailyValues(dag).CARB)+parseInt(getDailyValues(dag).PROT);
+ var fett = parseInt(getDailyValues(dag).FAT);  var andelFett= (fett/sum*100).toFixed(1);
+ var carbo = parseInt(getDailyValues(dag).CARB); var andelCarbo = (carbo/sum*100).toFixed(1);
+ var protein = parseInt(getDailyValues(dag).PROT); var andelProtein = (protein/sum*100).toFixed(1);
+ var kcal = parseInt(getDailyValues(dag).KCAL);
  var counter=1; // for the list below
 
 // running through all elements in maaltid and adding to output string (str)
-str+="<b>RANDOM MEALS ("+(dag.length-1)+") :</b><br>"
-for (i in maaltid) {
-  str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
-  +maaltid[i].Fett.toFixed(1)+" g fett  -  " +maaltid[i].Karbohydrat.toFixed(1)+" g karbo  -  "
-  +maaltid[i].Protein.toFixed(1)+" g proteiner.  " +maaltid[i].Spiselig+"% er spiselig " +"<br>";
-  counter++;
-}
+for (j in dag) {
+  maaltid = dag[j];
 
+  str+="<b><br>MEAL ("+(parseInt(j)+1)+") :</b><br>"
+  for (i in maaltid) {
+    str += counter+") "+maaltid[i].weight+" gram - "+maaltid[i].Matvare+"  -  " + maaltid[i].Kilokalorier*maaltid[i].weight/100+" kcal  -  "
+    +maaltid[i].Fett.toFixed(1)+" g fett  -  " +maaltid[i].Karbohydrat.toFixed(1)+" g karbo  -  "
+    +maaltid[i].Protein.toFixed(1)+" g proteiner.  " +maaltid[i].Spiselig+"% er spiselig " +"<br>";
+    counter++;
+  }
+}
 // get all calculations and put in output string
-  str+="<br><b>TOTAL "+(getMealValues(maaltid).KCAL)+" kcal MALE: "+(getMealValues(maaltid).KCAL/user1.Energy*100).toFixed(0)
-  +" %  -  FEMALE: "+(getMealValues(maaltid).KCAL/user2.Energy*100).toFixed(0)+" %</b><br>"
-  +"<br><b>BALANCE OF MEALS:</b> <br>"
+  str+="<br><b>TOTAL "+(getDailyValues(dag).KCAL)+" kcal MANN: "+(getDailyValues(dag).KCAL/user1.Energy*100).toFixed(0)
+  +" %  -  KVINNE: "+(getDailyValues(dag).KCAL/user2.Energy*100).toFixed(0)+" %</b><br>"
+  +"<br><b>BALANSE AV MÅLTIDER:</b> <br>"
   +fett+" g fett ("+ andelFett + " %) "+checkNutricion(fett,sum, 0.35, 0.25)+"<br> "
   +carbo+" g karbohydrater ("+ andelCarbo + " %) "+checkNutricion(carbo,sum, 0.50, 0.40)+" <br> "
   +protein+" g proteiner ("+ andelProtein + " %) "+checkNutricion(protein,sum, 0.25, 0.20)+"<br>"
-  +sum+"<br>";
-console.log(dag);
+  +"<br>";
+
 document.getElementById("paraId").innerHTML = str;
