@@ -1,4 +1,6 @@
-[{"Matvare":"Berlinerbolle, kjøpt","Kilokalorier":439,"Fett":23.2,"Karbohydrat":49.2,"Protein":7.3,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
+mat=
+[
+{"Matvare":"Berlinerbolle, kjøpt","Kilokalorier":439,"Fett":23.2,"Karbohydrat":49.2,"Protein":7.3,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Bolle, med sjokoladebiter","Kilokalorier":378,"Fett":13.3,"Karbohydrat":55.3,"Protein":7.7,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Bolle, uten rosiner, kjøpt","Kilokalorier":361,"Fett":11.3,"Karbohydrat":55.7,"Protein":7.7,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Kanelbolle, skillingsbolle, med sukkerstrø, kjøpt","Kilokalorier":292,"Fett":5.2,"Karbohydrat":51.8,"Protein":8.4,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
@@ -601,4 +603,17 @@
 {"Matvare":"Marsipan, 50 % mandler","Kilokalorier":508,"Fett":27.5,"Karbohydrat":52.7,"Protein":10.5,"Kategori":"Snacks","underkategori":"Søt"},
 {"Matvare":"Marsipanbrød, med sjokoladetrekk","Kilokalorier":514,"Fett":29.5,"Karbohydrat":52,"Protein":9,"Kategori":"Snacks","underkategori":"Søt"},
 {"Matvare":"Saftis, Lollipop","Kilokalorier":120,"Fett":3.5,"Karbohydrat":22,"Protein":0.1,"Kategori":"Snacks","underkategori":"Søt"},
-{"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}]
+{"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
+];
+var str = "";
+var karbo = 0.0;
+var kcal = 0;
+for (i in mat) {
+            str += i + ") " + mat[i].Kategori + "-" + mat[i].underkategori + ": " + mat[i].Matvare + " - <b>kcal: " + mat[i].Kilokalorier +
+            "</b>     Fett: "+ mat[i].Fett + "%    Karbohydrat: " + mat[i].Karbohydrat + "%     Proteiner: " + mat[i].Protein + "%<br>";
+            karbo += mat[i].Karbohydrat;
+            kcal += mat[i].Kilokalorier;
+              }
+str += "<br>Total karbo: " + karbo + " <br>";
+str += "<br>Kcal: " + kcal + " <br>";
+document.getElementById("paraId").innerHTML = str;

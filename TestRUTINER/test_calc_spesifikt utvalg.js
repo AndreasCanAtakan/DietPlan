@@ -1,4 +1,6 @@
-[{"Matvare":"Berlinerbolle, kjøpt","Kilokalorier":439,"Fett":23.2,"Karbohydrat":49.2,"Protein":7.3,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
+mat=
+[
+{"Matvare":"Berlinerbolle, kjøpt","Kilokalorier":439,"Fett":23.2,"Karbohydrat":49.2,"Protein":7.3,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Bolle, med sjokoladebiter","Kilokalorier":378,"Fett":13.3,"Karbohydrat":55.3,"Protein":7.7,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Bolle, uten rosiner, kjøpt","Kilokalorier":361,"Fett":11.3,"Karbohydrat":55.7,"Protein":7.7,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
 {"Matvare":"Kanelbolle, skillingsbolle, med sukkerstrø, kjøpt","Kilokalorier":292,"Fett":5.2,"Karbohydrat":51.8,"Protein":8.4,"Kategori":"Brødmat","underkategori":"Bolle/lefse"},
@@ -601,4 +603,70 @@
 {"Matvare":"Marsipan, 50 % mandler","Kilokalorier":508,"Fett":27.5,"Karbohydrat":52.7,"Protein":10.5,"Kategori":"Snacks","underkategori":"Søt"},
 {"Matvare":"Marsipanbrød, med sjokoladetrekk","Kilokalorier":514,"Fett":29.5,"Karbohydrat":52,"Protein":9,"Kategori":"Snacks","underkategori":"Søt"},
 {"Matvare":"Saftis, Lollipop","Kilokalorier":120,"Fett":3.5,"Karbohydrat":22,"Protein":0.1,"Kategori":"Snacks","underkategori":"Søt"},
-{"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}]
+{"Matvare":"Vaniljesaus, Piano","Kilokalorier":147,"Fett":8.4,"Karbohydrat":15,"Protein":2.7,"Kategori":"Snacks","underkategori":"Søt"}
+];
+
+
+function checkFett(fett, total) {
+  var fettMaks = 0.35
+  var fettMin = 0.25
+  if (fett/total<=fettMaks && fett/total>=fettMin) {
+    return "OK";
+  }
+  else {
+    return "UTENFOR";
+  }
+}
+
+function checkCarbo(carbo, total) {
+  var carboMaks = 0.50
+  var carboMin = 0.40
+  if (carbo/total<=carboMaks && carbo/total>=carboMin) {
+    return "OK";
+  }
+  else {
+    return "UTENFOR";
+  }
+}
+
+function checkProtein(protein, total) {
+  var proteinMaks = 0.25
+  var proteinMin = 0.20
+  if (protein/total<=proteinMaks && protein/total>=proteinMin) {
+    return "OK";
+  }
+  else {
+    return "UTENFOR";
+  }
+}
+
+
+// taking name and values for specific elements
+// and displaying and calculating total for all values
+var kcal = 0;
+var fett = 0;
+var carbo = 0;
+var protein = 0;
+var sum = 0.0;
+
+var str = "";
+var values = [4,45,455,56,233,603,455,275];
+for (i in values) {
+
+    str += i+") "+mat[values[i]].Matvare+"  -  " + mat[values[i]].Kilokalorier+" kcal  -  "
+    +mat[values[i]].Fett+" g fett  -  " +mat[values[i]].Karbohydrat+" g karbo  -  "
+    +mat[values[i]].Protein+" g proteiner.  " +"<br>";
+    kcal+= mat[values[i]].Kilokalorier;
+    fett+= mat[values[i]].Fett;
+    carbo+= mat[values[i]].Karbohydrat;
+    protein+= mat[values[i]].Protein;
+    sum = fett+carbo+protein
+  }
+
+  str+="<br><b>TOTALT "+kcal+" kcal: </b><br>"
+  +fett.toFixed(1)+" g fett ( "+ (fett/sum*100).toFixed(1) + " % ) " + checkFett(fett, sum) + "<br> "
+  +carbo.toFixed(1)+" g karbohydrater ( "+ (carbo/sum*100).toFixed(1) + " % ) " + checkCarbo(carbo, sum) + "<br> "
+  +protein.toFixed(1)+" g proteiner ( "+ (protein/sum*100).toFixed(1) + " % ) " + checkProtein(protein, sum) + " <br>"
+  +sum.toFixed(1)+" gram summert <br>";
+
+document.getElementById("paraId").innerHTML = str;
